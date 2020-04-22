@@ -1,0 +1,1602 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Slash Admin 1.8\n"
+"POT-Creation-Date: 2016-04-30 01:43+0300\n"
+"PO-Revision-Date: 2016-04-30 01:43+0300\n"
+"Last-Translator: Giorgos Sarigiannidis <contact@gsarigiannidis.gr>\n"
+"Language-Team: Giorgos Sarigiannidis <contact@gsarigiannidis.gr>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;esc_attr_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/admin_notices.php:18
+msgid ""
+"Debug mode is enabled. This is a good habit if you are currently developing "
+"this site, but don't forget to disable it when you go on air (<a href="
+"\"http://codex.wordpress.org/Function_Reference/wp_debug_mode\" target="
+"\"_blank\">more info</a>)."
+msgstr ""
+"Η λειτουργία αποσφαλμάτωσης (debug mode) είναι ενεργή. Αυτό είναι καλό αν ο "
+"ιστοχώρος σας είναι ακόμη υπό ανάπτυξη, αλλά μην ξεχάσετε να την "
+"απενεργοποιήσετε όταν βγει στον αέρα (<a href=\"http://codex.wordpress.org/"
+"Function_Reference/wp_debug_mode\" target=\"_blank\">περισσότερα</a>). "
+
+#: inc/admin_notices.php:25
+msgid ""
+"Debug mode is disabled. It seems that this site is under development so, you "
+"might consider turning it on. (<a href=\"http://codex.wordpress.org/"
+"Function_Reference/wp_debug_mode\" target=\"_blank\">more info</a>)."
+msgstr ""
+"To WP_DEBUG είναι απενεργοποιημένο. Μιας και από ότι φαίνεται το site σας "
+"είναι υπό ανάπτυξη, μήπως να το ενεργοποιούσατε; (<a href=\"http://codex."
+"wordpress.org/Function_Reference/wp_debug_mode\" target=\"_blank"
+"\">περισσότερα</a>)."
+
+#: inc/admin_notices.php:31
+msgid ""
+"Your Website is on air and you have chosen to hide it from Search Engines. "
+"This is a huge SEO issue. Unless you know what you are doing, you should go "
+"to <strong>Settings &rarr; Reading &rarr; Search engine visibility</strong> "
+"and <strong>uncheck</strong> <i>\"Discourage search engines from indexing "
+"this site\"</i>."
+msgstr ""
+"Το site σας φαίνεται πως βρίσκεται στον αέρα και παρόλα αυτά είναι κρυμμένο "
+"από τις μηχανές αναζήτησης. Αυτό είναι τεράστιο πρόβλημα σε ό,τι αφορά το "
+"SEO. Εκτός κι αν ξέρετε τι κάνετε, καλό είναι να πάτε στο <strong>Ρυθμίσεις "
+"&rarr; Ανάγνωση &rarr; Ορατότητα μηχανής αναζήτησης </strong> και να "
+"<strong>απενεργοποιήσετε</strong> το <i>\"Να απαγορεύεται σε μηχανές "
+"αναζήτησης η ευρετηριοποίηση του ιστότοπου\"</i>."
+
+#: inc/oldiewarning.php:20
+msgid "Warning: Your browser is outdated"
+msgstr "Προσοχή: Ο φυλλομετρητής σας είναι παλιός"
+
+#: inc/oldiewarning.php:21
+msgid ""
+"Your browser is <strong>out of date</strong>. It has known <strong>security "
+"flaws</strong> and may not display all features of this and other websites. "
+"Please update to the latest version of <a href=\"http://windows.microsoft."
+"com/en-us/internet-explorer/download-ie\" target=\"_blank\">Internet "
+"Explorer</a> or download a modern browser like <a href=\"http://www.mozilla."
+"com/firefox/\" target=\"_blank\">Mozilla Firefox</a>, <a href=\"http://www."
+"google.com/chrome\" target=\"_blank\">Google Chrome</a> or <a href=\"http://"
+"www.opera.com/browser/\" target=\"_blank\">Opera</a>."
+msgstr ""
+"Το πρόγραμμα περιήγησης που χρησιμοποιείτε είναι <strong>παλιό</strong>. "
+"Έχει γνωστά <strong>κενά ασφαλείας</strong> και μπορεί να μην εμφανίζει "
+"σωστά όλες τις λειτουργίες του παρόντος  ή και άλλων ιστοχώρων. Παρακαλούμε "
+"αναβαθμίστε στην τελευταία έκδοση του <a href=\"http://windows.microsoft.com/"
+"en-us/internet-explorer/download-ie\" target=\"_blank\">Internet Explorer</"
+"a> ή κατεβάστε κάποιον άλλο σύγχρονο φυλλομετρητή όπως τον <a href=\"http://"
+"www.mozilla.com/firefox/\" target=\"_blank\">Mozilla Firefox</a>, τον <a "
+"href=\"http://www.google.com/chrome\" target=\"_blank\">Google Chrome</a> ή "
+"τον <a href=\"http://www.opera.com/browser/\" target=\"_blank\">Opera</a>."
+
+#: inc/oldiewarning.php:23
+msgid "Close this warning"
+msgstr "Κλείσιμο ειδοποίησης"
+
+#: options.php:27
+msgid "Frontend"
+msgstr "Εμφάνιση"
+
+#: options.php:28
+msgid "Administration"
+msgstr "Διαχείριση"
+
+#: options.php:29 options.php:664
+msgid "Login screen"
+msgstr "Οθόνη σύνδεσης"
+
+#: options.php:30
+msgid "Non-admins"
+msgstr "Μη-Διαχειριστές"
+
+#: options.php:31
+msgid "White label"
+msgstr "Παραμετροποίηση Διαχειριστικού"
+
+#: options.php:32
+msgid "Performance"
+msgstr "Ταχύτητα"
+
+#: options.php:33 options.php:976
+msgid "Shortcodes"
+msgstr "Shortcodes"
+
+#: options.php:34
+msgid "Documentation"
+msgstr "Βοήθεια"
+
+#: options.php:52 options.php:113
+msgid "Slash Admin Options"
+msgstr "Επιλογές Slash Admin"
+
+#: options.php:52
+msgid "Slash Admin"
+msgstr "Slash Admin"
+
+#: options.php:71
+msgid "Default Field"
+msgstr "Προεπιλεγμένο πεδίο"
+
+#: options.php:72
+msgid "This is a default description."
+msgstr "Προεπιλεγμένη περιγραφή."
+
+#: options.php:116
+msgid "Options updated."
+msgstr "Οι Ρυθμίσεις ενημερώθηκαν."
+
+#: options.php:134
+msgid "Save Changes"
+msgstr "Αποθήκευση Αλλαγών"
+
+#: options.php:286
+msgid "Upload"
+msgstr "Ανέβασμα"
+
+#: options.php:356
+msgid "Font fixes"
+msgstr "Διορθώσεις γραμματοσειρών"
+
+#: options.php:361
+msgid "Default Open Sans font"
+msgstr "Προεπιλεγμένη Open Sans"
+
+#: options.php:362
+msgid ""
+"Select how you should deal with the default Open Sans fonts that WordPress "
+"uses. If you have issues with how the font is displayed on logged-in users "
+"(it usually happens with non-latin subsets), try to disable it and then re-"
+"enter them properly below."
+msgstr ""
+"Επιλέξτε πώς θέλετε να διαχειριστείτε την προεπιλεγμένη γραμματοσειρά Open "
+"Sans που χρησιμοποιεί το WordPress. Εάν έχετε προβλήματα με τον τρόπο που "
+"εμφανίζεται στους συνδεδεμένους χρήστες (συνήθως συμβαίνει με τα Ελληνικά), "
+"δοκιμάστε να την απενεργοποιήσετε και να την εισάγετε ξανά μόνοι σας "
+"χρησιμοποιώντας το παρακάτω πεδίο. "
+
+#: options.php:366
+msgid "Keep the default Wordpress fonts (default)"
+msgstr "Διατήρηση προεπιλογών του WordPress (προεπιλογή)"
+
+#: options.php:367
+msgid "Remove default Open Sans from the Frontend"
+msgstr "Αφαίρεση προεπιλεγμένης Open Sans από το Frontend"
+
+#: options.php:368
+msgid "Remove default Open Sans from both Frontend and Backend"
+msgstr "Αφαίρεση προεπιλεγμένης Open Sans από Frontend και Διαχειριστικό"
+
+#: options.php:373
+msgid "Insert custom fonts"
+msgstr "Εισαγωγή γραμματοσειρών"
+
+#: options.php:374
+msgid ""
+"Insert your Google Web Fonts here. You can declare more than one fonts, "
+"styles and language subsets. Keep in mind that you must only fill in the "
+"part after the \"http://fonts.googleapis.com/css?family=\" like for example "
+"<code>Open+Sans:400,300&subset=latin,greek</code>. View more information "
+"about the font's structure, subsets and weights at the <a href=\"https://"
+"developers.google.com/fonts/docs/getting_started#Overview\" target=\"_blank"
+"\">Google Fonts help page</a>. If your theme has it's own mechanism for "
+"embedding Google Fonts or if you prefer to do it manually, just leave it "
+"blank."
+msgstr ""
+"Προσθέστε εδώ γραμματοσειρές από το Google Web Fonts. Μπορείτε να ορίσετε "
+"περισσότερες από μία γραμματοσειρές, στυλ και γλώσσες. Έχετε υπόψη ότι "
+"πρέπει να συμπληρώσετε μόνο το κομμάτι που ακολουθεί το \"http://fonts."
+"googleapis.com/css?family=\", δηλαδή για παράδειγμα: <code>Open"
+"+Sans:400,300&subset=latin,greek</code>. Δείτε περισσότερες πληροφορίες "
+"σχετικά με τη δομή των γραμματοσειρών, τα διάφορα βάρη και τις γλώσσες στην "
+"σελίδα βοηθείας των <a href=\"https://developers.google.com/fonts/docs/"
+"getting_started#Overview\" target=\"_blank\">Google Fonts</a>. Εάν το θέμα "
+"σας έχει τον δικό του μηχανισμό για την εισαγωγή των Google Fonts ή εάν "
+"προτιμάτε να το κάνετε χειροκίνητα, απλά αφήστε το πεδίο κενό. "
+
+#: options.php:382
+msgid "Cookie Law consent message"
+msgstr "Μήνυμα συμμόρφωσης με τη Ευρωπαϊκή οδηγία περί cookies"
+
+#: options.php:384
+msgid ""
+"Show how your website complies with the EU Cookie Law. It displays a message "
+"at the bottom or the top of the page asking for the user's consent. Read "
+"more about <a href=\"http://ec.europa.eu/ipg/basics/legal/cookies/index_en."
+"htm\" target=\"_blank\">EU legislation on cookies</a>"
+msgstr ""
+"Δείξτε ότι ο ιστοχώρος σας συμμορφώνεται με την οδηγία της Ευρωπαϊκής Ένωσης "
+"σχετικά με την χρήση των cookies. Εμφανίζει μήνυμα στο κάτω ή το πάνω μέρος "
+"κάθε σελίδας που ζητά την συγκατάθεση του χρήστη. Όταν ο χρήστης το "
+"αποδεχτεί, το μήνυμα αφαιρείται. <a href=\"http://ec.europa.eu/ipg/basics/"
+"legal/cookies/index_en.htm\" target=\"_blank\">Διαβάστε περισσότερα για το "
+"θέμα</a>"
+
+#: options.php:388
+msgid "Enable"
+msgstr "Ενεργοποίηση"
+
+#: options.php:389
+msgid "Show the Cookie Law consent message"
+msgstr ""
+"Να εμφανίζεται το μήνυμα συμμόρφωσης στην Ευρωπαϊκή οδηγία περί cookies"
+
+#: options.php:395
+msgid "Message style"
+msgstr "Μορφή μηνύματος"
+
+#: options.php:396
+msgid "Select the style of the message box."
+msgstr "Επιλέξτε την μορφή του μηνύματος."
+
+#: options.php:400
+msgid "Dark (default)"
+msgstr "Σκοτεινό (προεπιλογή)"
+
+#: options.php:401
+msgid "Light"
+msgstr "Φωτεινό"
+
+#: options.php:402
+msgid "None (I will style it my self)"
+msgstr "Κανένα (θα το μορφοποιήσω μόνος μου)"
+
+#: options.php:407
+msgid "Position"
+msgstr "Θέση"
+
+#: options.php:408
+msgid "Select the position of the message box."
+msgstr "Επιλέξτε τη θέση του μηνύματος."
+
+#: options.php:412
+msgid "Bottom"
+msgstr "Κάτω"
+
+#: options.php:413
+msgid "Top"
+msgstr "Επάνω"
+
+#: options.php:414
+msgid "Bottom right"
+msgstr "Κάτω δεξιά"
+
+#: options.php:419
+msgid "Message"
+msgstr "Μήνυμα"
+
+#: options.php:420
+msgid "Change the default message"
+msgstr "Αλλαγή του προεπιλεγμένου μηνύματος"
+
+#: options.php:422
+msgid "We use cookies. By browsing our site you agree to our use of cookies."
+msgstr ""
+"Ο ιστοχώρος χρησιμοποιεί cookies για τη βελτιστοποίηση της εμπειρίας του "
+"χρήστη. Με τη χρήση αυτού του ιστοχώρου, αποδέχεστε τη χρήση των cookies."
+
+#: options.php:426
+msgid "Accept text"
+msgstr "Κείμενο αποδοχής"
+
+#: options.php:427
+msgid "Change the \"Accept\" button text."
+msgstr "Αλλάξτε το μήνυμα στο κουμπί αποδοχής."
+
+#: options.php:429
+msgid "Accept"
+msgstr "Αποδοχή"
+
+#: options.php:433 options.php:436
+msgid "Read more"
+msgstr "Περισσότερα"
+
+#: options.php:434
+msgid "Change the \"read more\" text"
+msgstr "Αλλάξτε το κείμενο \"περισσότερα\""
+
+#: options.php:441
+msgid "Read more page"
+msgstr "Σελίδα λεπτομερειών"
+
+#: options.php:442
+msgid ""
+"The page with the details about how your website uses cookies. If you don't "
+"select one, then no \"read more\" link will appear."
+msgstr ""
+"Η σελίδα που περιλαμβάνει πληροφορίες για το πώς χρησιμοποιείτε τα cookies "
+"στον ιστοχώρο σας. Εάν δεν επιλέξετε κάποια σελίδα, τότε ο σύνδεσμος "
+"\"Περισσότερα\" δεν θα εμφανίζεται. "
+
+#: options.php:451
+msgid "Loading animation"
+msgstr "Εφέ φόρτωσης"
+
+#: options.php:453
+msgid ""
+"Show a \"Loading\" animation which dissapears when the page is fully loaded."
+msgstr ""
+"Εμφανίζει ένα κινούμενο εφέ που χάνεται μόλις η σελίδα φορτώσει ολόκληρη."
+
+#: options.php:457
+msgid "Enable loader"
+msgstr "Ενεργοποίηση εφέ φόρτωσης"
+
+#: options.php:458
+msgid ""
+"Select whether the loader should be enabled or not. \"Loader with a logo\" "
+"displays a circular spinner with your logo in the middle. If no image is "
+"uploaded, it gets the site icon uploaded in the theme customizer. If no "
+"image is uploaded there either, it shows the spinner with no image "
+"(practically, in that case it is the same as the \"Empty loader\" option). "
+"\"Custom GIF\" option disables the circular spinner and allows you to upload "
+"and use your own animated GIF."
+msgstr "Επιλέξτε εάν το εφέ φόρτωσης θα είναι ενεργό ή όχι. "
+
+#: options.php:462 options.php:629
+msgid "Disabled"
+msgstr "Μη ενεργό"
+
+#: options.php:463
+msgid "Loader with a logo"
+msgstr "Εφέ φόρτωσης με εμφάνιση λογοτύπου"
+
+#: options.php:464
+msgid "Custom GIF"
+msgstr "Ξεχωριστό GIF"
+
+#: options.php:465
+msgid "Empty loader"
+msgstr "Εφέ φόρτωσης χωρίς εικόνα"
+
+#: options.php:469
+msgid "Image loader"
+msgstr "Εφέ φόρτωσης με εικόνα"
+
+#: options.php:470
+msgid ""
+"If you use a site icon (via <strong>Appearance &rarr; Customize &rarr; Site "
+"Identity &rarr; Site Icon</strong>) it will be used as the loader's image. "
+"In that case, just leave this field empty. If you want to display a "
+"different image as your loader, upload it here. The image should be square "
+"and no more than 160x160 pixels."
+msgstr ""
+"Εάν χρησιμοποιείτε \"Εικονίδιο Ιστοτόπου\" (μέσω του <strong>Εμφάνιση &rarr; "
+"Προσαρμογή &rarr;  Ταυτότητα ιστοτόπου &rarr; Εικονίδιο ιστοτόπου</strong>) "
+"θα χρησιμοποιηθεί ως η εικονα του εφέ φόρτωσης. Σε αυτή την περίπτωση, "
+"αφήστε το παραπάνω πεδίο κενό. Εάν θέλετε να εμφανίσετε διαφορετική εικόνα "
+"για το εφέ φόρτωσης, ανεβάστε την εδώ. Η εικόνα θα πρέπει να είναι τετράγωνη "
+"και όχι μεγαλύτερη από 160x160 pixels."
+
+#: options.php:478
+msgid "Background color"
+msgstr "Χρώμα φόντου"
+
+#: options.php:479
+msgid ""
+"The loader's background color. You can use hex (e.g. <code>#FFFFFF</code>) "
+"or rgb/rgba (e.g. <code>rgba(255,255,255,0.8)</code>)."
+msgstr ""
+"Το χρώμα φόντου του εφέ φόρτωσης. Μπορείτε να χρησιμοποιήσετε κωδικούς τύπου "
+"HEX (π.χ. <code>#FFFFFF</code>) ή και rgb/rgba (π.χ. "
+"<code>rgba(255,255,255,0.8)</code>)."
+
+#: options.php:485
+msgid "Spinner background"
+msgstr "Χρώμα περιστρεφόμενου κύκλου"
+
+#: options.php:486
+msgid "The background of the spinner."
+msgstr "Το χρώμα του φόντου στον περιστρεφόμενο κύκλο"
+
+#: options.php:492
+msgid "Spinner loading color"
+msgstr "Χρώμα φόρτωσης"
+
+#: options.php:493
+msgid "The color of the spinner's loading part."
+msgstr "Το χρώμα φόρτωσης του περιστρεφόμενου κύκλου"
+
+#: options.php:499
+msgid "Alt text"
+msgstr "Alt text"
+
+#: options.php:500
+msgid "The text to be displayed as the image's alt text."
+msgstr "Εναλλακτικό κείμενο εικόνας (alt text)"
+
+#: options.php:502
+msgid "Loading..."
+msgstr "Φορτώνει..."
+
+#: options.php:506
+msgid "Homepage only"
+msgstr "Μόνο στην αρχική σελίδα"
+
+#: options.php:507
+msgid ""
+"If checked, it will show the loader only on the homepage. Leave it unchecked "
+"to show it on all your website's pages. This option gets ignored if you "
+"insert the function manually."
+msgstr ""
+"Εάν επιλεγεί, θα εμφανίζει το εφέ φόρτωσης μόνο στην αρχική σελίδα. Αφήστε "
+"το αποεπιλεγμένο εάν θέλετε να εμφανίζεται σε όλες τις σελίδες του site σας. "
+"Η συγκεκριμένη επιλογή δεν λαμβάνεται υπόψη αν έχετε επιλέξει να εισάγετε το "
+"εφέ χειροκίνητα. "
+
+#: options.php:514
+msgid "Manual add"
+msgstr "Χειροκίνητη προσθήκη"
+
+#: options.php:515
+msgid ""
+"Normally, the function is hooked to the footer via the <code>wp_footer</"
+"code> hook. For better results, you can disable that hook and manually add "
+"the loader to your template using <code>&lt;?php "
+"do_action('slash_admin_loader'); ?&gt;</code>, prefferably right after your "
+"<code>&lt;body&gt;</code> opening."
+msgstr ""
+"Κανονικά, το εφέ φόρτωσης εισάγεται στο site μέσω hook στο <code>wp_footer</"
+"code>. Για καλύτερα αποτελέσματα και μεγαλύτερη ευελιξία, μπορείτε να "
+"απενεργοποιήσετε το hook και να εισάγετε χειροκίνητα το εφέ στο template σας "
+"προσθέτοντας το <code>&lt;?php do_action('slash_admin_loader'); ?&gt;</"
+"code>, κατά προτίμηση ακριβώς πριν το άνοιγμα του <code>&lt;body&gt;</code>."
+
+#: options.php:523
+msgid "Miscellaneous"
+msgstr "Διάφορα"
+
+#: options.php:528
+msgid "Remove \"Category:\" from archives"
+msgstr "Αφαιρέσετε το \"Κατηγορία:\" από τα αρχεία"
+
+#: options.php:529
+msgid "Gets rid of the word \"Category:\" in front of the Archive title."
+msgstr "Αφαιρέστε την λέξη \"Κατηγορία:\" από τους τίτλους των σελίδων Αρχείου"
+
+#: options.php:536
+msgid "Excerpt to pages"
+msgstr "Αποσπάσματα στις Σελίδες"
+
+#: options.php:537
+msgid "Add excerpt support to pages."
+msgstr "Προσθέστε υποστήριξη για Αποσπάσματα (excerpts) στις Σελίδες"
+
+#: options.php:544
+msgid "Shortcodes in widgets"
+msgstr "Shortcodes στα Widgets"
+
+#: options.php:545
+msgid "Enable use of shortcodes in widgets."
+msgstr "Ενεργοποιήστε την υποστήριξη shortcodes στις μικροεφαρμογές (widgets)"
+
+#: options.php:554
+msgid "Compatibility"
+msgstr "Συμβατότητα"
+
+#: options.php:560
+msgid "Old IE Warning"
+msgstr "Προειδοποίηση παλιού ΙΕ"
+
+#: options.php:561
+msgid ""
+"If the visitor uses an old version of Internet Explorer (aka IE8 or older) "
+"display a message at the top of the page warning him that he is using an "
+"outdated browser and that he should update to a newer one."
+msgstr ""
+"Εάν ο επισκέπτης χρησιμοποιεί κάποια παλιά έκδοση του Internet Explorer "
+"(δηλαδή από τον ΙΕ8 και παλιότερο) εμφανίστε ένα μήνυμα στην κορυφή της "
+"σελίδας που θα τον προειδοποιεί ότι χρησιμοποιεί παλιό φυλλομετρητή και ότι "
+"καλό είναι να αναβαθμίσει σε έναν νεότερο."
+
+#: options.php:569
+msgid "Legacy options"
+msgstr "Παρωχημένες επιλογές"
+
+#: options.php:573
+msgid "Upload your favicon"
+msgstr "Ανεβάστε το favicon σας"
+
+#: options.php:574
+msgid ""
+"Since WordPress 4.3, you can use a native Customizer option to upload your "
+"favicon (Under Appearance &rarr; Customize &rarr; Site Identity &rarr; Site "
+"Icon). This option here is kept for legacy reasons, but you should prefer "
+"the WordPress' default."
+msgstr ""
+"Από το WordPress 4.3 και μετά, μπορείτε να χρησιμοποιείτε την ενσωματωμένη "
+"επιλογή του Προσαρμογέα για να ανεβάσετε το favicon σας. Η εδώ επιλογή "
+"διατηρείται για λόγους συμβατότητας με παλιότερες εκδόσεις του πρόσθετου, "
+"αλλά είναι προτιμότερο να χρησιμοποιείτε την ενσωματωμένη λύση του WordPress."
+
+#: options.php:586
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: options.php:590
+msgid "Analytics tracking code"
+msgstr "Κώδικας παρακολούθησης του Google Analytics"
+
+#: options.php:591
+msgid ""
+"Add code for Google Analytics (it will be inserted before the <code>&lt;/"
+"head&gt;</code> tag)."
+msgstr ""
+"Προσθέστε τον κώδικα του Google Analytics (θα προστεθεί ακριβώς πριν το "
+"<code>&lt;/head&gt;</code>)."
+
+#: options.php:600
+msgid "Limit revisions"
+msgstr "Περιορισμός αναθεωρήσεων"
+
+#: options.php:605
+msgid "Limit post revisions"
+msgstr "Περιορισμός αναθεωρήσεων στα άρθρα"
+
+#: options.php:606
+msgid ""
+"Limit the number of revisions that WordPress keeps for each post type. By "
+"default, an infinite number of revisions are stored if a post type supports "
+"revisions. Keep in mind that if you restrict this number, WordPress will "
+"purge the older revisions only after the post is updated."
+msgstr ""
+"Μειώστε τον αριθμό των αναθεωρήσεων που κρατά το WordPress για κάθε άρθρο. "
+"Από προεπιλογή το σύστημα διατηρεί απεριόριστο αριθμό αναθεωρήσεων για τους "
+"τύπους περιεχομένου που υποστηρίζουν τη λειτουργία. Έχετε υπόψη ότι εάν "
+"περιορίσετε τον αριθμό, το WordPress θα καθαρίσει τις παλιότερες "
+"αναθεωρήσεις μόνο μετά την επόμενη ενημέρωση του άρθρου."
+
+#: options.php:610
+msgid "WordPress default (unlimited revisions)"
+msgstr "Προεπιλογή του WordPress (απεριόριστες αναθεωρήσεις)"
+
+#: options.php:611
+msgid "1 revision (practically disables it)"
+msgstr "1 αναθεώρηση (ουσιαστικά τις απενεργοποιεί)"
+
+#: options.php:612
+msgid "2 revisions"
+msgstr "2 αναθεωρήσεις"
+
+#: options.php:613
+msgid "3 revisions"
+msgstr "3 αναθεωρήσεις"
+
+#: options.php:614
+msgid "4 revisions"
+msgstr "4 αναθεωρήσεις"
+
+#: options.php:615
+msgid "5 revisions"
+msgstr "5 αναθεωρήσεις"
+
+#: options.php:616
+msgid "10 revisions"
+msgstr "10 αναθεωρήσεις"
+
+#: options.php:617
+msgid "20 revisions"
+msgstr "20 αναθεωρήσεις"
+
+#: options.php:618
+msgid "50 revisions"
+msgstr "50 αναθεωρήσεις"
+
+#: options.php:624
+msgid "Prevent updates on old posts"
+msgstr "Απαγόρευση αλλαγών σε παλιά άρθρα"
+
+#: options.php:625
+msgid ""
+"Block post updates and deletion if the post is older than a specific period "
+"of time. Applies only to editors (admins can still edit the post as usual)."
+msgstr ""
+"Απαγορεύστε στους Αρχισυντάκτες σας (Editors) να επεξεργάζονται ή να "
+"διαγράφουν άρθρα παλαιότερα από ένα συγκεκριμένο χρονικό διάστημα. Η ρύθμιση "
+"δεν επηρεάζει τους διαχειριστές."
+
+#: options.php:630
+msgid "After one day"
+msgstr "Μετά από μια ημέρα"
+
+#: options.php:631
+msgid "After one week (7 days)"
+msgstr "Μετά από μία εβδομάδα (7 ημέρες)"
+
+#: options.php:632
+msgid "After two weeks (14 days)"
+msgstr "Μετά από δύο εβδομάδες (14 ημέρες)"
+
+#: options.php:633
+msgid "After one month (30 days)"
+msgstr "Μετά από ένα μήνα (30 ημέρες)"
+
+#: options.php:640
+msgid "Maintenance mode"
+msgstr "Εργασίες συντήρησης"
+
+#: options.php:645
+msgid "Enable maintenance mode"
+msgstr "Ενεργοποίηση εργασιών συντήρησης"
+
+#: options.php:646
+msgid ""
+"If checked, non-Admins will not be able to acess the WordPress backend and "
+"they will see the following message instead. Admins can always login as "
+"usual. Dont' forget to un-check it back when you are done."
+msgstr ""
+"Εάν η επιλογή ενεργοποιηθεί, οι μη-Διαχειριστές δεν θα μπορούν να έχουν "
+"πρόσβαση στο διαχειριστικό περιβάλλον του WordPress και αντ' αυτού θα "
+"βλέπουν το παρακάτω μήνυμα. Οι Διαχειριστές μπορούν πάντοτε να συνδεθούν "
+"όπως συνήθως. Μην ξεχάσετε να επαναφέρετε την επιλογή στο \"ανενεργό\" όταν "
+"τελειώσετε. "
+
+#: options.php:651
+msgid "Maintenance message"
+msgstr "Μήνυμα συντήρησης"
+
+#: options.php:652
+msgid ""
+"The message to be displayed if an non-Admin tries to login while in "
+"maintenance mode."
+msgstr ""
+"Το μήνυμα εμφανίζεται εάν κάποιος μη-Διαχειριστής επιχειρήσει να συνδεθεί "
+"κατά τη διάρκεια των εργασιών συντήρησης. "
+
+#: options.php:653
+#, php-format
+msgid ""
+"Site undergoing maintainance. Content uploading and editing will not be "
+"available for a while. If you have a question, please contact the website's "
+"<a href='mailto:%s'>Administrator</a>."
+msgstr ""
+"Εκτελούνται εργασίες συντήρησης στον ιστοχώρο. Το ανέβασμα και η επεξεργασία "
+"του περιεχομένου προσωρινά δεν θα είναι διαθέσιμα. Για περισσότερες "
+"διευκρινίσεις παρακαλούμε επικοινωνήστε με τον <a href='mailto:"
+"%s'>Διαχειριστή</a> του ιστοχώρου."
+
+#: options.php:669
+msgid "Upload your logo"
+msgstr "Ανεβάστε το λογότυπό σας"
+
+#: options.php:670
+msgid ""
+"Upload the logo to appear at the login screen of your website. The plugin "
+"will try to automatically adjust the width/height but the suggested "
+"dimensions are <strong>320x80 pixels</strong>."
+msgstr ""
+"Ανεβάστε το λογότυπο που θέλετε να εμφανίζεται στην οθόνη σύνδεσης του "
+"ιστοχώρου σας. Το πρόσθετο θα προσπαθήσει να ρυθμίσει αυτόματα το πλάτος και "
+"το ύψος, αλλά παρόλα αυτά οι προτεινόμενες διαστάσεις είναι <strong>320x80 "
+"pixels</strong>."
+
+#: options.php:678
+msgid "Fix links at the login screen"
+msgstr "Διόρθωση συνδέσμων στην οθόνη σύνδεσης"
+
+#: options.php:679
+msgid ""
+"Fix the links at the wordpress login screen in order to link to your website "
+"instead of wordpress.org."
+msgstr ""
+"Διορθώστε τους συνδέσμους που εμφανίζονται στην οθόνη σύνδεσης του Wordpress "
+"ώστε να οδηγούν στον ιστοχώρο σας και όχι στο wordpress.org."
+
+#: options.php:686
+msgid "Go to homepage after login"
+msgstr "Μετάβαση στην αρχική σελίδα μετά τη σύνδεση"
+
+#: options.php:687
+msgid ""
+"After log-in, redirect users to the website's homepage instead of their "
+"profile page."
+msgstr ""
+"Μετά τη σύνδεση, οι χρήστες να ανακατευθύνονται στην αρχική σελίδα του "
+"ιστοχώρου αντί για την σελίδα του προφίλ τους."
+
+#: options.php:694
+msgid "Disable Admin Bar for non Admins"
+msgstr "Απενεργοποίηση Μπάρας Διαχείρισης για τους μη Διαχειριστές"
+
+#: options.php:695
+msgid ""
+"Disable the Admin Bar for all users except Administrators (applies only to "
+"the front-end)."
+msgstr ""
+"Απενεργοποιήστε την Μπάρα Διαχείρισης για όλους τους χρήστες εκτός από τους "
+"Διαχειριστές (αφορά μόνο τις σελίδες που βλέπουν οι επισκέπτες του ιστοχώρου "
+"και όχι το διαχειριστικό περιβάλλον)."
+
+#: options.php:701 options.php:906
+msgid "Custom CSS"
+msgstr "Προσαρμοσμένα CSS"
+
+#: options.php:702
+msgid ""
+"Your custom styles for the login screen (quick referrence for tags you might "
+"want to use: <code>body.login.login-action-login, div#login, div#login h1 a, "
+"form#loginform, input#user_login.input, input#user_pass.input, input#wp-"
+"submit, p#nav, p#backtoblog</code>)."
+msgstr ""
+"Τα CSS σας για την σελίδα σύνδεσης (μερικά tags που μπορεί να χρειαστείτε: "
+"<code>body.login.login-action-login, div#login, div#login h1 a, "
+"form#loginform, input#user_login.input, input#user_pass.input, input#wp-"
+"submit, p#nav, p#backtoblog</code>)."
+
+#: options.php:712
+msgid "Hide options for non-admins"
+msgstr "Απόκρυψη επιλογών για μη διαχειριστές"
+
+#: options.php:718
+msgid "Media"
+msgstr "Πολυμέσα"
+
+#: options.php:719
+msgid "Exclude media"
+msgstr "Απόκρυψη πολυμέσων"
+
+#: options.php:725
+msgid "Comments"
+msgstr "Σχόλια"
+
+#: options.php:726
+msgid "Exclude comments"
+msgstr "Απόκρυψη σχολίων"
+
+#: options.php:732
+msgid "Tools"
+msgstr "Εργαλεία"
+
+#: options.php:733
+msgid "Exclude tools"
+msgstr "Απόκρυψη εργαλείων"
+
+#: options.php:739
+msgid "Profile"
+msgstr "Προφίλ"
+
+#: options.php:740
+msgid "Exclude profile"
+msgstr "Απόκρυψη προφίλ"
+
+#: options.php:746
+msgid "Posts"
+msgstr "Άρθρα"
+
+#: options.php:747
+msgid "Exclude posts"
+msgstr "Απόκρυψη άρθρων"
+
+#: options.php:753
+msgid "Pages"
+msgstr "Σελίδες"
+
+#: options.php:754
+msgid "Exclude pages"
+msgstr "Απόκρυψη σελίδων"
+
+#: options.php:760
+msgid "Jetpack"
+msgstr "Jetpack"
+
+#: options.php:761
+msgid "Exclude Jetpack plugin"
+msgstr "Απόκρυψη του Jetpack"
+
+#: options.php:767
+msgid "Custom excludes"
+msgstr "Επιπλέον εξαιρέσεις"
+
+#: options.php:768
+msgid ""
+"Exclude other options such as custom post types or even the Dashboard. To do "
+"so, add the names separated with commas and no blank spaces like for example "
+"<code>Dashboard,Pages,Media,Posts</code> etc. You can exclude <strong>up to "
+"5 additional items</strong>."
+msgstr ""
+"Κρύψτε άλλες επιλογές όπως Custom Post Types ή ακόμα και τον Πίνακα Ελέγχου. "
+"Για να το κάνετε προσθέστε τα ονόματα όπως εμφανίζονται στα αγγλικά, "
+"χωρισμένα με κόμμα και χωρίς κενά όπως για παράδειγμα <code>Dashboard,Posts,"
+"Media,Pages</code> κλπ. Μπορείτε να εξαιρέσετε <strong>έως 5 επιπλέον "
+"επιλογές</strong>."
+
+#: options.php:775
+msgid "Exclude by CSS"
+msgstr "Αφαίρεση μέσω CSS"
+
+#: options.php:776
+msgid ""
+"If there is an section that you cannot hide with the options above, you can "
+"hide it by adding here its CSS id or class. You can hide multiple elements "
+"by separating their ids or classes with comma (e.g.: <code>#menu-item-id, "
+"#menu-item-2-id, .menu-item-3-class, .menu-item-4-class</code>). Please keep "
+"in mind that this only hides the options with CSS. You should only use it "
+"for usability purposes and not for security reasons."
+msgstr ""
+"Εάν υπάρχει κάποια ενότητα που δεν μπορείτε να κρύψετε με τις παραπάνω "
+"επιλογές, μπορείτε να την κρύψετε από εδώ προσθέτοντας το CSS id ή class "
+"της. Μπορείτε να κρύψετε πολλαπλά στοιχεία χωρίζοντας τα id ή class τους με "
+"κόμμα (π.χ.: <code>#menu-item-id, #menu-item-2-id, .menu-item-3-class, .menu-"
+"item-4-class</code>). Έχετε υπόψη πως αυτό απλώς θα κρύψει τα στοιχεία μέσω "
+"CSS. Θα πρέπει να το χρησιμοποιείτε μόνο για λόγους ευχρηστίας και όχι για "
+"λόγους ασφαλείας. "
+
+#: options.php:782
+msgid "Hide update notices to non Admins"
+msgstr "Απόκρυψη ειδοποιήσεων αναβάθμισης"
+
+#: options.php:783
+msgid ""
+"Hide the notices for updating Wordpress and other plugins for all users "
+"except from Admins"
+msgstr ""
+"Κρύψτε τις ειδοποιήσεις για την αναβάθμιση του Wordpress και άλλων προσθέτων "
+"για όλους τους χρήστες εκτός από τους Διαχειριστές"
+
+#: options.php:791
+msgid "Hide specific pages from non admins"
+msgstr "Κρύψτε συγκεκριμένες σελίδες από τους μη-Διαχειριστές"
+
+#: options.php:797
+msgid "Hide pages"
+msgstr "Απόκρυψη σελίδων"
+
+#: options.php:798
+msgid ""
+"Hide specific pages for non admins. Press \"Ctrl/Cmd+Click\" to select/"
+"deselect multiple pages."
+msgstr ""
+"Κρύψτε συγκεκριμένες σελίδες από τους μη-Διαχειριστές. Πατήστε \"Ctrl/Cmd"
+"+Click\" για να επιλέξετε ή να αποεπιλέξετε πολλαπλές σελίδες."
+
+#: options.php:807
+msgid "Show extra options to Editors"
+msgstr "Προβολή επιπλέον επιλογών στους Αρχισυντάκτες (Editors)"
+
+#: options.php:812
+msgid "Menus"
+msgstr "Μενού"
+
+#: options.php:813
+msgid "Allow Editors to manage the website's menus."
+msgstr ""
+"Επιτρέψτε στους Αρχισυντάκτες να διαχειρίζονται τα μενού του ιστοχώρου."
+
+#: options.php:819
+msgid "Widgets"
+msgstr "Μονάδες"
+
+#: options.php:820
+msgid "Allow Editors to manage the website's widgets."
+msgstr ""
+"Επιτρέψτε στους Αρχισυντάκτες να διαχειρίζονται τις Μονάδες (Widgets) του "
+"ιστοχώρου."
+
+#: options.php:826
+msgid "Customizer"
+msgstr "Προσαρμογέας"
+
+#: options.php:827
+msgid "Allow Editors access to the Theme Customizer."
+msgstr ""
+"Επιτρέψτε στους Αρχισυντάκτες πρόσβαση στις επιλογές Προσαρμογής του "
+"τρέχοντος θέματος."
+
+#: options.php:833
+msgid "Background"
+msgstr "Φόντο"
+
+#: options.php:834
+msgid ""
+"Allow Editors to change the website's background (check this only if your "
+"theme has support for WordPress' <a href=\"http://codex.wordpress.org/"
+"Function_Reference/add_theme_support#Custom_Background\" target=\"_blank"
+"\">Custom Background</a> feature)."
+msgstr ""
+"Επιτρέψτε στους Αρχισυντάκτες να αλλάζουν το φόντο του ιστοχώρου (επιλέξτε "
+"το μόνο εάν το Θέμα σας υποστηρίζει την λειτουργία <a href=\"http://codex."
+"wordpress.org/Function_Reference/add_theme_support#Custom_Background\" "
+"target=\"_blank\">Custom Background</a> του WordPress)."
+
+#: options.php:844
+msgid "White label Backend"
+msgstr "Παραμετροποίηση διαχειριστικού"
+
+#: options.php:849
+msgid "Change \"Howdy\""
+msgstr "Αλλαγή του καλωσορίσματος"
+
+#: options.php:850
+msgid "Change the \"Howdy\" message at the top right corner of the screen."
+msgstr "Αλλάξτε το \"Howdy\" που εμφανίζεται ως καλωσόρισμα πάνω δεξιά"
+
+#: options.php:856
+msgid "Change footer text"
+msgstr "Αλλάξτε το κείμενο στο τέλος της σελίδας"
+
+#: options.php:857
+msgid "Change the footer text (you can use HTML markup)."
+msgstr ""
+"Αλλάξτε το κείμενο στο τέλος της σελίδας του Διαχειριστικού (μπορείτε να "
+"χρησιμοποιήσετε κώδικα HTML)"
+
+#: options.php:861
+msgid "Change the Admin logo"
+msgstr "Αλλάξτε το λογότυπο του Διαχειριστικού"
+
+#: options.php:862
+msgid ""
+"Replace the WordPress logo at the top left of the screen. Suggested image "
+"dimension is <strong>92x92 pixels</strong>."
+msgstr ""
+"Αντικαταστήστε το λογότυπο του WordPress επάνω αριστερά της οθόνης, με το "
+"δικό σας. Προτεινόμενες διαστάσεις:  <strong>92x92 pixels</strong>."
+
+#: options.php:871
+msgid "Welcome message"
+msgstr "Καλωσόρισμα"
+
+#: options.php:873
+msgid ""
+"Change the Dashboard welcome message. Removes the default welcome message at "
+"the Dashboard and replaces it with your own."
+msgstr ""
+"Αλλάξτε το καλωσόρισμα που εμφανίζεται στον Πίνακα ελέγχου. Αφαιρεί το "
+"προεπιλεγμένο μήνυμα και το αντικαθιστά με το δικό σας."
+
+#: options.php:877
+msgid "Your welcome message"
+msgstr "Το μήνυμά σας"
+
+#: options.php:878
+msgid ""
+"Add the content of your custom welcome message (HTML markup is allowed)."
+msgstr ""
+"Προσθέστε το δικό σας καλωσόρισμα (μπορείτε να χρησιμοποιήσετε κώδικα HTML)"
+
+#: options.php:885
+msgid "Add a Dashboard widget"
+msgstr "Νέα Μικροεφαρμογή στον Πίνακα ελέγχου"
+
+#: options.php:887
+msgid ""
+"Add a Dashboard Widget to provide general or commercial information to your "
+"clients (for example: your contact info or links to support documentation)."
+msgstr ""
+"Προσθέστε μια νέα Μικροεφαρμογή στον Πίνακα ελέγχου για να παρέχετε γενικές "
+"ή εμπορικές πληροφορίες προς τους πελάτες σας (για παράδειγμα, θα μπορούσατε "
+"να εμφανίζετε τα στοιχεία επικοινωνίας σας ή κάποια παραπομπή σε οδηγίες "
+"χρήσης)."
+
+#: options.php:891
+msgid "Widget title"
+msgstr "Τίτλος Μικροεφαρμογής"
+
+#: options.php:892
+msgid "Add the title of the Dashboard widget."
+msgstr "Προσθέστε τον τίτλο της Μικροεφαρμογής του Πίνακα ελέγχου"
+
+#: options.php:898
+msgid "Widget content"
+msgstr "Περιεχόμενο Μικροεφαρμογής"
+
+#: options.php:899
+msgid "Add the content of the Dashboard widget (HTML markup is allowed)."
+msgstr ""
+"Προσθέστε το περιεχόμενο της Μικροεφαρμογής του Πίνακα ελέγχου (μπορείτε να "
+"χρησιμοποιήσετε κώδικα HTML)"
+
+#: options.php:911
+msgid "Custom CSS for the Admin"
+msgstr "Προσαρμοσμένα CSS για το Διαχειριστικό"
+
+#: options.php:912
+msgid ""
+"The styles that you put here affect only the Admin and they don't get called "
+"at the frontend. Quick referrence for tags you might want to use: "
+"<code>div#slashadmin_dashboard_widget</code> for the custom widget, "
+"<code>div#welcome-panel</code> for the welcome panel."
+msgstr ""
+"Τα CSS που βάζετε εδώ επηρεάζουν μόνο το Διαχειριστικό περιβάλλον και δεν "
+"καλούνται στον ιστοχώρο. Μερικά tags που μπορεί να χρειαστείτε: "
+"<code>div#slashadmin_dashboard_widget</code>για την Μικροεφαρμογή στον "
+"Πίνακα ελέγχου και <code>div#welcome-panel</code> για το Καλωσόρισμα."
+
+#: options.php:921 options.php:926
+msgid "DNS prefetching"
+msgstr "DNS prefetching"
+
+#: options.php:927
+msgid ""
+"DNS prefetching notifies the client that there are assets we'll need later "
+"from a specific URL (outside our website's domain) so the browser can "
+"resolve the DNS as quickly as possible (<a href=\"https://developer.mozilla."
+"org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching\" target=\"_blank\">read "
+"more</a>). Enter here the  URLs to be prefetched (each URL in separate "
+"line). Here's some examples of sources that can be prefetched for an easy "
+"copy/paste: \n"
+"\t\t\t\t\t</br><code>//fonts.googleapis.com</code> (Google web fonts)</br>\n"
+"\t\t\t\t\t<code>//google-analytics.com</code> & <code>//www.google-analytics."
+"com</code> (Google Analytics)</br>\n"
+"\t\t\t\t\t<code>//platform.twitter.com</code> (Twitter)</br>\n"
+"\t\t\t\t\t<code>//maxcdn.bootstrapcdn.com</code> (MaxCDN, used by Font "
+"Awesome)"
+msgstr ""
+"Το DNS prefetching βοηθά τον φυλλομετρητή να κάνει resolve τους DNS το "
+"συντομότερο δυνατό (<a href=\"https://developer.mozilla.org/en-US/docs/Web/"
+"HTTP/Controlling_DNS_prefetching\" target=\"_blank\">διαβάστε περισσότερα</"
+"a>). Εισάγετε εδώ τα URL που θέλετε να γίνουν prefetch (κάθε URL σε "
+"ξεχωριστή σειρά). Ακολουθούν μερικά παραδείγματα του τί θα μπορούσατε να "
+"κάνετε prefetch: \n"
+"\t\t\t\t\t</br><code>//fonts.googleapis.com</code> (Google web fonts)</br>\n"
+"\t\t\t\t\t<code>//google-analytics.com</code> & <code>//www.google-analytics."
+"com</code> (Google Analytics)</br>\n"
+"\t\t\t\t\t<code>//platform.twitter.com</code> (Twitter)</br>\n"
+"\t\t\t\t\t<code>//maxcdn.bootstrapcdn.com</code> (MaxCDN, χρησιμοποιείται "
+"από το Font Awesome)"
+
+#: options.php:938
+msgid "Prefetch and prerender pages"
+msgstr "Prefetch και prerender σελίδων"
+
+#: options.php:940
+msgid ""
+"Link prefetching is a browser mechanism, which utilizes browser idle time to "
+"download or prefetch documents that the user might visit in the near future. "
+"A web page provides a set of prefetching hints to the browser, and after the "
+"browser is finished loading the page, it begins silently prefetching "
+"specified documents and stores them in its cache. When the user visits one "
+"of the prefetched documents, it can be served up quickly out of the "
+"browser's cache. Prerendering downloads and renders the entire page and "
+"hides it from the user until it is requested, therefore, it should be used "
+"with caution."
+msgstr ""
+"Το prefetching σελίδων είναι ένας μηχανισμός του φυλλομετρητή που αξιοποιεί "
+"τον χρόνο που δεν κατεβάζει κάτι άλλο για να αποθηκεύσει στην cache "
+"συγκεκριμένες σελίδες. Όταν ο χρήστης επισκεφτεί τις σελίδες αυτές, θα "
+"φορτώσουν πιο γρήγορα, καθώς θα βρίσκονται ήδη στην cache του φυλλομετρητή. "
+"Το Prerendering είναι ακόμα πιο \"επιθετικό\" καθώς κατεβάζει και κάνει "
+"render ολόκληρη τη σελίδα και την κρύβει από τον χρήστη μέχρι αυτός να την "
+"καλέσει. Για το λόγο αυτό, το prerendering καλό είναι να χρησιμοποείται με "
+"σύνεση."
+
+#: options.php:944
+msgid "Prefetch next page"
+msgstr "Prefetch επόμενης σελίδας"
+
+#: options.php:945
+msgid "Prefetch next page when on archives."
+msgstr "Prefetch επόμενης σελίδας όταν βρισκόμαστε σε σελίδες αρχείων"
+
+#: options.php:951
+msgid "Prerender next page"
+msgstr "Prerender επόμενης σελίδας"
+
+#: options.php:952
+msgid "Prerender next page when on archives."
+msgstr "Prerender επόμενης σελίδας όταν βρισκόμαστε σε σελίδες αρχείων"
+
+#: options.php:958
+msgid "Prefetch homepage"
+msgstr "Prefetch αρχικής σελίδας"
+
+#: options.php:959
+msgid "Prefetch homepage when on sigle posts and pages."
+msgstr ""
+"Prefetch αρχικής σελίδας όταν βρισκόμαστε σε μεμονωμένα άρθρα και σελίδες"
+
+#: options.php:965
+msgid "Prerender homepage"
+msgstr "Prerender αρχικής σελίδας"
+
+#: options.php:966
+msgid "Prerender homepage when on sigle posts and pages."
+msgstr ""
+"Prerender αρχικής σελίδας όταν βρισκόμαστε σε μεμονωμένα άρθρα και σελίδες"
+
+#: options.php:981
+msgid "Protect mail from harvesters"
+msgstr "Προστασία των e-mail από spammers"
+
+#: options.php:982
+msgid ""
+"To disguise an email address, use <code>[slash_mail address=\"yourmail@mail."
+"com\"]</code>.Use <code>[slash_mailto address=\"yourmail@mail.com\"]</code> "
+"instead if you want to automatically make it a link as well. Using just "
+"<code>[slash_mail]</code> or <code>[slash_mailto]</code> will automatically "
+"display the post/page author's email address. For a more detailed "
+"explanation click on the Documentation tab."
+msgstr ""
+"Για να μεταμφιέσετε μια διεύθυνση email χρησιμοποιήστε το <code>[slash_mail "
+"address=\"yourmail@mail.com\"]</code>. Χρησιμοποιήστε το <code>[slash_mailto "
+"address=\"yourmail@mail.com\"]</code> εάν θέλετε να το κάνετε να είναι, "
+"επιπλέον, και link. Τέλος, αν χρησιμοποιήσετε μόνο το <code>[slash_mail]</"
+"code> ή το <code>[slash_mailto]</code> τότε το shortcode θα τραβήξει "
+"αυτόματα το email του χρήστη που έχει δημιουργήσει την τρέχουσα σελίδα/"
+"άρθρο. Για πιο αναλυτική περιγραφή δείτε την καρτέλα \"Βοήθεια\""
+
+#: options.php:989
+msgid "Show telephone numbers"
+msgstr "Εμφάνιση τηλεφωνικών αριθμών"
+
+#: options.php:990
+msgid ""
+"Show a telephone number in a way that it is clickable. When clicked, if you "
+"are on a mobile device it opens the phone's dialer and if you are on a "
+"desktop computer it prompts to make a call via a related program (e.g. "
+"Skype). Here are some usage examples: <code>[slash_phone number=\"999999\"]</"
+"code> would output a link \"999999\" which would make a phone call to "
+"999999. <code>[slash_phone number=\"999999\" prefix=\"+30\"]</code> would "
+"output a link \"999999\" which would make a phone call to +30999999. "
+"<code>[slash_phone number=\"999999\" prefix=\"+30\" text=\"Call us\"]</code> "
+"would output a link \"Call us\" which would make a phone call to +30999999."
+msgstr ""
+"Εμφανίστε τηλεφωνικούς αριθμούς με τρόπο που να μπορούν να γίνουν κλικ και "
+"να ανοίξουν είτε τον dialer του κινητού (εάν ο επισκέπτης μπαίνει από το "
+"τηλέφωνό του) είτε κάποιο πρόγραμμα κλήσεων τύπου Skype (εάν μπαίνει από "
+"desktop). Μερικά παραδείγματα χρήσης: Το <code>[slash_phone number="
+"\"999999\"]</code> θα εμφάνιζε ένα link \"999999\" που θα έκανε κλήση στον "
+"αριθμό 999999. Το <code>[slash_phone number=\"999999\" prefix=\"+30\"]</"
+"code> θα εμφάνιζε ένα link \"999999\" που θα έκανε κλήση στο +30999999. "
+"Τέλος, το <code>[slash_phone number=\"999999\" prefix=\"+30\" text="
+"\"Τηλεφωνήστε μας\"]</code> θα εμφάνιζε link \"Τηλεφωνήστε μας\" που θα "
+"έκανε κλήση στο +30999999."
+
+#: options.php:997
+msgid "Enable relative URLs"
+msgstr "Χρήση σχετικών URL"
+
+#: options.php:998
+msgid ""
+"If you develop your site on localhost or on a temporary URL, you might want "
+"to avoid absolute URLs inside posts and pages. That way you don't need to "
+"update your links after migrating to your actual domain.  The available "
+"options are:<br />\n"
+"\t\t\t\t\t<code>[slash_home]</code> retrieves the <a href=\"http://codex."
+"wordpress.org/Function_Reference/home_url\" target=\"_blank\">home URI</a> "
+"for the current site.<br />\n"
+"\t\t\t\t\t<code>[slash_theme]</code> retrieves the <a href=\"http://codex."
+"wordpress.org/Function_Reference/get_template_directory_uri\" target=\"_blank"
+"\">template directory URI</a> for the current theme.<br />\n"
+"\t\t\t\t\t<code>[slash_child]</code> retrieves the <a href=\"http://codex."
+"wordpress.org/Function_Reference/get_stylesheet_directory_uri\" target="
+"\"_blank\">stylesheet directory URI</a> for the current theme/child theme."
+"<br />\n"
+"\t\t\t\t\tThen, you can use them like so <code>&lt;img src=\"[slash_child]/"
+"images/image.png\" /&gt;</code>, with which you would get <code>&lt;img src="
+"\"http://www.yourdomain.com/wp-content/themes/childtheme/images/image.png\" /"
+"&gt;</code>"
+msgstr ""
+"Εάν αναπτύσσετε τοπικά το site σας ή σε κάποιο προσωρινό URL, μπορεί να "
+"θέλετε να αποφύγετε τα απόλυτα URL μέσα σε άρθρα και σελίδες. Με αυτό τον "
+"τρόπο δεν χρειάζεται να ενημερώνετε τα links σας μετά τη μεταφορά στο τελικό "
+"domain. Οι διαθέσιμες επιλογές είναι οι εξής:<br />\n"
+"\t\t\t\t\t<code>[slash_home]</code>. Φορτώνει το <a href=\"http://codex."
+"wordpress.org/Function_Reference/home_url\" target=\"_blank\">link της "
+"αρχικής σελίδας</a> του ιστοχώρου.<br />\n"
+"\t\t\t\t\t<code>[slash_theme]</code>. Φορτώνει τη <a href=\"http://codex."
+"wordpress.org/Function_Reference/get_template_directory_uri\" target=\"_blank"
+"\">διαδρομή του θέματος</a> που χρησιμοποιείτε.<br />\n"
+"\t\t\t\t\t<code>[slash_child]</code>. Φορτώνει τη <a href=\"http://codex."
+"wordpress.org/Function_Reference/get_stylesheet_directory_uri\" target="
+"\"_blank\">διαδρομή του child theme</a> (σε περίπτωση που χρησιμοποιείτε "
+"child).<br />\n"
+"\t\t\t\t\tΤα παραπάνω μπορείτε να τα χρησιμοποιήσετε κάπως έτσι: <code>&lt;"
+"img src=\"[slash_child]/images/image.png\" /&gt;</code>, που θα σας έδινε: "
+"<code>&lt;img src=\"http://www.yourdomain.com/wp-content/themes/childtheme/"
+"images/image.png\" /&gt;</code>"
+
+#: options.php:1013
+msgid ""
+"My theme also supports some of this plugin's features. Which one should I "
+"choose?"
+msgstr ""
+"Το θέμα μου υποστηρίζει ήδη κάποιες από τις λειτουργίες αυτού του πρόσθετου. "
+"Ποιές να διαλέξω;"
+
+#: options.php:1015
+msgid ""
+"It is up to you to decide whether you will use your theme's options or those "
+"provided by this plugin. It is recommended, though, that you keep those "
+"settings separated from your theme and the reason is simple: If at some "
+"point you decide to switch themes, those options will be lost and you have "
+"to remember to re-enter them. Keeping them in a plugin maintains the options "
+"between themes."
+msgstr ""
+"Το αν θα προτιμήσετε να ορίσετε τις ρυθμίσεις σας μέσω αυτού εδώ του "
+"πρόσθετου ή μέσω του θέματός σας, είναι κάτι που εξαρτάται από εσάς. "
+"Προτείνεται, ωστόσο, να κρατάτε τις συγκεκριμένες ρυθμίσεις χωριστά από το "
+"θέμα σας και ο λόγος είναι απλός: Εάν κάποια στιγμή αποφασίσετε να αλλάξετε "
+"θέμα, αυτές οι επιλογές θα χαθούν και θα πρέπει να θυμηθείτε να τις "
+"ξαναπεράσετε. Αντίθετα, έχοντάς τες σε ένα αυτόνομο πρόσθετο διατηρείτε τις "
+"επιλογές μεταξύ διαφορετικών θεμάτων."
+
+#: options.php:1021
+msgid "Which shortcodes are available?"
+msgstr "Ποια shortcodes είναι διαθέσιμα;"
+
+#: options.php:1023
+msgid ""
+"You can enable the following shortcodes:\n"
+"\t\t\t\t\t\t\t\t<br />- <code>[slash_mail address=\"yourmail@mail.com\"]</"
+"code>. If you manually include email addresses in your posts, you should "
+"consider disguising them in order to \"fool\" e-mail harvesters. This "
+"shortcode displays the \"disguised\" version of the given email as plain "
+"text.\n"
+"\t\t\t\t\t\t\t\t<br />- <code>[slash_mailto address=\"yourmail@mail.com\"]</"
+"code> does the exact same thing, but it also transforms the text to a "
+"\"mailto\" link as well. \n"
+"\t\t\t\t\t\t\t\t<br />- <code>[slash_mail]</code> and <code>[slash_mailto]</"
+"code> will automatically display the post/page author's email address. All "
+"the above shortcodes take advantage of the <code>&lt;?php echo "
+"antispambot(); ?&gt;</code> function. For a more in-depth explanation on why "
+"you should care about disquising your emails, check the <a href=\"http://"
+"codex.wordpress.org/Protection_From_Harvesters\" target=\"_blank\">WordPress "
+"Codex</a>.\n"
+"\t\t\t\t\t\t\t\t<br />- <code>[slash_home]</code> retrieves the <a href="
+"\"http://codex.wordpress.org/Function_Reference/home_url\" target=\"_blank"
+"\">home URI</a> for the current site. It is the equivalent of <code>&lt;?php "
+"echo home_url(); ?&gt;</code>. \n"
+"\t\t\t\t\t\t\t\t<br />- <code>[slash_theme]</code> retrieves the <a href="
+"\"http://codex.wordpress.org/Function_Reference/get_template_directory_uri\" "
+"target=\"_blank\">template directory URI</a> for the current theme. It is "
+"the equivalent of <code>&lt;?php echo get_template_directory_uri(); ?&gt;</"
+"code>.\n"
+"\t\t\t\t\t\t\t\t<br />- <code>[slash_child]</code> retrieves the <a href="
+"\"http://codex.wordpress.org/Function_Reference/get_stylesheet_directory_uri"
+"\" target=\"_blank\">stylesheet directory URI</a> for the current theme/"
+"child theme. It is the equivalent of <code>&lt;?php echo "
+"get_stylesheet_directory_uri(); ?&gt;</code>.\n"
+"\t\t\t\t\t\t"
+msgstr ""
+"Μπορείτε να ενεργοποιήσετε τα παρακάτω shortcodes:\n"
+"\t\t\t\t\t\t\t\t<br />- <code>[slash_mail address=\"yourmail@mail.com\"]</"
+"code>. «Μεταμφιέζει» τις διευθύνσεις με σκοπό να ξεγελάσει τους spammers. Το "
+"συγκεκριμένο shortcode θα εμφανίσει την «μεταμφιεσμένη» έκδοση του email ως "
+"απλό κείμενο.\n"
+"\t\t\t\t\t\t\t\t<br />- <code>[slash_mailto address=\"yourmail@mail.com\"]</"
+"code>. Κάνει ακριβώς το ίδιο με παραπάνω, αλλά επιπλέον μετατρέπει τη "
+"διεύθυνση σε link τύπου \"mailto:\".\n"
+"\t\t\t\t\t\t\t\t<br />- <code>[slash_mail]</code> και <code>[slash_mailto]</"
+"code>. Και τα δύο shortcodes εμφανίζουν αυτόματα τη διεύθυνση email του "
+"συντάκτη του εκάστοτε άρθρου/σελίδας. Όλα τα παραπάνω shortcodes αξιοποιούν "
+"το function <code>&lt;?php echo antispambot(); ?&gt;</code> του WordPress. "
+"Για πιο αναλυτική επεξήγηση επισκεφθείτε το <a href=\"http://codex.wordpress."
+"org/Protection_From_Harvesters\" target=\"_blank\">WordPress Codex</a>.\n"
+"\t\t\t\t\t\t\t\t<br />- <code>[slash_home]</code. Εμφανίζει τη διεύθυνση URL "
+"της <a href=\"http://codex.wordpress.org/Function_Reference/home_url\" "
+"target=\"_blank\">αρχικής σελίδας</a> του ιστοχώρου. Είναι το αντίστοιχο του "
+"<code>&lt;?php echo home_url(); ?&gt;</code>. \n"
+"\t\t\t\t\t\t\t\t<br />- <code>[slash_theme]</code>. Εμφανίζει τη διεύθυνση "
+"URL του <a href=\"http://codex.wordpress.org/Function_Reference/"
+"get_template_directory_uri\" target=\"_blank\">τρέχοντος θέματος</a>. Είναι "
+"το αντίστοιχο του <code>&lt;?php echo get_template_directory_uri(); ?&gt;</"
+"code>.\n"
+"\t\t\t\t\t\t\t\t<br />- <code>[slash_child]</code>. Εμφανίζει τη διεύθυνση "
+"URL του <a href=\"http://codex.wordpress.org/Function_Reference/"
+"get_stylesheet_directory_uri\" target=\"_blank\">child theme</a> εάν "
+"υπάρχει. Είναι το αντίστοιχο του <code>&lt;?php echo "
+"get_stylesheet_directory_uri(); ?&gt;</code>.\n"
+"\t\t\t\t\t\t"
+
+#: options.php:1036
+msgid "Available functions"
+msgstr "Διαθέσιμα functions"
+
+#: options.php:1038
+msgid ""
+"Slash Admin includes the following functions which you can use in your "
+"code:\n"
+"\t\t\t\t\t\t\t\t<br />- <code>slash_dump()</code>. You can use it instead of "
+"<code>var_dump()</code> to wrap the output in <code>&lt;pre&gt;&lt;/pre&gt;</"
+"code>tags, for better readability.\n"
+"\t\t\t\t\t\t"
+msgstr ""
+"To Slash Admin περιλαμβάνει τα παρακάτω functions που μπορείτε να "
+"χρησιμοποιήσετε κατά την ανάπτυξη του site σας:\n"
+"\t\t\t\t\t\t\t\t<br />- <code>slash_dump()</code>. Μπορείτε να το "
+"χρησιμοποιήσετε αντί για το <code>var_dump()</code> για να κλείσετε το "
+"αποτέλεσμα σε <code>&lt;pre&gt;&lt;/pre&gt;</code>tags, ώστε να διαβάζεται "
+"καλύτερα.\n"
+"\t\t\t\t\t\t"
+
+#: options.php:1046
+msgid "What's wrong with the default WordPress Open Sans fonts?"
+msgstr ""
+"Τί πρόβλημα υπάρχει με την προεπιλεγμένη γραμματοσειρά Open Sans του "
+"WordPress;"
+
+#: options.php:1048
+msgid ""
+"Since version 3.8 WordPress uses Open Sans Web Font in the admin section and "
+"on all public pages when a user is logged in (for the admin bar). Some times "
+"this causes an issue when you want to use another configuration of Open Sans "
+"for your site. If you use Open Sans in your theme and you notice "
+"inconsistencies in the font's display between logged in and anonymous users "
+"or if you just don't want Open Sans for some reason (e.g. for better speed "
+"or privacy concerns), you can disable the WordPress' default configuration. "
+"Then, you can insert your own configuration of Open Sans either via this "
+"plugin, your theme's options panel or manually."
+msgstr ""
+"Από την έκδοση 3.8 το WordPress χρησιμοποιεί την γραμματοσειρά Open Sans στο "
+"διαχειριστικό περιβάλλον καθώς και σε όλες τις δημόσιες σελίδες στους "
+"χρήστες που έχουν συνδεθεί (για την μπάρα διαχείρισης). Κάποιες φορές αυτό "
+"μπορεί να προκαλέσει πρόβλημα σε όσους θέλουν να χρησιμοποιήσουν την Open "
+"Sans για τον ιστοχώρο τους με διαφορετικές ρυθμίσεις από τις προεπιλεγμένες. "
+"Εάν χρησιμοποιείτε Open Sans και παρατηρήσετε ασυνέπειες στον τρόπο με τον "
+"οποίο εμφανίζεται το περιεχόμενό σας όταν είστε συνδεδεμένοι ή εάν απλά δεν "
+"θέλετε να χρησιμοποιήσετε τη συγκεκριμένη γραμματοσειρά (π.χ. για λόγους "
+"ταχύτητας ή ιδιωτικότητας), μπορείτε να απενεργοποιήσετε την προεπιλεγμένη "
+"ρύθμιση του WordPress. Στη συνέχεια, μπορείτε να εισάγετε εκ νέου την Open "
+"Sans με τις επιθυμητές ρυθμίσεις είτε μέσω αυτού εδώ του πρόσθετου είτε μέσω "
+"των ρυθμίσεων του θέματός σας ή χειροκίνητα. "
+
+#: options.php:1054
+msgid "What does hiding options for non-admins means?"
+msgstr "Τί ακριβώς κάνει η απόκρυψη επιλογών για τους μη διαχειριστές;"
+
+#: options.php:1056
+msgid ""
+"Sometimes you only use certain features of Wordpress. For example, your "
+"website might have comments disabled or not using a certain feature. Also, "
+"for better usability you might want to show your users only the options that "
+"concern them. Hiding those options won't remove them. You, as an "
+"administrator, will always see the full list of all the available options. "
+"An editor, though, won't see the hidden options, which helps him focus to "
+"only those that concern him."
+msgstr ""
+"Κάποιες φορές χρησιμοποιείτε μόνο συγκεκριμένα χαρακτηριστικά του Wordpress. "
+"Για παράδειγμα, ο ιστοχώρος σας μπορεί να έχει απενεργοποιημένα τα σχόλια "
+"και γι' αυτό να μην έχει νόημα να εμφανίζονται στο περιβάλλον διαχείρισης. "
+"Επίσης, για λόγους ευχρηστίας μπορεί να θέλετε να εμφανίζετε στους χρήστες "
+"σας μόνο τις επιλογές που τους αφορούν. Η απόκρυψη των επιλογών δεν σημαίνει "
+"αφαίρεσή τους. Εσείς, ως ο Διαχειριστής, θα μπορείτε πάντα να δείτε την "
+"πλήρη λίστα με όλες τις διαθέσιμες επιλογές. Ένας συντάκτης, όμως, δεν θα "
+"μπορεί να δει τις κρυφές επιλογές, κάτι που τον βοηθά να εστιάσει μόνο σε "
+"αυτές που τον αφορούν."
+
+#: options.php:1062
+msgid "Is it wise to hide update notices from my users?"
+msgstr ""
+"Είναι σωστό να κρύβω τις ειδοποιήσεις αναβάθμισης από τους χρήστες μου;"
+
+#: options.php:1064
+msgid ""
+"Generally speaking, no. Wordpress' default behaviour is probably the best, "
+"that's why the specific option is disabled by default. In some cases, "
+"though, users might get confused with those notifications or think that "
+"something is wrong with the website. In cases like that, you might want to "
+"keep the update notifications visible only for those who can apply them - "
+"namely the administrators. Keep in mind that, technically, selecting this "
+"option won't remove the notifications for the non-admins - it will just hide "
+"them via CSS."
+msgstr ""
+"Μάλλον όχι. Η προεπιλεγμένη συμπεριφορά του wordpress είναι πιθανότατα και η "
+"καλύτερη - γι' αυτό και η συγκεκριμένη ρύθμιση είναι από προεπιλογή "
+"ανενεργή. Σε κάποιες περιπτώσεις, όμως, οι χρήστες μπορεί να μπερδεύονται "
+"από τις ειδοποιήσεις και να νομίζουν ότι κάτι δεν πάει καλά με τον ιστοχώρο. "
+"Σε τέτοιες περιπτώσεις μπορεί να θέλετε να κρατήσετε τις ειδοποιήσεις για "
+"αναβαθμίσεις ορατές μόνο σε όσους μπορούν να τις εφαρμόσουν - δηλαδή στους "
+"διαχειριστές. Έχετε υπόψη πάντως ότι, από τεχνικής άποψης, η ενεργοποίηση "
+"της συγκεκριμένης ρύθμισης δεν θα αφαιρέσει τις ειδοποιήσεις για τους μη-"
+"διαχειριστές - απλά θα τις κρύψει μέσω CSS."
+
+#: options.php:1070
+msgid "How does allowing access to appearance settings work?"
+msgstr "Πώς λειτουργεί η πρόσβαση στις επιλογές Εμφάνισης;"
+
+#: options.php:1072
+msgid ""
+"You can allow editors access to one or more of the following sub-sections of "
+"the \"Appearance\" section: <br />- Customize<br />- Widgets<br />- "
+"Menus<br />- Background<br />Technically, by selecting even one of the above "
+"options you give editors access to the Appearance section. To prevent them "
+"from accessing unwanted subsections (e.g. you want them to see the Menus but "
+"not the Widgets) the plugin hides their links via CSS/JavaScript from both "
+"the backend and the frontend. If an editor knew the link for the Widgets "
+"subsection he/she could access it. By default the plugin respects the "
+"WordPress' default behavior, keeping those options disabled (users have no "
+"access at all to the Appearance section)."
+msgstr ""
+"Μπορείτε να επιτρέψετε στους Αρχισυντάκτες σας να έχουν πρόσβαση σε μία ή "
+"περισσότερες από τις παρακάτω υποενότητες που βρίσκονται κάτω από την "
+"ενότητα \"Εμφάνιση\": <br />- Προσαρμογή<br />- Μονάδες<br />- Μενού<br />- "
+"Φόντο<br />Από τεχνικής άποψης, επιλέγοντας κάτι από τα παραπάνω δίνετε "
+"στους Αρχισυντάκτες πρόσβαση στην ενότητα \"Εμφάνιση\". Για να τους "
+"εμποδίσει να δουν μη-επιθυμητές ενότητες (π.χ. μπορεί να θέλετε να βλέπουν "
+"τα Μενού αλλά όχι τις Μονάδες) το πρόσθεστο κρύβει τους συνδέσμους που "
+"οδηγούν σε αυτές μέσω CSS/JavaScript, τόσο στο διαχειριστικό περιβάλλον όσο "
+"και στο frontend. Αυτό σημαίνει πως εάν ο Αρχισυντάκτης γνώριζε τη διεύθυνση "
+"που οδηγεί στη σελίδα διαχείρισης των Μονάδων, τότε θα μπορούσε να αποκτήσει "
+"πρόσβαση σε αυτή. Από προεπιλογή το πρόσθετο σέβεται την αρχική συμπεριφορά "
+"του WordPress και διατηρεί τις παραπάνω επιλογές απενεργοποιημένες (έτσι οι "
+"Αρχισυντάκτες δεν έχουν καμία πρόσβαση στην ενότητα \"Εμφάνιση\")."
+
+#: options.php:1078
+msgid "Old browser warning behaves strangely with W3TC plugin"
+msgstr "Η προειδοποίηση παλιού φυλλομετρητή δεν συνεργάζεται καλά με το W3TC"
+
+#: options.php:1080
+msgid ""
+"This is a known issue. When Page Caching is activated in the W3 Total Cache "
+"plugin, the old browser warning becomes unpredictable and it may appear not "
+"only in Internet Explorer 8 but in newer IE versions as well as in Chrome. "
+"To deal with the problem you need to disable either the old IE warning or "
+"the W3TC Page Cache option."
+msgstr ""
+"Πράγματι, υπάρχει θέμα. Όταν η επιλογή Page Caching είναι ενεργοποιημένη στο "
+"W3 Total Cache, η προειδοποίηση παλιού φυλλομετρητή συμπεριφέρεται "
+"απρόβλεπτα και μπορεί να εμφανιστεί όχι μόνο στον Internet Explorer 8 αλλά "
+"και σε νεότερες εκδόσεις του ΙΕ, καθώς επίσης και στον Chrome. Ο μόνος "
+"τρόπος για να αντιμετωπίσετε το πρόβλημα είναι να απενεργοποιήσετε ένα από "
+"τα δύο - είτε την επιλογή προειδοποίησης από το Slash Admin είτε την επιλογή "
+"Page Caching από το W3TC."
+
+#: options.php:1086
+msgid "Which are the minimum requirements to run this plugin?"
+msgstr "Ποιές είναι οι ελάχιστες απαιτήσεις για να τρέξω αυτό το πρόσθετο;"
+
+#: options.php:1088
+msgid ""
+"This plugin has been tested with Wordpress 4.0 and above. It might probably "
+"work with older versions too, but you should always use the latest version "
+"of Wordpress."
+msgstr ""
+"Το πρόσθετο αυτό έχει δοκιμαστεί με το WordPress 4.0 και πάνω. Μπορεί να "
+"λειτουργεί και με παλαιότερες εκδόσεις, αλλά καλό είναι να χρησιμοποιείτε "
+"πάντα την τελευταία έκδοση του WordPress."
+
+#: options.php:1093
+msgid "I found a bug / I have a suggestion or a feature request."
+msgstr ""
+"Βρήκα ένα πρόβλημα / έχω μια πρόταση ή θα ήθελα να ζητήσω μια νέα λειτουργία."
+
+#: options.php:1095
+msgid ""
+"You can post a message at the plugin's <a target=\"_blank\" href=\"http://"
+"wordpress.org/support/plugin/slash-admin\">support forum</a> and I will to "
+"my best to help you out."
+msgstr ""
+"Μπορείτε να στείλετε το αίτημά σας στο <a target=\"_blank\" href=\"http://"
+"wordpress.org/support/plugin/slash-admin\">φόρουμ υποστήριξης</a> του "
+"προσθέτου και θα κάνω ό,τι μπορώ για να σας βοηθήσω."
+
+#: options.php:1158
+msgid "Use this image"
+msgstr "Χρήση αυτής της εικόνας"
+
+#: slashadmin.php:32
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: slashadmin.php:44
+msgid "None"
+msgstr "Καμία"
+
+#~ msgid "Old browser warning"
+#~ msgstr "Προειδοποίηση παλιού φυλλομετρητή"
+
+#~ msgid ""
+#~ "To disguise an email address, use <code>[slash_mail address="
+#~ "\"yourmail@mail.com\"]</code>.<br />Use <code>[slash_mailto address="
+#~ "\"yourmail@mail.com\"]</code> instead if you want to automatically make "
+#~ "it a link as well. Using just <code>[slash_mail]</code> or "
+#~ "<code>[slash_mailto]</code> will automatically display the post/page "
+#~ "author's email address. For a more detailed explanation click on the "
+#~ "Documentation tab."
+#~ msgstr ""
+#~ "Για να «μεταμφιέσετε» μια διεύθυνση, χρησιμοποιήστε το <code>[slash_mail "
+#~ "address=\"yourmail@mail.com\"]</code>.<br />Χρησιμοποιήστε το "
+#~ "<code>[slash_mailto address=\"yourmail@mail.com\"]</code>εάν επιπλέον "
+#~ "θέλετε να κάνετε τη διεύθυνση link. Χρησιμοποιώντας μόνο το "
+#~ "<code>[slash_mail]</code> ή το <code>[slash_mailto]</code> θα εμφανιστεί "
+#~ "αυτόματα η διεύθυνση email του συντάκτη του εκάστοτε άρθρου/σελίδας.  Για "
+#~ "πιο λεπτομερή εξήγηση δείτε την καρτέλα «Βοήθεια». "
+
+#~ msgid ""
+#~ "Slash Admin includes the following functions which you can use in your "
+#~ "code:\n"
+#~ "\t\t\t\t\t\t\t\t<br />- <code>slash_dump()</code>. You can use it instead "
+#~ "of <code>var_dump()</code> to wrap the output in <code><pre></pre></"
+#~ "code>tags, for better readability.\n"
+#~ "\t\t\t\t\t\t"
+#~ msgstr ""
+#~ "To Slash Admin περιλαμβάνει τα παρακάτω functions, που μπορείτε να "
+#~ "χρησιμοποιήσετε κατά την ανάπτυξη του site σας:\n"
+#~ "\t\t\t\t\t\t\t\t<br />- <code>slash_dump()</code>. Μπορείτε να το "
+#~ "χρησιμοποιήσετε αντί για το <code>var_dump()</code> για να κλείσετε το "
+#~ "αποτέλεσμα σε <code><pre></pre></code>tags, ώστε να διαβάζεται καλύτερα.\n"
+#~ "\t\t\t\t\t\t"
+
+#~ msgid "Appearance"
+#~ msgstr "Εμφάνιση"
+
+#~ msgid "Frontend usability"
+#~ msgstr "Ευχρηστία (Frontend)"
+
+#~ msgid "Backend usability"
+#~ msgstr "Ευχρηστία (Διαχειριστικό)"
+
+#~ msgid ""
+#~ "For information and best practices visit <a href=\"http://codex.wordpress."
+#~ "org/Creating_a_Favicon\" target=\"_blank\">codex.wordpress.org</a>."
+#~ msgstr ""
+#~ "Για περισσότερες πληροφορίες και καλές πρακτικές επισκεφθείτε το <a href="
+#~ "\"http://codex.wordpress.org/Creating_a_Favicon\" target=\"_blank\">codex."
+#~ "wordpress.org</a>."
+
+#~ msgid ""
+#~ "This plugin has been initially tested with Wordpress 3.7 and above. It "
+#~ "might probably work with older versions too, but you should always use "
+#~ "the latest version of Wordpress."
+#~ msgstr ""
+#~ "Το πρόσθετο έχει δοκιμαστεί στις εκδόσεις του WordPress 3.7 και πάνω. "
+#~ "Πιθανώς να μπορεί να εγκατασταθεί και σε παλαιότερες εκδόσεις, αλλά καλό "
+#~ "θα ήταν έτσι κι αλλιώς να χρησιμοποιείτε πάντα την τελευταία έκδοση του "
+#~ "WordPress."
+
+#~ msgid ""
+#~ "If you manually include email addresses in your posts, you should "
+#~ "consider disguising them in order to \"fool\" e-mail harvesters. For a "
+#~ "more in-depth explanation on why you should do it, check the <a href="
+#~ "\"http://codex.wordpress.org/Protection_From_Harvesters\" target=\"_blank"
+#~ "\">WordPress Codex</a>.<br />To disguise an email address, use "
+#~ "<code>[slash_mail address=\"yourmail@mail.com\"]</code>.<br />Use "
+#~ "<code>[slash_mailto address=\"yourmail@mail.com\"]</code> instead if you "
+#~ "want to automatically make it a link as well.<br />FYI, this shortcode "
+#~ "takes advantage of the <code>&lt;?php echo "
+#~ "antispambot(get_the_author_email()); ?&gt;</code> function."
+#~ msgstr ""
+#~ "Εάν εισάγετε χειροκίνητα διευθύνσεις e-mail στα άρθρα σας, καλό θα ήταν "
+#~ "να τα «μεταμφιέζετε» ώστε να ξεγελάτε τους spammers. Για μια πιο "
+#~ "αναλυτική εξήγηση του γιατί αυτό θεωρείται καλή πρακτική μπορείτε να "
+#~ "βρείτε στο  <a href=\"http://codex.wordpress.org/"
+#~ "Protection_From_Harvesters\" target=\"_blank\">WordPress Codex</a>.<br /"
+#~ ">Για να μεταμφιέσετε μια διεύθυνση e-mail χρησιμοποιήστε το "
+#~ "<code>[slash_mail address=\"yourmail@mail.com\"]</code>.<br /"
+#~ ">Χρησιμοποιήστε το <code>[slash_mailto address=\"yourmail@mail.com\"]</"
+#~ "code> σε περίπτωση που θέλετε η διεύθυνση να είναι επίσης link που θα "
+#~ "ανοίγει τον mail client του χρήστη.<br />Ενημερωτικά, τα συγκεκριμένα "
+#~ "shortcodes αξιοποιούν τη λειτουργία <code>&lt;?php echo "
+#~ "antispambot(get_the_author_email()); ?&gt;</code>."
+
+#~ msgid ""
+#~ "This plugin has been tested with Wordpress 3.7. It will probably work on "
+#~ "different versions too, but if not, please <a target=\"_blank\" href="
+#~ "\"mailto:contact@gsarigiannidis.gr\"> let me know</a> and I will try to "
+#~ "fix it. It is advisable, though, that you always use the latest version "
+#~ "of Wordpress."
+#~ msgstr ""
+#~ "Το πρόσθετο αυτό έχει δοκιμαστεί από την έκδοση Wordpress 3.7 και μετά. "
+#~ "Πιθανότατα θα λειτουργεί και σε διαφορετικές εκδόσεις, αλλά αν "
+#~ "συναντήσετε κάποιο πρόβλημα <a target=\"_blank\" href=\"mailto:"
+#~ "contact@gsarigiannidis.gr\"> ενημερώστε με</a> και θα προσπαθήσω να το "
+#~ "διορθώσω. Καλό είναι πάντως να χρησιμοποιείτε πάντα την τελευταία έκδοση "
+#~ "του Wordpress."
+
+#~ msgid "Allow Editors to change the website's background."
+#~ msgstr "Επιτρέψτε στους Συντάκτες να αλλάζουν το φόντο του ιστοχώρου."
+
+#~ msgid "Links"
+#~ msgstr "Σύνδεσμοι"
+
+#~ msgid "Exclude links"
+#~ msgstr "Απόκρυψη συνδέσμων"
+
+#~ msgid "let me know"
+#~ msgstr "ενημερώστε με"
+
+#~ msgid ""
+#~ " and I will try to fix it. It is advisable, though, that you always use "
+#~ "the latest version of Wordpress."
+#~ msgstr ""
+#~ " και θα προσπαθήσω να το διορθώσω. Καλό είναι, πάντως, να χρησιμοποιείτε "
+#~ "πάντοτε την τελευταία έκδοση του Wordpress."

@@ -1,0 +1,238 @@
+.wrap h1.slash-admin-header {
+	color: #7AD03A;
+	text-shadow: 1px 1px 1px #fff;
+}
+.wrap {
+	width: 90%;
+}
+a:active, a:focus {
+	outline: none;
+	box-shadow: none;
+}
+.ui-tabs-nav {
+	border-bottom: 3px solid #7AD03A;
+	height: 49px;
+	margin: 20px 0 3em;
+	padding: 0;
+}
+#administration > table > tbody > tr:first-child,
+#frontend_usability > table > tbody > tr:first-child,
+#backend_usability > table > tbody > tr:first-child,
+#compatibility > table > tbody > tr:first-child,
+#about > table > tbody > tr:first-child {
+	display: none;
+}
+.ui-tabs-nav li {
+	display: inline-block;
+	margin: 0;
+}
+.form-table th {
+	padding-top: 0;
+	padding-left: 1em;
+}
+
+.ui-tabs-nav li a {
+	border-style: solid;
+	border-color: #7AD03A;
+	border-width: 0 0 3px;
+	display: inline-block;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	margin: 0 1px 0 0;
+	text-align: center;
+	font-size: 14px;
+	height: 34px;
+	background: #ddd;
+	color: #777;
+	line-height: 2.5em;	
+	-webkit-transition: background 0.5s ease;
+	-moz-transition: background 0.5s ease;
+	-o-transition: background 0.5s ease;
+	-ms-transition: background 0.5s ease;
+	transition: background 0.5s ease;
+	text-shadow: 1px 1px 1px #fff;
+}
+.ui-tabs-nav li a:hover {
+	background: #ccc;
+}
+.ui-tabs-nav li.ui-tabs-selected a,
+.ui-tabs-nav li.ui-state-active a {
+	border-width: 1px;
+	color: #fff;
+	background: #7AD03A;
+	text-shadow: none;
+}
+
+.ui-tabs-panel {
+	clear: both;
+}
+
+.ui-tabs-panel h2,
+.ui-tabs-panel h3 {
+	margin: 0;
+	padding: 0 0 5px;
+	line-height: 35px;
+	text-shadow: 0 1px 0 #fff;
+	display: none !important;
+}
+
+.ui-tabs-panel h4 {
+	border-bottom: 1px solid #ddd;
+	font-size: 20px;
+	font-weight: 100;
+	margin: 0 0 1em 0;
+	padding-bottom: 0.5em;
+	width: 100%;
+	color: #999;
+	text-shadow: 1px 1px 1px #fff;
+}
+	.ui-tabs-panel h4:after {
+		border-bottom: 1px solid #fff;
+		content: "";
+		display: block;
+		height: 10px;
+		margin-bottom: -12px;
+		position: relative;
+		width: 100%;
+	}
+
+.wrap, .wrap h1, .wrap h2, .wrap h3 {
+	font-weight: 100;
+}
+
+.wrap h3, .wrap table {
+	display: none;
+}
+textarea, input[type="text"] {
+	width: 100%;
+	max-width: 340px;
+	background: #fff;
+	border-radius: 0;
+	padding: 0.5em 1em;
+	height: 35px;
+	border-color: #ddd;
+	font-size: 12px;
+}
+textarea {
+	height:280px;
+	max-width: 500px;
+}
+input {
+	background: #FFBA00;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	margin-right: 0.5em;
+	min-width: 100px;
+	padding: 0.5em 1em;
+	height: 35px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+input[type="button"]:hover {
+	background: #7AD03A;
+}
+span.description {
+	display: block;
+	text-shadow: 1px 1px 1px #fff;
+}
+input[type="checkbox"] {
+	margin: 0 -3em;
+}
+.multiple {
+	min-height: 150px;
+}
+p.submit .button-primary {
+	padding: 1em 2em;
+	height: auto;
+	border-radius: 0;
+	box-shadow: none;
+	background: #389ED3;
+	border: none;
+}
+p.submit .button-primary:hover {
+	background: #7AD03A;
+}
+.form-table td {
+	padding: 0 10px 15px;
+}
+.form-table td p {
+}
+div#general > h3, div#about > h3 {
+	display: none !important;
+}
+td .checkbox {
+	margin-left: 0;
+}
+td label {
+	margin-left: 3.5em;
+	display: inline-block;
+	max-width: 580px;
+	vertical-align: top;
+}
+label, #your-profile label + a {
+	vertical-align: top;
+	font-weight: 100;
+	color: #666;
+	text-shadow: 1px 1px 1px #fff;
+}
+li.current {
+	background: #0074A2;
+}
+.alert {
+	border: 1px solid #D54E21;
+	display: block;
+	padding: 1em;
+	margin: 1em 0;
+	color: #D54E21;
+	text-shadow: none;
+	background: #fff;
+	font-weight: bold;
+}
+.debug-mode {
+	background: #ddd;
+	padding: 1em;
+	margin-bottom: 2em;
+	margin-top: -1em;
+	text-align: center;
+	background: #FFFFDA;
+	border: 1px solid #ddd;
+	color: #999;
+}
+.debug-mode a {
+	color: #999;
+	font-size: 85%;
+}
+input#cookielaw_message {
+	max-width: 600px;
+}
+input[type="checkbox"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="radio"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, select:focus, textarea:focus {
+	box-shadow: none;
+	border-color: #7AD03A;
+}
+.notice .dashicons {
+	color: #DD3D36;
+}
+@media all and (max-width: 1200px) {
+	.ui-tabs-nav {
+		height: 100px;
+		border-bottom: none;
+	}
+
+}
+@media all and (max-width: 540px) {
+	.ui-tabs-nav {
+		height: 148px;
+	}
+	.ui-tabs-nav li a {
+		font-size: 13px;
+	}
+}
+@media all and (max-width: 359px) {
+	.ui-tabs-nav {
+		height: 200px;
+	}
+}

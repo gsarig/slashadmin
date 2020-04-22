@@ -1,0 +1,102 @@
+#slashadmin_eucookielaw {
+	display: block;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	padding: 1.5em 1em 0 1em;
+	font-size: 90%;
+	z-index: 999999;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+#slashadmin_eucookielaw p {
+	margin-bottom: 1.5em;
+	line-height: 2em;
+}
+#slashadmin_cookiemore {
+	border-bottom: 1px dotted;
+}
+#slashadmin_removecookie {
+	padding: 0.5em 1.5em;
+	margin-left: 1em;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+/* Bottom position */
+#slashadmin_eucookielaw.cl_bottom {
+	bottom: 0;
+	margin-bottom: -999px;
+}
+	#slashadmin_eucookielaw.cl_bottom.cl_visible {
+		margin-bottom: 0;
+	}
+#slashadmin_eucookielaw.cl_bottom.cl_light {
+	border-top: 1px solid #ccc;
+}
+
+/* Top position */
+#slashadmin_eucookielaw.cl_top {
+	top: 0;
+	margin-top: -999px;
+}
+	#slashadmin_eucookielaw.cl_top.cl_visible {
+		margin-top: 0;
+	}
+#slashadmin_eucookielaw.cl_top.cl_light {
+	border-bottom: 1px solid #ccc;
+}
+
+/* Bottom right */
+#slashadmin_eucookielaw.cl_right {
+	bottom: 0;
+	margin-bottom: -999px;
+	right: 1em;
+	max-width: 320px;
+	width: 80%;
+	border-radius: 5px 5px 0 0;
+}
+	#slashadmin_eucookielaw.cl_right.cl_visible {
+		margin-bottom: 0;
+	}
+#slashadmin_eucookielaw.cl_right #slashadmin_removecookie {
+	display: block;
+	margin-top: 1em;
+}
+#slashadmin_eucookielaw.cl_right.cl_light {
+	border: 1px solid #ccc;
+}
+
+/* Dark (default) */
+#slashadmin_eucookielaw.cl_dark {
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.85);
+	color: #fff;
+	box-shadow: 1px 1px 6px #000;
+}
+#slashadmin_eucookielaw.cl_dark #slashadmin_cookiemore {
+	color: #fff;
+}
+#slashadmin_eucookielaw.cl_dark #slashadmin_removecookie {
+	background: #ffcb00;
+	color: #000;
+}
+
+/* Light */
+#slashadmin_eucookielaw.cl_light {
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,0.92);
+	color: #000;
+	box-shadow: 1px 1px 6px #ccc;
+}
+#slashadmin_eucookielaw.cl_light #slashadmin_cookiemore {
+	color: #000;
+}
+#slashadmin_eucookielaw.cl_light #slashadmin_removecookie {
+	background: #444;
+	color: #fff;
+}
