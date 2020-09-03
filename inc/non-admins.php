@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( slash_admin( 'hide_update_notices' ) == 1 ) {
 
 	function my_admin_theme_style() {
-		if ( ! current_user_can( 'manage_options' ) ) {
+		if ( ! current_user_can( 'manage_options' ) || ! is_slash_techie() ) {
 			echo '<style>.update-nag, .updated { display: none; }</style>';
 		}
 	}
@@ -102,7 +102,7 @@ if ( slash_admin( 'exclude_links' ) && slash_admin( 'exclude_comments' ) && slas
 				__( $csecond ),
 				__( $cthird ),
 				__( $cfourth ),
-				__( $cfifth )
+				__( $cfifth ),
 			);
 			end( $menu );
 			while ( prev( $menu ) ) {
@@ -217,7 +217,8 @@ if ( slash_admin( 'hide_specific_pages' ) ) {
 		add_action( 'pre_get_posts', 'slash_hide_pages_backend' );
 		function slash_hide_pages_backend( $query ) {
 			if ( is_admin() && ! empty( $_GET['post_type'] ) && $_GET['post_type'] == 'page' && $query->query['post_type'] == 'page' && ! current_user_can( 'administrator' ) ) {
-				$query->set( 'post__not_in', slash_get_excluded_pages()
+				$query->set( 'post__not_in',
+					slash_get_excluded_pages()
 				);
 			}
 		}

@@ -3,7 +3,7 @@
  * Plugin Name: Slash Admin
  * Plugin URI: http://wordpress.org/plugins/slash-admin/
  * Description: Slash Admin lets you change various different options in a WordPress website, keeps them active even if you switch your theme and helps you create a friendlier Admin Panel for you and your editors. 
- * Version: 3.3.6
+ * Version: 3.4
  * Author: Giorgos Sarigiannidis
  * Author URI: http://www.gsarigiannidis.gr
  * Text Domain: slash-admin
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'SLASH_ADMIN_VERSION', '3.3.6' );
+define( 'SLASH_ADMIN_VERSION', '3.4' );
 
 load_plugin_textdomain( 'slash-admin', false, basename( dirname( __FILE__ ) ) . '/languages' ); // Localize it
 
@@ -62,7 +62,15 @@ function slashadmin_editor_roles() {
 	);
 }
 
-// Header includes (Favicon and Google Analytics code)
+// Check if current user is set as "Techie"
+function is_slash_techie() {
+	$techie_id  = slash_admin( 'slash_techie' );
+	$current_id = get_current_user_id();
+
+	return ! ( $techie_id && '0' !== $techie_id && $current_id !== intval( $techie_id ) );
+}
+
+// Header includes (Google Analytics code)
 include_once dirname( __FILE__ ) . '/inc/header-includes.php';
 
 // Cookie law consent
@@ -121,3 +129,9 @@ include_once dirname( __FILE__ ) . '/inc/custom-splash.php';
 
 // Recovery mode email
 include_once dirname( __FILE__ ) . '/inc/recovery-mode-email.php';
+
+// Hide Site Health
+include_once dirname( __FILE__ ) . '/inc/site-health.php';
+
+// ACF Mods
+include_once dirname( __FILE__ ) . '/inc/acf-mods.php';

@@ -370,9 +370,10 @@ class Slash_Admin_Options {
 	 */
 	public function get_settings() {
 
+
 		/* Appearance
 		===========================================*/
-		$this->settings['custom_splash']           = array( // Custom Splash page
+		$this->settings['custom_splash'] = array( // Custom Splash page
 			'section' => 'appearance',
 			'title'   => '', // Not used for headings.
 			'desc'    => __( 'Custom Splash page', 'slash-admin' ),
@@ -380,14 +381,14 @@ class Slash_Admin_Options {
 			'para'    => __( 'Redirect anonymous users to a static splash page located on a folder in the root of your WordPress installation. In there you can put plain old HTML or PHP without restrictions and without having to pollute your theme\'s files with temporary code that should be removed when the site goes on air.',
 				'slash-admin' ),
 		);
-		$this->settings['splash_enable']           = array( // Hide update notices for all but Admins
+		$this->settings['splash_enable'] = array( // Hide update notices for all but Admins
 			'section' => 'appearance',
 			'title'   => __( 'Enable', 'slash-admin' ),
 			'desc'    => __( 'Enable the custom splash page', 'slash-admin' ),
 			'type'    => 'checkbox',
 			'std'     => 0,
 		);
-		$this->settings['splash_path']             = array(
+		$this->settings['splash_path']   = array(
 			'section' => 'appearance',
 			'title'   => __( 'Custom splash page folder', 'slash-admin' ),
 			'desc'    => __( 'Fill in the name of the folder where your splash page is. The folder should be on the root of your WordPress installation. If you leave this blank, the custom splash functionality won\'t work.',
@@ -395,29 +396,10 @@ class Slash_Admin_Options {
 			'type'    => 'text',
 			'std'     => '',
 		);
-		$this->settings['opensans_fix']            = array( // Font fixes
-			'section' => 'appearance',
-			'title'   => '', // Not used for headings.
-			'desc'    => __( 'Font fixes', 'slash-admin' ),
-			'type'    => 'heading',
-		);
-		$this->settings['default_opensans_remove'] = array(
-			'section' => 'appearance',
-			'title'   => __( 'Default Open Sans font', 'slash-admin' ),
-			'desc'    => __( 'Select how you should deal with the default Open Sans fonts that WordPress uses. If you have issues with how the font is displayed on logged-in users (it usually happens with non-latin subsets), try to disable it and then re-enter them properly below.',
-				'slash-admin' ),
-			'type'    => 'select',
-			'std'     => 'default',
-			'choices' => array(
-				'default'         => __( 'Keep the default Wordpress fonts (default)', 'slash-admin' ),
-				'remove_frontend' => __( 'Remove default Open Sans from the Frontend', 'slash-admin' ),
-				'remove_backend'  => __( 'Remove default Open Sans from both Frontend and Backend', 'slash-admin' ),
-			),
-		);
-		$this->settings['custom_fonts']            = array(
+		$this->settings['custom_fonts']  = array(
 			'section' => 'appearance',
 			'title'   => __( 'Insert custom fonts', 'slash-admin' ),
-			'desc'    => __( 'Insert your Google Web Fonts here. You can declare more than one fonts, styles and language subsets. Keep in mind that you must only fill in the part after the "http://fonts.googleapis.com/css?family=" like for example <code>Open+Sans:400,300&subset=latin,greek</code>. View more information about the font\'s structure, subsets and weights at the <a href="https://developers.google.com/fonts/docs/getting_started#Overview" target="_blank">Google Fonts help page</a>. If your theme has it\'s own mechanism for embedding Google Fonts or if you prefer to do it manually, just leave it blank.',
+			'desc'    => __( 'Insert your Google Web Fonts here. You can declare more than one fonts, styles and language subsets. If you use the latest, CSS2 version of Google Fonts, you should copy/paste the full URL that it generates, like for example <code>https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;900&display=swap</code>.<br/> If you prefer the old API, then you must only fill in the part after the "http://fonts.googleapis.com/css?family=" like for example <code>Roboto+Slab:300,400,700|Roboto:300,400,900&display=swap</code>. View more information about the font\'s structure, subsets and weights at the <a href="https://developers.google.com/fonts/docs/getting_started#Overview" target="_blank">Google Fonts help page</a>.<br/> If your theme has it\'s own mechanism for embedding Google Fonts or if you prefer to do it manually, just leave it blank.',
 				'slash-admin' ),
 			'type'    => 'text',
 			'std'     => '',
@@ -649,25 +631,10 @@ class Slash_Admin_Options {
 		$this->settings['oldie_warning'] = array( // Hide update notices for all but Admins
 			'section' => 'appearance',
 			'title'   => __( 'Old IE Warning', 'slash-admin' ),
-			'desc'    => __( 'If the visitor uses an old version of Internet Explorer (aka IE9 or older) display a message at the top of the page warning him that he is using an outdated browser and that he should update to a newer one.',
+			'desc'    => __( 'If the visitor uses Internet Explorer, display a message at the top of the page warning him that he is using an outdated browser and that he should update to a newer one.',
 				'slash-admin' ),
 			'type'    => 'checkbox',
 			'std'     => 0,
-		);
-
-		$this->settings['legacy_options'] = array(
-			'section' => 'appearance',
-			'title'   => '', // Not used for headings.
-			'desc'    => __( 'Legacy options', 'slash-admin' ),
-			'type'    => 'heading',
-		);
-		$this->settings['favicon']        = array( // Favicon
-			'title'   => __( 'Upload your favicon', 'slash-admin' ),
-			'desc'    => '<span class="alert">' . __( 'Since WordPress 4.3, you can use a native Customizer option to upload your favicon (Under Appearance &rarr; Customize &rarr; Site Identity &rarr; Site Icon). This option here is kept for legacy reasons, but you should prefer the WordPress\' default. For more control over which icon should be displayed on different devices, check <a href="https://wordpress.org/plugins/favicon-extender/" target="_blank">Favicon Extender</a>.',
-					'slash-admin' ) . '</span>',
-			'std'     => '',
-			'type'    => 'upload',
-			'section' => 'appearance',
 		);
 
 		/* Administration
@@ -680,22 +647,39 @@ class Slash_Admin_Options {
 		);
 		$this->settings['analytics']        = array(
 			'title'   => __( 'Analytics tracking code', 'slash-admin' ),
-			'desc'    => __( 'Add code for Google Analytics (it will be inserted before the <code>&lt;/head&gt;</code> tag).',
+			'desc'    => __( 'Add code for Google Analytics (it will be inserted before the <code>&lt;/head&gt;</code> tag). You can load scripts only if a specific cookie is set. Example: <code>&lt;&lt;cookie=eucookie&gt;&gt;YOUR SCRIPT HERE&lt;&lt;/cookie&gt;&gt;</code>',
 				'slash-admin' ),
 			'std'     => '',
 			'type'    => 'textarea',
 			'section' => 'administration',
 		);
 
-		$this->settings['recovery_mode_email_header'] = array(
+		$this->settings['admin_overrides_header'] = array(
 			'section' => 'administration',
 			'title'   => '', // Not used for headings.
-			'desc'    => __( 'Recovery mode email', 'slash-admin' ),
+			'desc'    => __( 'Admin overrides', 'slash-admin' ),
 			'type'    => 'heading',
 		);
-		$this->settings['recovery_mode_email']        = array(
+
+		$admins     = get_users();
+		$admin_list = [
+			'0' => __( 'None', 'slash-admin' ),
+		];
+		foreach ( $admins as $admin ) {
+			$admin_list[ $admin->ID ] = $admin->user_login;
+		}
+		$this->settings['slash_techie']        = array(
+			'section' => 'administration',
+			'title'   => __( 'Techie user', 'slash-admin' ),
+			'desc'    => __( 'Assigning a user with the "Techie" attribute will show some admin functionality only to the particular user. This includes features like Site Health, Recovery mode email notifications, Admin update notices and ACF Settings panel visibility.',
+				'slash-admin' ),
+			'type'    => 'select',
+			'std'     => '0',
+			'choices' => $admin_list,
+		);
+		$this->settings['recovery_mode_email'] = array(
 			'title'   => __( 'Recovery mode email(s)', 'slash-admin' ),
-			'desc'    => __( 'Since WordPress 5.2 there is a built-in feature that detects when a plugin or theme causes a fatal error on your site, and notifies you with this automated email. By default, it will be sent to the admin email. To override it, add the alternative address here. For multiple recipients, separate them with a comma (,).',
+			'desc'    => __( 'Since WordPress 5.2 there is a built-in feature that detects when a plugin or theme causes a fatal error on your site, and notifies you with this automated email. By default, it will be sent to the admin email, unless you have declared a "Techie". To override it, add the alternative address here. For multiple recipients, separate them with a comma (,).',
 				'slash-admin' ),
 			'std'     => '',
 			'type'    => 'text',
@@ -1276,15 +1260,6 @@ class Slash_Admin_Options {
 				'slash-admin' ),
 		);
 
-		$this->settings['q1_heading'] = array(
-			'section' => 'about',
-			'title'   => '', // Not used for headings.
-			'desc'    => __( 'What\'s wrong with the default WordPress Open Sans fonts?', 'slash-admin' ),
-			'type'    => 'heading',
-			'para'    => __( 'Since version 3.8 WordPress uses Open Sans Web Font in the admin section and on all public pages when a user is logged in (for the admin bar). Some times this causes an issue when you want to use another configuration of Open Sans for your site. If you use Open Sans in your theme and you notice inconsistencies in the font\'s display between logged in and anonymous users or if you just don\'t want Open Sans for some reason (e.g. for better speed or privacy concerns), you can disable the WordPress\' default configuration. Then, you can insert your own configuration of Open Sans either via this plugin, your theme\'s options panel or manually.',
-				'slash-admin' ),
-		);
-
 		$this->settings['q2_heading'] = array(
 			'section' => 'about',
 			'title'   => '', // Not used for headings.
@@ -1317,7 +1292,7 @@ class Slash_Admin_Options {
 			'title'   => '', // Not used for headings.
 			'desc'    => __( 'Old browser warning behaves strangely with W3TC plugin', 'slash-admin' ),
 			'type'    => 'heading',
-			'para'    => __( 'This is a known issue. When Page Caching is activated in the W3 Total Cache plugin, the old browser warning becomes unpredictable and it may appear not only in Internet Explorer 9 but in newer IE versions as well as in Chrome. To deal with the problem you need to disable either the old IE warning or the W3TC Page Cache option.',
+			'para'    => __( 'This is a known issue. When Page Caching is activated in the W3 Total Cache plugin, the old browser warning becomes unpredictable and it may appear not only in Internet Explorer but in Chrome. To deal with the problem you need to disable either the old IE warning or the W3TC Page Cache option.',
 				'slash-admin' ),
 		);
 

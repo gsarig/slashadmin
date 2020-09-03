@@ -1,10 +1,10 @@
 === Slash Admin ===
 Contributors: gsarig
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4EYE898NTMYKE
-Tags: WordPress, admin, administration, dashboard, favicon, login, analytics, internet explorer, revisions, permission, role, access, fonts, dns prefetching, prefetching, prerendering, white label, cookie law, eu cookie law, loading, obfuscate
+Tags: WordPress, admin, administration, dashboard, login, analytics, internet explorer, revisions, permission, role, access, fonts, dns prefetching, prefetching, prerendering, white label, cookie law, eu cookie law, site health, loading, obfuscate
 Requires at least: 4.0
 Tested up to: 5.5
-Stable tag: 3.3.6
+Stable tag: 3.4
 License: GPLv2 or later
 
 Dozens of settings aiming at creating a friendlier administration environment for both Administrators and Editors.
@@ -31,9 +31,11 @@ Slash Admin gathers some common functions that you probably need in most of your
 *Administration*
 
 * Insert Google Analytics tracking code (so as you don't have to remember re-entering it in case you switch themes in the future)
-* Since WordPress 5.2 there is a built-in feature that detects when a plugin or theme causes a fatal error on your site, and notifies you with this automated email. By default, it will be sent to the admin email. Slash Admin allows you to override it (you can also add multiple recipients if you like).
+* Hide Site Health from everyone except from a selected Admin
+* Hide ACF options from everyone except from the selected Admin
+* Since WordPress 5.2 there is a built-in feature that detects when a plugin or theme causes a fatal error on your site, and notifies you with this automated email. By default, it will be sent to the admin email. Slash Admin allows you to override it (you can also add multiple recipients if you like)
 * Limit the number of revisions that WordPress keeps for each post (keeps the database cleaner)
-* Prevent Post Updates and Deletion After a Set Period. Useful if you have many editors or in cases where an editor's account is compromized, adding spam code to the posts (by disallowing editing of older posts you limit the damage)
+* Prevent Post Updates and Deletion After a Set Period. Useful if you have many editors or in cases where an editor's account is compromised, adding spam code to the posts (by disallowing editing of older posts you limit the damage)
 * Enable Jetpack development mode
 * Move Jetpack share and like buttons
 * Maintenance mode. If checked, non-Admins will not be able to acess the WordPress backend and they will see a customizable message instead. Useful if you want to perform some maintenance work to your website and you don't want your Editors to add or modify the content before you finish. Admins are not affected and they can always login as usual.
@@ -155,8 +157,13 @@ This is a known issue. When Page Caching is activated in the W3 Total Cache plug
 
 == Changelog ==
 
-= 3.3.6 =
+= 3.4 =
+* NEW FEATURE: Added an option to assign a specific admin user as "Techie". Doing so, will hide some functionalities from every other admin except from the Techie. Those functionalities include Site Health and ACF settings.
+* NEW FEATURE: Added option to conditionally load scripts based on whether the eu_cookie is stored.
 * Fixed a warning on the login page when a custom image is added.
+* Removed the deprecated "Add favicon" option.
+* Updated old IE warning to appear on all versions of Internet Explorer.
+* Removed the now unneeded option to Unload Open Sans as WordPress ditched it a few versions ago.
 
 = 3.3.5 =
 * NEW FEATURE: Added option to override WordPress' recovery mode email.
@@ -340,6 +347,9 @@ Bug fix
 * First release!
 
 == Upgrade Notice ==
+
+= 3.4 =
+This is a relatively big update, with the most important addition being the option to assign a specific admin user as "Techie". Doing so, will hide some functionalities from every other admin except from the Techie. Those functionalities include Site Health and ACF settings. Also, deprecated "Add favicon" option has been removed, and the same happened to the option to Unload Open Sans, as WordPress ditched it a few versions ago. Check the changelog for the full list of additions and changes.
 
 = 2.6 =
 This is a major update with lots of new options. A whole new section named "White label" has been added, allowing you to customize the WordPress Dashboard, add your own Welcome message and dashboard widget, change the WordPress logo and Admin texts and more (see the changelog for details).
