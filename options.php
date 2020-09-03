@@ -396,6 +396,14 @@ class Slash_Admin_Options {
 			'type'    => 'text',
 			'std'     => '',
 		);
+
+		$this->settings['opensans_fix']            = array( // Font fixes
+			'section' => 'appearance',
+			'title'   => '', // Not used for headings.
+			'desc'    => __( 'Fonts', 'slash-admin' ),
+			'type'    => 'heading',
+		);
+
 		$this->settings['custom_fonts']  = array(
 			'section' => 'appearance',
 			'title'   => __( 'Insert custom fonts', 'slash-admin' ),
@@ -666,12 +674,12 @@ class Slash_Admin_Options {
 			'0' => __( 'None', 'slash-admin' ),
 		];
 		foreach ( $admins as $admin ) {
-			$admin_list[ $admin->ID ] = $admin->user_login;
+			$admin_list[ $admin->ID ] = $admin->user_login . ' (' . $admin->user_email . ')';
 		}
 		$this->settings['slash_techie']        = array(
 			'section' => 'administration',
 			'title'   => __( 'Techie user', 'slash-admin' ),
-			'desc'    => __( 'Assigning a user with the "Techie" attribute will show some admin functionality only to the particular user. This includes features like Site Health, Recovery mode email notifications, Admin update notices and ACF Settings panel visibility.',
+			'desc'    => __( 'Assigning a user with the "Techie" attribute will hide parts of the admin from everybody else, except for the given user. This includes features like Site Health, Recovery mode email notifications, Admin update notices and ACF Settings panel visibility.',
 				'slash-admin' ),
 			'type'    => 'select',
 			'std'     => '0',

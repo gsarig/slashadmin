@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slash Admin 1.8\n"
-"POT-Creation-Date: 2016-04-30 01:43+0300\n"
+"POT-Creation-Date: 2020-09-04 00:24+0300\n"
 "PO-Revision-Date: 2014-12-25 15:19+0200\n"
 "Last-Translator: Giorgos Sarigiannidis <contact@gsarigiannidis.gr>\n"
 "Language-Team: Giorgos Sarigiannidis <contact@gsarigiannidis.gr>\n"
@@ -10,12 +10,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.4.1\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;esc_attr_x:1,2c\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: inc/admin_notices.php:18
+#: inc/admin_notices.php:53
 msgid ""
 "Debug mode is enabled. This is a good habit if you are currently developing "
 "this site, but don't forget to disable it when you go on air (<a href="
@@ -23,14 +23,14 @@ msgid ""
 "\"_blank\">more info</a>)."
 msgstr ""
 
-#: inc/admin_notices.php:25
+#: inc/admin_notices.php:60
 msgid ""
 "Debug mode is disabled. It seems that this site is under development so, you "
 "might consider turning it on. (<a href=\"http://codex.wordpress.org/"
 "Function_Reference/wp_debug_mode\" target=\"_blank\">more info</a>)."
 msgstr ""
 
-#: inc/admin_notices.php:31
+#: inc/admin_notices.php:66
 msgid ""
 "Your Website is on air and you have chosen to hide it from Search Engines. "
 "This is a huge SEO issue. Unless you know what you are doing, you should go "
@@ -39,136 +39,157 @@ msgid ""
 "this site\"</i>."
 msgstr ""
 
-#: inc/oldiewarning.php:20
+#: inc/admin_notices.php:74
+msgid ""
+"Jetpack is on development mode. Don't forget to properly connect to it when "
+"you go live."
+msgstr ""
+
+#: inc/oldiewarning.php:26 inc/oldiewarning.php:27
 msgid "Warning: Your browser is outdated"
 msgstr ""
 
-#: inc/oldiewarning.php:21
+#: inc/oldiewarning.php:29
 msgid ""
 "Your browser is <strong>out of date</strong>. It has known <strong>security "
 "flaws</strong> and may not display all features of this and other websites. "
-"Please update to the latest version of <a href=\"http://windows.microsoft."
-"com/en-us/internet-explorer/download-ie\" target=\"_blank\">Internet "
-"Explorer</a> or download a modern browser like <a href=\"http://www.mozilla."
-"com/firefox/\" target=\"_blank\">Mozilla Firefox</a>, <a href=\"http://www."
-"google.com/chrome\" target=\"_blank\">Google Chrome</a> or <a href=\"http://"
-"www.opera.com/browser/\" target=\"_blank\">Opera</a>."
+"Please update to a modern browser like <a href=\"http://windows.microsoft."
+"com/en-us/internet-explorer/download-ie\" target=\"_blank\">Microsoft Edge</"
+"a>, <a href=\"http://www.mozilla.com/firefox/\" target=\"_blank\">Mozilla "
+"Firefox</a>, <a href=\"http://www.google.com/chrome\" target=\"_blank"
+"\">Google Chrome</a> or <a href=\"http://www.opera.com/browser/\" target="
+"\"_blank\">Opera</a>."
 msgstr ""
 
-#: inc/oldiewarning.php:23
+#: inc/oldiewarning.php:32
 msgid "Close this warning"
 msgstr ""
 
-#: options.php:27
-msgid "Frontend"
-msgstr ""
-
-#: options.php:28
-msgid "Administration"
-msgstr ""
-
-#: options.php:29 options.php:664
-msgid "Login screen"
-msgstr ""
-
-#: options.php:30
-msgid "Non-admins"
-msgstr ""
-
-#: options.php:31
-msgid "White label"
+#: inc/whois-online.php:83
+msgid "Recently online (logged in less than 15 minutes ago): "
 msgstr ""
 
 #: options.php:32
+msgid "Frontend"
+msgstr ""
+
+#: options.php:33
+msgid "Administration"
+msgstr ""
+
+#: options.php:34 options.php:796
+msgid "Login screen"
+msgstr ""
+
+#: options.php:35
+msgid "Non-admins"
+msgstr ""
+
+#: options.php:36
+msgid "White label"
+msgstr ""
+
+#: options.php:37
 msgid "Performance"
 msgstr ""
 
-#: options.php:33 options.php:976
+#: options.php:38 options.php:1197
 msgid "Shortcodes"
 msgstr ""
 
-#: options.php:34
+#: options.php:39
 msgid "Documentation"
 msgstr ""
 
-#: options.php:52 options.php:113
+#: options.php:57 options.php:127
 msgid "Slash Admin Options"
 msgstr ""
 
-#: options.php:52
+#: options.php:58
 msgid "Slash Admin"
 msgstr ""
 
-#: options.php:71
+#: options.php:80
 msgid "Default Field"
 msgstr ""
 
-#: options.php:72
+#: options.php:81
 msgid "This is a default description."
 msgstr ""
 
-#: options.php:116
+#: options.php:130
 msgid "Options updated."
 msgstr ""
 
-#: options.php:134
+#: options.php:148
 msgid "Save Changes"
 msgstr ""
 
-#: options.php:286
+#: options.php:306
 msgid "Upload"
 msgstr ""
 
-#: options.php:356
-msgid "Font fixes"
+#: options.php:379
+msgid "Custom Splash page"
 msgstr ""
 
-#: options.php:361
-msgid "Default Open Sans font"
-msgstr ""
-
-#: options.php:362
+#: options.php:381
 msgid ""
-"Select how you should deal with the default Open Sans fonts that WordPress "
-"uses. If you have issues with how the font is displayed on logged-in users "
-"(it usually happens with non-latin subsets), try to disable it and then re-"
-"enter them properly below."
+"Redirect anonymous users to a static splash page located on a folder in the "
+"root of your WordPress installation. In there you can put plain old HTML or "
+"PHP without restrictions and without having to pollute your theme's files "
+"with temporary code that should be removed when the site goes on air."
 msgstr ""
 
-#: options.php:366
-msgid "Keep the default Wordpress fonts (default)"
+#: options.php:386 options.php:426
+msgid "Enable"
 msgstr ""
 
-#: options.php:367
-msgid "Remove default Open Sans from the Frontend"
+#: options.php:387
+msgid "Enable the custom splash page"
 msgstr ""
 
-#: options.php:368
-msgid "Remove default Open Sans from both Frontend and Backend"
+#: options.php:393
+msgid "Custom splash page folder"
 msgstr ""
 
-#: options.php:373
+#: options.php:394
+msgid ""
+"Fill in the name of the folder where your splash page is. The folder should "
+"be on the root of your WordPress installation. If you leave this blank, the "
+"custom splash functionality won't work."
+msgstr ""
+
+#: options.php:403
+msgid "Fonts"
+msgstr ""
+
+#: options.php:409
 msgid "Insert custom fonts"
 msgstr ""
 
-#: options.php:374
+#: options.php:410
 msgid ""
 "Insert your Google Web Fonts here. You can declare more than one fonts, "
-"styles and language subsets. Keep in mind that you must only fill in the "
-"part after the \"http://fonts.googleapis.com/css?family=\" like for example "
-"<code>Open+Sans:400,300&subset=latin,greek</code>. View more information "
-"about the font's structure, subsets and weights at the <a href=\"https://"
-"developers.google.com/fonts/docs/getting_started#Overview\" target=\"_blank"
-"\">Google Fonts help page</a>. If your theme has it's own mechanism for "
-"embedding Google Fonts or if you prefer to do it manually, just leave it "
-"blank."
+"styles and language subsets. If you use the latest, CSS2 version of Google "
+"Fonts, you should copy/paste the full URL that it generates, like for "
+"example <code>https://fonts.googleapis.com/css2?family=Roboto+Slab:"
+"wght@300;400;700&family=Roboto:wght@300;400;900&display=swap</code>.<br/> If "
+"you prefer the old API, then you must only fill in the part after the "
+"\"http://fonts.googleapis.com/css?family=\" like for example <code>Roboto"
+"+Slab:300,400,700|Roboto:300,400,900&display=swap</code>. View more "
+"information about the font's structure, subsets and weights at the <a href="
+"\"https://developers.google.com/fonts/docs/getting_started#Overview\" target="
+"\"_blank\">Google Fonts help page</a>.<br/> If your theme has it's own "
+"mechanism for embedding Google Fonts or if you prefer to do it manually, "
+"just leave it blank."
 msgstr ""
 
-#: options.php:382
+#: options.php:419
 msgid "Cookie Law consent message"
 msgstr ""
 
-#: options.php:384
+#: options.php:421
 msgid ""
 "Show how your website complies with the EU Cookie Law. It displays a message "
 "at the bottom or the top of the page asking for the user's consent. Read "
@@ -176,110 +197,124 @@ msgid ""
 "htm\" target=\"_blank\">EU legislation on cookies</a>"
 msgstr ""
 
-#: options.php:388
-msgid "Enable"
-msgstr ""
-
-#: options.php:389
+#: options.php:427
 msgid "Show the Cookie Law consent message"
 msgstr ""
 
-#: options.php:395
+#: options.php:433
 msgid "Message style"
 msgstr ""
 
-#: options.php:396
+#: options.php:434
 msgid "Select the style of the message box."
 msgstr ""
 
-#: options.php:400
+#: options.php:438
 msgid "Dark (default)"
 msgstr ""
 
-#: options.php:401
+#: options.php:439
 msgid "Light"
 msgstr ""
 
-#: options.php:402
+#: options.php:440
 msgid "None (I will style it my self)"
 msgstr ""
 
-#: options.php:407
+#: options.php:445
 msgid "Position"
 msgstr ""
 
-#: options.php:408
+#: options.php:446
 msgid "Select the position of the message box."
 msgstr ""
 
-#: options.php:412
+#: options.php:450
 msgid "Bottom"
 msgstr ""
 
-#: options.php:413
+#: options.php:451
 msgid "Top"
 msgstr ""
 
-#: options.php:414
+#: options.php:452
 msgid "Bottom right"
 msgstr ""
 
-#: options.php:419
+#: options.php:457
 msgid "Message"
 msgstr ""
 
-#: options.php:420
-msgid "Change the default message"
+#: options.php:458
+msgid ""
+"Change the default message. If you use WPML and you want a different message "
+"per language, you should enable \"Get message from page\" option below."
 msgstr ""
 
-#: options.php:422
+#: options.php:461
 msgid "We use cookies. By browsing our site you agree to our use of cookies."
 msgstr ""
 
-#: options.php:426
+#: options.php:465
 msgid "Accept text"
 msgstr ""
 
-#: options.php:427
-msgid "Change the \"Accept\" button text."
+#: options.php:466
+msgid ""
+"Change the \"Accept\" button text. If you use WPML and you want a different "
+"wording per language, go to your terms page (as set via \"Read more page\" "
+"option below) and fill in your new value in the custom field \"slash_accept"
+"\"."
 msgstr ""
 
-#: options.php:429
+#: options.php:469
 msgid "Accept"
 msgstr ""
 
-#: options.php:433 options.php:436
+#: options.php:473 options.php:476
 msgid "Read more"
 msgstr ""
 
-#: options.php:434
-msgid "Change the \"read more\" text"
+#: options.php:474
+msgid "Change the \"read more\" text."
 msgstr ""
 
-#: options.php:441
+#: options.php:481
 msgid "Read more page"
 msgstr ""
 
-#: options.php:442
+#: options.php:482
 msgid ""
 "The page with the details about how your website uses cookies. If you don't "
 "select one, then no \"read more\" link will appear."
 msgstr ""
 
-#: options.php:451
+#: options.php:491
+msgid "Get message from page"
+msgstr ""
+
+#: options.php:492
+msgid ""
+"Retrieve the box message form from your \"Read more\" page's excerpt instead "
+"of the plugin's message field. You need to enable excerpt support to pages "
+"from the \"Miscellaneous\" section below. Check this option if you use WPML "
+"and you want to have different consent messages per language."
+msgstr ""
+
+#: options.php:501
 msgid "Loading animation"
 msgstr ""
 
-#: options.php:453
+#: options.php:503
 msgid ""
 "Show a \"Loading\" animation which dissapears when the page is fully loaded."
 msgstr ""
 
-#: options.php:457
+#: options.php:508
 msgid "Enable loader"
 msgstr ""
 
-#: options.php:458
+#: options.php:509
 msgid ""
 "Select whether the loader should be enabled or not. \"Loader with a logo\" "
 "displays a circular spinner with your logo in the middle. If no image is "
@@ -290,27 +325,27 @@ msgid ""
 "and use your own animated GIF."
 msgstr ""
 
-#: options.php:462 options.php:629
+#: options.php:514 options.php:731
 msgid "Disabled"
 msgstr ""
 
-#: options.php:463
+#: options.php:515
 msgid "Loader with a logo"
 msgstr ""
 
-#: options.php:464
+#: options.php:516
 msgid "Custom GIF"
 msgstr ""
 
-#: options.php:465
+#: options.php:517
 msgid "Empty loader"
 msgstr ""
 
-#: options.php:469
+#: options.php:521
 msgid "Image loader"
 msgstr ""
 
-#: options.php:470
+#: options.php:522
 msgid ""
 "If you use a site icon (via <strong>Appearance &rarr; Customize &rarr; Site "
 "Identity &rarr; Site Icon</strong>) it will be used as the loader's image. "
@@ -319,60 +354,74 @@ msgid ""
 "and no more than 160x160 pixels."
 msgstr ""
 
-#: options.php:478
+#: options.php:531
 msgid "Background color"
 msgstr ""
 
-#: options.php:479
+#: options.php:532
 msgid ""
 "The loader's background color. You can use hex (e.g. <code>#FFFFFF</code>) "
 "or rgb/rgba (e.g. <code>rgba(255,255,255,0.8)</code>)."
 msgstr ""
 
-#: options.php:485
+#: options.php:539
 msgid "Spinner background"
 msgstr ""
 
-#: options.php:486
+#: options.php:540
 msgid "The background of the spinner."
 msgstr ""
 
-#: options.php:492
+#: options.php:546
 msgid "Spinner loading color"
 msgstr ""
 
-#: options.php:493
+#: options.php:547
 msgid "The color of the spinner's loading part."
 msgstr ""
 
-#: options.php:499
+#: options.php:553
 msgid "Alt text"
 msgstr ""
 
-#: options.php:500
+#: options.php:554
 msgid "The text to be displayed as the image's alt text."
 msgstr ""
 
-#: options.php:502
+#: options.php:556
 msgid "Loading..."
 msgstr ""
 
-#: options.php:506
+#: options.php:560
+msgid "Hide Loader"
+msgstr ""
+
+#: options.php:561
+msgid ""
+"The text to be displayed if the spinner takes too long. When it gets "
+"clicked, it hides the spinner."
+msgstr ""
+
+#: options.php:564
+msgid "If the spinner keeps loading forever, click to hide it."
+msgstr ""
+
+#: options.php:568
 msgid "Homepage only"
 msgstr ""
 
-#: options.php:507
+#: options.php:569
 msgid ""
 "If checked, it will show the loader only on the homepage. Leave it unchecked "
 "to show it on all your website's pages. This option gets ignored if you "
 "insert the function manually."
 msgstr ""
 
-#: options.php:514
+#: options.php:577
 msgid "Manual add"
 msgstr ""
 
-#: options.php:515
+#: options.php:578
 msgid ""
 "Normally, the function is hooked to the footer via the <code>wp_footer</"
 "code> hook. For better results, you can disable that hook and manually add "
@@ -381,88 +430,120 @@ msgid ""
 "<code>&lt;body&gt;</code> opening."
 msgstr ""
 
-#: options.php:523
+#: options.php:587 options.php:603
 msgid "Miscellaneous"
 msgstr ""
 
-#: options.php:528
-msgid "Remove \"Category:\" from archives"
+#: options.php:592
+msgid "Obfuscate emails"
 msgstr ""
 
-#: options.php:529
-msgid "Gets rid of the word \"Category:\" in front of the Archive title."
+#: options.php:593
+msgid ""
+"Filters the_content to automatically obfuscate email addresses using the <a "
+"href=\"https://developer.wordpress.org/reference/functions/antispambot/\" "
+"target=\"_blank\">antispambot()</a> function."
 msgstr ""
 
-#: options.php:536
+#: options.php:608
+msgid "Remove prefix from archives"
+msgstr ""
+
+#: options.php:609
+msgid ""
+"Gets rid of the word \"Category:\", \"Tag:\" etc in front of the Archive "
+"title."
+msgstr ""
+
+#: options.php:617
 msgid "Excerpt to pages"
 msgstr ""
 
-#: options.php:537
+#: options.php:618
 msgid "Add excerpt support to pages."
 msgstr ""
 
-#: options.php:544
+#: options.php:625
 msgid "Shortcodes in widgets"
 msgstr ""
 
-#: options.php:545
+#: options.php:626
 msgid "Enable use of shortcodes in widgets."
 msgstr ""
 
-#: options.php:554
+#: options.php:635
 msgid "Compatibility"
 msgstr ""
 
-#: options.php:560
+#: options.php:641
 msgid "Old IE Warning"
 msgstr ""
 
-#: options.php:561
+#: options.php:642
 msgid ""
-"If the visitor uses an old version of Internet Explorer (aka IE8 or older) "
-"display a message at the top of the page warning him that he is using an "
-"outdated browser and that he should update to a newer one."
+"If the visitor uses Internet Explorer, display a message at the top of the "
+"page warning him that he is using an outdated browser and that he should "
+"update to a newer one."
 msgstr ""
 
-#: options.php:569
-msgid "Legacy options"
-msgstr ""
-
-#: options.php:573
-msgid "Upload your favicon"
-msgstr ""
-
-#: options.php:574
-msgid ""
-"Since WordPress 4.3, you can use a native Customizer option to upload your "
-"favicon (Under Appearance &rarr; Customize &rarr; Site Identity &rarr; Site "
-"Icon). This option here is kept for legacy reasons, but you should prefer "
-"the WordPress' default."
-msgstr ""
-
-#: options.php:586
+#: options.php:653
 msgid "Google Analytics"
 msgstr ""
 
-#: options.php:590
+#: options.php:657
 msgid "Analytics tracking code"
 msgstr ""
 
-#: options.php:591
+#: options.php:658
 msgid ""
 "Add code for Google Analytics (it will be inserted before the <code>&lt;/"
-"head&gt;</code> tag)."
+"head&gt;</code> tag). You can load scripts only if a specific cookie is set. "
+"Example: <code>&lt;&lt;cookie=eucookie&gt;&gt;YOUR SCRIPT HERE&lt;&lt;/"
+"cookie&gt;&gt;</code>"
 msgstr ""
 
-#: options.php:600
+#: options.php:668
+msgid "Admin overrides"
+msgstr ""
+
+#: options.php:674 slashadmin.php:49
+msgid "None"
+msgstr ""
+
+#: options.php:681
+msgid "Techie user"
+msgstr ""
+
+#: options.php:682
+msgid ""
+"Assigning a user with the \"Techie\" attribute will hide parts of the admin "
+"from everybody else, except for the given user. This includes features like "
+"Site Health, Recovery mode email notifications, Admin update notices and ACF "
+"Settings panel visibility."
+msgstr ""
+
+#: options.php:689
+msgid "Recovery mode email(s)"
+msgstr ""
+
+#: options.php:690
+msgid ""
+"Since WordPress 5.2 there is a built-in feature that detects when a plugin "
+"or theme causes a fatal error on your site, and notifies you with this "
+"automated email. By default, it will be sent to the admin email, unless you "
+"have declared a \"Techie\". To override it, add the alternative address "
+"here. For multiple recipients, separate them with a comma (,)."
+msgstr ""
+
+#: options.php:700
 msgid "Limit revisions"
 msgstr ""
 
-#: options.php:605
+#: options.php:705
 msgid "Limit post revisions"
 msgstr ""
 
-#: options.php:606
+#: options.php:706
 msgid ""
 "Limit the number of revisions that WordPress keeps for each post type. By "
 "default, an infinite number of revisions are stored if a post type supports "
@@ -470,94 +551,125 @@ msgid ""
 "purge the older revisions only after the post is updated."
 msgstr ""
 
-#: options.php:610
+#: options.php:711
 msgid "WordPress default (unlimited revisions)"
 msgstr ""
 
-#: options.php:611
+#: options.php:712
 msgid "1 revision (practically disables it)"
 msgstr ""
 
-#: options.php:612
+#: options.php:713
 msgid "2 revisions"
 msgstr ""
 
-#: options.php:613
+#: options.php:714
 msgid "3 revisions"
 msgstr ""
 
-#: options.php:614
+#: options.php:715
 msgid "4 revisions"
 msgstr ""
 
-#: options.php:615
+#: options.php:716
 msgid "5 revisions"
 msgstr ""
 
-#: options.php:616
+#: options.php:717
 msgid "10 revisions"
 msgstr ""
 
-#: options.php:617
+#: options.php:718
 msgid "20 revisions"
 msgstr ""
 
-#: options.php:618
+#: options.php:719
 msgid "50 revisions"
 msgstr ""
 
-#: options.php:624
+#: options.php:725
 msgid "Prevent updates on old posts"
 msgstr ""
 
-#: options.php:625
+#: options.php:726
 msgid ""
 "Block post updates and deletion if the post is older than a specific period "
 "of time. Applies only to editors (admins can still edit the post as usual)."
 msgstr ""
 
-#: options.php:630
+#: options.php:732
 msgid "After one day"
 msgstr ""
 
-#: options.php:631
+#: options.php:733
 msgid "After one week (7 days)"
 msgstr ""
 
-#: options.php:632
+#: options.php:734
 msgid "After two weeks (14 days)"
 msgstr ""
 
-#: options.php:633
+#: options.php:735
 msgid "After one month (30 days)"
 msgstr ""
 
-#: options.php:640
+#: options.php:743
+msgid "Jetpack settings"
+msgstr ""
+
+#: options.php:748
+msgid "Enable Jetpack development mode"
+msgstr ""
+
+#: options.php:749
+msgid ""
+"With Development Mode, features that do not require a connection to "
+"WordPress.com servers can be activated on a localhost WordPress installation "
+"for testing. Dont' forget to un-check it back when you go live."
+msgstr ""
+
+#: options.php:757
+msgid "Move Jetpack share and like buttons"
+msgstr ""
+
+#: options.php:758
+msgid ""
+"Jetpack, by default, just attaches it's share and like buttons to two "
+"filters: the_content() and the_excerpt(). If you want to manually display "
+"them somewhere else, check this option to remove them. Then, to show them "
+"anywhere you like in your template, use: <br/><code>&lt;?php if "
+"( function_exists( 'sharing_display' ) ) { <br/> sharing_display( '', "
+"true ); <br/>}<br/> if ( class_exists( 'Jetpack_Likes' ) ) {<br/> "
+"$custom_likes = new Jetpack_Likes;<br/> echo $custom_likes->post_likes( '' );"
+"<br/>}?></code>"
+msgstr ""
+
+#: options.php:768
 msgid "Maintenance mode"
 msgstr ""
 
-#: options.php:645
+#: options.php:773
 msgid "Enable maintenance mode"
 msgstr ""
 
-#: options.php:646
+#: options.php:774
 msgid ""
 "If checked, non-Admins will not be able to acess the WordPress backend and "
 "they will see the following message instead. Admins can always login as "
 "usual. Dont' forget to un-check it back when you are done."
 msgstr ""
 
-#: options.php:651
+#: options.php:780
 msgid "Maintenance message"
 msgstr ""
 
-#: options.php:652
+#: options.php:781
 msgid ""
 "The message to be displayed if an non-Admin tries to login while in "
 "maintenance mode."
 msgstr ""
 
-#: options.php:653
+#: options.php:783
 #, php-format
 msgid ""
 "Site undergoing maintainance. Content uploading and editing will not be "
@@ -565,52 +677,52 @@ msgid ""
 "<a href='mailto:%s'>Administrator</a>."
 msgstr ""
 
-#: options.php:669
+#: options.php:801
 msgid "Upload your logo"
 msgstr ""
 
-#: options.php:670
+#: options.php:802
 msgid ""
 "Upload the logo to appear at the login screen of your website. The plugin "
 "will try to automatically adjust the width/height but the suggested "
 "dimensions are <strong>320x80 pixels</strong>."
 msgstr ""
 
-#: options.php:678
+#: options.php:811
 msgid "Fix links at the login screen"
 msgstr ""
 
-#: options.php:679
+#: options.php:812
 msgid ""
 "Fix the links at the wordpress login screen in order to link to your website "
 "instead of wordpress.org."
 msgstr ""
 
-#: options.php:686
+#: options.php:820
 msgid "Go to homepage after login"
 msgstr ""
 
-#: options.php:687
+#: options.php:821
 msgid ""
 "After log-in, redirect users to the website's homepage instead of their "
 "profile page."
 msgstr ""
 
-#: options.php:694
+#: options.php:829
 msgid "Disable Admin Bar for non Admins"
 msgstr ""
 
-#: options.php:695
+#: options.php:830
 msgid ""
 "Disable the Admin Bar for all users except Administrators (applies only to "
 "the front-end)."
 msgstr ""
 
-#: options.php:701 options.php:906
+#: options.php:837 options.php:1093
 msgid "Custom CSS"
 msgstr ""
 
-#: options.php:702
+#: options.php:838
 msgid ""
 "Your custom styles for the login screen (quick referrence for tags you might "
 "want to use: <code>body.login.login-action-login, div#login, div#login h1 a, "
@@ -618,71 +730,71 @@ msgid ""
 "submit, p#nav, p#backtoblog</code>)."
 msgstr ""
 
-#: options.php:712
+#: options.php:849
 msgid "Hide options for non-admins"
 msgstr ""
 
-#: options.php:718
+#: options.php:855
 msgid "Media"
 msgstr ""
 
-#: options.php:719
+#: options.php:856
 msgid "Exclude media"
 msgstr ""
 
-#: options.php:725
+#: options.php:862
 msgid "Comments"
 msgstr ""
 
-#: options.php:726
+#: options.php:863
 msgid "Exclude comments"
 msgstr ""
 
-#: options.php:732
+#: options.php:869
 msgid "Tools"
 msgstr ""
 
-#: options.php:733
+#: options.php:870
 msgid "Exclude tools"
 msgstr ""
 
-#: options.php:739
+#: options.php:876
 msgid "Profile"
 msgstr ""
 
-#: options.php:740
+#: options.php:877
 msgid "Exclude profile"
 msgstr ""
 
-#: options.php:746
+#: options.php:883
 msgid "Posts"
 msgstr ""
 
-#: options.php:747
+#: options.php:884
 msgid "Exclude posts"
 msgstr ""
 
-#: options.php:753
+#: options.php:890
 msgid "Pages"
 msgstr ""
 
-#: options.php:754
+#: options.php:891
 msgid "Exclude pages"
 msgstr ""
 
-#: options.php:760
+#: options.php:897
 msgid "Jetpack"
 msgstr ""
 
-#: options.php:761
+#: options.php:898
 msgid "Exclude Jetpack plugin"
 msgstr ""
 
-#: options.php:767
+#: options.php:904
 msgid "Custom excludes"
 msgstr ""
 
-#: options.php:768
+#: options.php:905
 msgid ""
 "Exclude other options such as custom post types or even the Dashboard. To do "
 "so, add the names separated with commas and no blank spaces like for example "
@@ -690,11 +802,11 @@ msgid ""
 "5 additional items</strong>."
 msgstr ""
 
-#: options.php:775
+#: options.php:913
 msgid "Exclude by CSS"
 msgstr ""
 
-#: options.php:776
+#: options.php:914
 msgid ""
 "If there is an section that you cannot hide with the options above, you can "
 "hide it by adding here its CSS id or class. You can hide multiple elements "
@@ -704,63 +816,83 @@ msgid ""
 "for usability purposes and not for security reasons."
 msgstr ""
 
-#: options.php:782
+#: options.php:921
 msgid "Hide update notices to non Admins"
 msgstr ""
 
-#: options.php:783
+#: options.php:922
 msgid ""
 "Hide the notices for updating Wordpress and other plugins for all users "
 "except from Admins"
 msgstr ""
 
-#: options.php:791
+#: options.php:932
+msgid "Remove tags and categories"
+msgstr ""
+
+#: options.php:938
+msgid "Tags"
+msgstr ""
+
+#: options.php:939
+msgid "Remove tags"
+msgstr ""
+
+#: options.php:946
+msgid "Categories"
+msgstr ""
+
+#: options.php:947
+msgid "Remove categories"
+msgstr ""
+
+#: options.php:956
 msgid "Hide specific pages from non admins"
 msgstr ""
 
-#: options.php:797
+#: options.php:962
 msgid "Hide pages"
 msgstr ""
 
-#: options.php:798
+#: options.php:963
 msgid ""
 "Hide specific pages for non admins. Press \"Ctrl/Cmd+Click\" to select/"
 "deselect multiple pages."
 msgstr ""
 
-#: options.php:807
+#: options.php:973
 msgid "Show extra options to Editors"
 msgstr ""
 
-#: options.php:812
+#: options.php:978
 msgid "Menus"
 msgstr ""
 
-#: options.php:813
+#: options.php:979
 msgid "Allow Editors to manage the website's menus."
 msgstr ""
 
-#: options.php:819
+#: options.php:985
 msgid "Widgets"
 msgstr ""
 
-#: options.php:820
+#: options.php:986
 msgid "Allow Editors to manage the website's widgets."
 msgstr ""
 
-#: options.php:826
+#: options.php:992
 msgid "Customizer"
 msgstr ""
 
-#: options.php:827
+#: options.php:993
 msgid "Allow Editors access to the Theme Customizer."
 msgstr ""
 
-#: options.php:833
+#: options.php:999
 msgid "Background"
 msgstr ""
 
-#: options.php:834
+#: options.php:1000
 msgid ""
 "Allow Editors to change the website's background (check this only if your "
 "theme has support for WordPress' <a href=\"http://codex.wordpress.org/"
@@ -768,86 +900,106 @@ msgid ""
 "\">Custom Background</a> feature)."
 msgstr ""
 
-#: options.php:844
+#: options.php:1007
+msgid "Gravity Forms"
+msgstr ""
+
+#: options.php:1008
+msgid ""
+"Allow Editors to view entries submitted via Gravity Forms (requires Gravity "
+"Forms plugin to be installed, obviously)."
+msgstr ""
+
+#: options.php:1015
+msgid "Remove Gravity Forms \"Add Form\" button"
+msgstr ""
+
+#: options.php:1016
+msgid ""
+" Remove Gravity Forms' \"Add Form\" button from all WYSIWYG editors "
+"(requires Gravity Forms plugin to be installed, obviously)."
+msgstr ""
+
+#: options.php:1027
 msgid "White label Backend"
 msgstr ""
 
-#: options.php:849
+#: options.php:1032
 msgid "Change \"Howdy\""
 msgstr ""
 
-#: options.php:850
+#: options.php:1033
 msgid "Change the \"Howdy\" message at the top right corner of the screen."
 msgstr ""
 
-#: options.php:856
+#: options.php:1039
 msgid "Change footer text"
 msgstr ""
 
-#: options.php:857
+#: options.php:1040
 msgid "Change the footer text (you can use HTML markup)."
 msgstr ""
 
-#: options.php:861
+#: options.php:1044
 msgid "Change the Admin logo"
 msgstr ""
 
-#: options.php:862
+#: options.php:1045
 msgid ""
 "Replace the WordPress logo at the top left of the screen. Suggested image "
 "dimension is <strong>92x92 pixels</strong>."
 msgstr ""
 
-#: options.php:871
+#: options.php:1055
 msgid "Welcome message"
 msgstr ""
 
-#: options.php:873
+#: options.php:1057
 msgid ""
 "Change the Dashboard welcome message. Removes the default welcome message at "
 "the Dashboard and replaces it with your own."
 msgstr ""
 
-#: options.php:877
+#: options.php:1062
 msgid "Your welcome message"
 msgstr ""
 
-#: options.php:878
+#: options.php:1063
 msgid ""
 "Add the content of your custom welcome message (HTML markup is allowed)."
 msgstr ""
 
-#: options.php:885
+#: options.php:1071
 msgid "Add a Dashboard widget"
 msgstr ""
 
-#: options.php:887
+#: options.php:1073
 msgid ""
 "Add a Dashboard Widget to provide general or commercial information to your "
 "clients (for example: your contact info or links to support documentation)."
 msgstr ""
 
-#: options.php:891
+#: options.php:1078
 msgid "Widget title"
 msgstr ""
 
-#: options.php:892
+#: options.php:1079
 msgid "Add the title of the Dashboard widget."
 msgstr ""
 
-#: options.php:898
+#: options.php:1085
 msgid "Widget content"
 msgstr ""
 
-#: options.php:899
+#: options.php:1086
 msgid "Add the content of the Dashboard widget (HTML markup is allowed)."
 msgstr ""
 
-#: options.php:911
+#: options.php:1098
 msgid "Custom CSS for the Admin"
 msgstr ""
 
-#: options.php:912
+#: options.php:1099
 msgid ""
 "The styles that you put here affect only the Admin and they don't get called "
 "at the frontend. Quick referrence for tags you might want to use: "
@@ -855,11 +1007,53 @@ msgid ""
 "<code>div#welcome-panel</code> for the welcome panel."
 msgstr ""
 
-#: options.php:921 options.php:926
+#: options.php:1109
+msgid "Remove scripts"
+msgstr ""
+
+#: options.php:1114
+msgid "Emojis"
+msgstr ""
+
+#: options.php:1115
+msgid "Disable emojis (remove emojis scripts and styles)."
+msgstr ""
+
+#: options.php:1122
+msgid "Disable oEmbed"
+msgstr ""
+
+#: options.php:1123
+msgid ""
+"If you don't use embedded content you can completely disable oEmbeds or load "
+"them only on specific pages."
+msgstr ""
+
+#: options.php:1128
+msgid "Keep it enabled (default)"
+msgstr ""
+
+#: options.php:1129
+msgid "Disable"
+msgstr ""
+
+#: options.php:1130
+msgid "Enable only on single posts, pages and custom posts"
+msgstr ""
+
+#: options.php:1131
+msgid "Enable only on the Home Page"
+msgstr ""
+
+#: options.php:1132
+msgid "Enable everywhere except from archives"
+msgstr ""
+
+#: options.php:1140 options.php:1145
 msgid "DNS prefetching"
 msgstr ""
 
-#: options.php:927
+#: options.php:1146
 msgid ""
 "DNS prefetching notifies the client that there are assets we'll need later "
 "from a specific URL (outside our website's domain) so the browser can "
@@ -876,11 +1070,11 @@ msgid ""
 "Awesome)"
 msgstr ""
 
-#: options.php:938
+#: options.php:1158
 msgid "Prefetch and prerender pages"
 msgstr ""
 
-#: options.php:940
+#: options.php:1160
 msgid ""
 "Link prefetching is a browser mechanism, which utilizes browser idle time to "
 "download or prefetch documents that the user might visit in the near future. "
@@ -893,43 +1087,43 @@ msgid ""
 "with caution."
 msgstr ""
 
-#: options.php:944
+#: options.php:1165
 msgid "Prefetch next page"
 msgstr ""
 
-#: options.php:945
+#: options.php:1166
 msgid "Prefetch next page when on archives."
 msgstr ""
 
-#: options.php:951
+#: options.php:1172
 msgid "Prerender next page"
 msgstr ""
 
-#: options.php:952
+#: options.php:1173
 msgid "Prerender next page when on archives."
 msgstr ""
 
-#: options.php:958
+#: options.php:1179
 msgid "Prefetch homepage"
 msgstr ""
 
-#: options.php:959
+#: options.php:1180
 msgid "Prefetch homepage when on sigle posts and pages."
 msgstr ""
 
-#: options.php:965
+#: options.php:1186
 msgid "Prerender homepage"
 msgstr ""
 
-#: options.php:966
+#: options.php:1187
 msgid "Prerender homepage when on sigle posts and pages."
 msgstr ""
 
-#: options.php:981
+#: options.php:1202
 msgid "Protect mail from harvesters"
 msgstr ""
 
-#: options.php:982
+#: options.php:1203
 msgid ""
 "To disguise an email address, use <code>[slash_mail address=\"yourmail@mail."
 "com\"]</code>.Use <code>[slash_mailto address=\"yourmail@mail.com\"]</code> "
@@ -939,11 +1133,11 @@ msgid ""
 "explanation click on the Documentation tab."
 msgstr ""
 
-#: options.php:989
+#: options.php:1211
 msgid "Show telephone numbers"
 msgstr ""
 
-#: options.php:990
+#: options.php:1212
 msgid ""
 "Show a telephone number in a way that it is clickable. When clicked, if you "
 "are on a mobile device it opens the phone's dialer and if you are on a "
@@ -956,11 +1150,11 @@ msgid ""
 "would output a link \"Call us\" which would make a phone call to +30999999."
 msgstr ""
 
-#: options.php:997
+#: options.php:1220
 msgid "Enable relative URLs"
 msgstr ""
 
-#: options.php:998
+#: options.php:1221
 msgid ""
 "If you develop your site on localhost or on a temporary URL, you might want "
 "to avoid absolute URLs inside posts and pages. That way you don't need to "
@@ -982,13 +1176,13 @@ msgid ""
 "&gt;</code>"
 msgstr ""
 
-#: options.php:1013
+#: options.php:1237
 msgid ""
 "My theme also supports some of this plugin's features. Which one should I "
 "choose?"
 msgstr ""
 
-#: options.php:1015
+#: options.php:1240
 msgid ""
 "It is up to you to decide whether you will use your theme's options or those "
 "provided by this plugin. It is recommended, though, that you keep those "
@@ -998,11 +1192,11 @@ msgid ""
 "between themes."
 msgstr ""
 
-#: options.php:1021
+#: options.php:1247
 msgid "Which shortcodes are available?"
 msgstr ""
 
-#: options.php:1023
+#: options.php:1249
 msgid ""
 "You can enable the following shortcodes:\n"
 "\t\t\t\t\t\t\t\t<br />- <code>[slash_mail address=\"yourmail@mail.com\"]</"
@@ -1037,42 +1231,27 @@ msgid ""
 "\t\t\t\t\t\t"
 msgstr ""
 
-#: options.php:1036
+#: options.php:1263
 msgid "Available functions"
 msgstr ""
 
-#: options.php:1038
+#: options.php:1265
 msgid ""
 "Slash Admin includes the following functions which you can use in your "
 "code:\n"
 "\t\t\t\t\t\t\t\t<br />- <code>slash_dump()</code>. You can use it instead of "
 "<code>var_dump()</code> to wrap the output in <code>&lt;pre&gt;&lt;/pre&gt;</"
-"code>tags, for better readability.\n"
+"code>tags, for better readability. <br />- <code>slash_admin_dump()</code> "
+"does the same thing, only this time the output is only visible to admins "
+"(can be handy if you want to debug a live site).\n"
 "\t\t\t\t\t\t"
 msgstr ""
 
-#: options.php:1046
-msgid "What's wrong with the default WordPress Open Sans fonts?"
-msgstr ""
-
-#: options.php:1048
-msgid ""
-"Since version 3.8 WordPress uses Open Sans Web Font in the admin section and "
-"on all public pages when a user is logged in (for the admin bar). Some times "
-"this causes an issue when you want to use another configuration of Open Sans "
-"for your site. If you use Open Sans in your theme and you notice "
-"inconsistencies in the font's display between logged in and anonymous users "
-"or if you just don't want Open Sans for some reason (e.g. for better speed "
-"or privacy concerns), you can disable the WordPress' default configuration. "
-"Then, you can insert your own configuration of Open Sans either via this "
-"plugin, your theme's options panel or manually."
-msgstr ""
-
-#: options.php:1054
+#: options.php:1274
 msgid "What does hiding options for non-admins means?"
 msgstr ""
 
-#: options.php:1056
+#: options.php:1276
 msgid ""
 "Sometimes you only use certain features of Wordpress. For example, your "
 "website might have comments disabled or not using a certain feature. Also, "
@@ -1083,11 +1262,11 @@ msgid ""
 "only those that concern him."
 msgstr ""
 
-#: options.php:1062
+#: options.php:1283
 msgid "Is it wise to hide update notices from my users?"
 msgstr ""
 
-#: options.php:1064
+#: options.php:1285
 msgid ""
 "Generally speaking, no. Wordpress' default behaviour is probably the best, "
 "that's why the specific option is disabled by default. In some cases, "
@@ -1099,11 +1278,11 @@ msgid ""
 "them via CSS."
 msgstr ""
 
-#: options.php:1070
+#: options.php:1292
 msgid "How does allowing access to appearance settings work?"
 msgstr ""
 
-#: options.php:1072
+#: options.php:1294
 msgid ""
 "You can allow editors access to one or more of the following sub-sections of "
 "the \"Appearance\" section: <br />- Customize<br />- Widgets<br />- "
@@ -1117,49 +1296,44 @@ msgid ""
 "access at all to the Appearance section)."
 msgstr ""
 
-#: options.php:1078
+#: options.php:1301
 msgid "Old browser warning behaves strangely with W3TC plugin"
 msgstr ""
 
-#: options.php:1080
+#: options.php:1303
 msgid ""
 "This is a known issue. When Page Caching is activated in the W3 Total Cache "
 "plugin, the old browser warning becomes unpredictable and it may appear not "
-"only in Internet Explorer 8 but in newer IE versions as well as in Chrome. "
-"To deal with the problem you need to disable either the old IE warning or "
-"the W3TC Page Cache option."
+"only in Internet Explorer but in Chrome. To deal with the problem you need "
+"to disable either the old IE warning or the W3TC Page Cache option."
 msgstr ""
 
-#: options.php:1086
+#: options.php:1310
 msgid "Which are the minimum requirements to run this plugin?"
 msgstr ""
 
-#: options.php:1088
+#: options.php:1312
 msgid ""
 "This plugin has been tested with Wordpress 4.0 and above. It might probably "
 "work with older versions too, but you should always use the latest version "
 "of Wordpress."
 msgstr ""
 
-#: options.php:1093
+#: options.php:1318
 msgid "I found a bug / I have a suggestion or a feature request."
 msgstr ""
 
-#: options.php:1095
+#: options.php:1320
 msgid ""
 "You can post a message at the plugin's <a target=\"_blank\" href=\"http://"
 "wordpress.org/support/plugin/slash-admin\">support forum</a> and I will to "
 "my best to help you out."
 msgstr ""
 
-#: options.php:1158
+#: options.php:1386
 msgid "Use this image"
 msgstr ""
 
-#: slashadmin.php:32
+#: slashadmin.php:37
 msgid "Settings"
-msgstr ""
-
-#: slashadmin.php:44
-msgid "None"
 msgstr ""

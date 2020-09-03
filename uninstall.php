@@ -15,4 +15,3 @@
 	$option_name = 'slashadmin_options';
 
 	delete_option( $option_name );
-?>
