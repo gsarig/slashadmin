@@ -397,14 +397,14 @@ class Slash_Admin_Options {
 			'std'     => '',
 		);
 
-		$this->settings['opensans_fix']            = array( // Font fixes
+		$this->settings['opensans_fix'] = array( // Font fixes
 			'section' => 'appearance',
 			'title'   => '', // Not used for headings.
 			'desc'    => __( 'Fonts', 'slash-admin' ),
 			'type'    => 'heading',
 		);
 
-		$this->settings['custom_fonts']  = array(
+		$this->settings['custom_fonts'] = array(
 			'section' => 'appearance',
 			'title'   => __( 'Insert custom fonts', 'slash-admin' ),
 			'desc'    => __( 'Insert your Google Web Fonts here. You can declare more than one fonts, styles and language subsets. If you use the latest, CSS2 version of Google Fonts, you should copy/paste the full URL that it generates, like for example <code>https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;900&display=swap</code>.<br/> If you prefer the old API, then you must only fill in the part after the "http://fonts.googleapis.com/css?family=" like for example <code>Roboto+Slab:300,400,700|Roboto:300,400,900&display=swap</code>. View more information about the font\'s structure, subsets and weights at the <a href="https://developers.google.com/fonts/docs/getting_started#Overview" target="_blank">Google Fonts help page</a>.<br/> If your theme has it\'s own mechanism for embedding Google Fonts or if you prefer to do it manually, just leave it blank.',
@@ -674,7 +674,9 @@ class Slash_Admin_Options {
 			'0' => __( 'None', 'slash-admin' ),
 		];
 		foreach ( $admins as $admin ) {
-			$admin_list[ $admin->ID ] = $admin->user_login . ' (' . $admin->user_email . ')';
+			if ( in_array( 'administrator', $admin->roles ) ) {
+				$admin_list[ $admin->ID ] = $admin->user_login . ' (' . $admin->user_email . ')';
+			}
 		}
 		$this->settings['slash_techie']        = array(
 			'section' => 'administration',

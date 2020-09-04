@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: WordPress, admin, administration, dashboard, login, analytics, internet explorer, revisions, permission, role, access, fonts, dns prefetching, prefetching, prerendering, white label, cookie law, eu cookie law, site health, loading, obfuscate
 Requires at least: 4.0
 Tested up to: 5.5
-Stable tag: 3.4
+Stable tag: 3.4.1
 License: GPLv2 or later
 
 Dozens of settings aiming at creating a friendlier administration environment for both Administrators and Editors.
@@ -156,6 +156,9 @@ This is a known issue. When Page Caching is activated in the W3 Total Cache plug
 10. The Old Browser warning message 
 
 == Changelog ==
+
+= 3.4.1 =
+* Restrict "techie" users dropdown options to admins only.
 
 = 3.4 =
 * NEW FEATURE: Added an option to assign a specific admin user as "Techie". Doing so, will hide some functionalities from every other admin except from the Techie. Those functionalities include Site Health and ACF settings.
