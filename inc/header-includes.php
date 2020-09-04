@@ -6,6 +6,9 @@ function slashadmin_header() {
 	if ( slash_admin( 'analytics' ) !== '' ) {
 		echo slash_cookie_check( slash_admin( 'analytics' ) );
 	}
+	if ( ! has_site_icon() && slash_admin( 'favicon' ) !== '' ) {
+		echo '<link rel="shortcut icon" href="' . slash_admin( 'favicon' ) . '" />';
+	}
 }
 
 add_action( 'wp_head', 'slashadmin_header' );
