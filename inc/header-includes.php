@@ -22,12 +22,16 @@ add_action( 'wp_head', 'slashadmin_header' );
  * @return string
  */
 function slash_cookie_check( $scripts ) {
+	$cookie_law = slash_admin( 'cookielaw_enable' );
 	preg_match_all( '/<<cookie=(.*?)>>(.*?)<<\/cookie>>/s', $scripts, $match );
 	$output = '';
-	if ( isset( $match[1] ) ) {
+	if ( isset( $match[1] ) && ! empty( $match[1] ) ) {
 		foreach ( $match[1] as $num => $cookie ) {
-
-			if ( isset( $_COOKIE[ $cookie ] ) || $cookie === '0' ) {
+			if ( false !== $cookie_law ) {
+				if ( isset( $_COOKIE[ $cookie ] ) || $cookie === '0' ) {
+					$output .= $match[2][ $num ];
+				}
+			} else {
 				$output .= $match[2][ $num ];
 			}
 		}

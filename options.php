@@ -194,6 +194,29 @@ class Slash_Admin_Options {
 					$(this).css("color", "#999");
 				}
 			});
+		
+			var localEnabled = $("#local_fonts_enabled");
+			var urls = $("#local_fonts").parents("tr");
+			var woff = $("#local_fonts_woff").parents("tr");
+			var google = $("#custom_fonts").parents("tr");
+			if(localEnabled.is(":checked")) {
+				google.hide();
+			} else {
+				urls.hide();
+		        woff.hide();
+			}
+			
+			localEnabled.on("change", function() {
+				if(this.checked) {
+		            urls.show();
+		            woff.show();
+		            google.hide();
+		        } else {
+			        urls.hide();
+			        woff.hide();
+			        google.show();
+		        }
+			});
 			
 			$(".wrap ' . $htag . ', .wrap table").show();
 		
@@ -203,10 +226,6 @@ class Slash_Admin_Options {
 				else
 					$(this).parent().css("background", "none").css("color", "inherit").css("fontWeight", "normal");
 			});
-			
-			// Browser compatibility
-			if ($.browser.mozilla) 
-				$("form").attr("autocomplete", "off");
 		});
 	</script>
 </div>';
@@ -404,14 +423,42 @@ class Slash_Admin_Options {
 			'type'    => 'heading',
 		);
 
+		$this->settings['local_fonts_enabled'] = array( // Local fonts
+			'section' => 'appearance',
+			'title'   => __( 'Local fonts', 'slash-admin' ),
+			'desc'    => __( 'Download webfonts and host them locally using <a href="https://github.com/WPTT/webfont-loader" target="_blank">Webfont Loader</a>.',
+				'slash-admin' ),
+			'type'    => 'checkbox',
+			'std'     => 0,
+		);
+
+		$this->settings['local_fonts'] = array( // Local font URLs
+			'title'   => __( 'Local fonts URLs', 'slash-admin' ),
+			'desc'    => __( 'Paste the full URLs of the fonts. You can add more than one. Each URL should be on its own line.',
+				'slash-admin' ),
+			'std'     => '',
+			'type'    => 'textarea',
+			'section' => 'appearance',
+		);
+
+		$this->settings['local_fonts_woff'] = array( // WOFF support
+			'section' => 'appearance',
+			'title'   => __( 'Support Internet Explorer', 'slash-admin' ),
+			'desc'    => __( 'The wptt_get_webfont_url will - by default - download .woff2 files. However, if you need to support IE you will need to use .woff files instead. To do that, enable this option',
+				'slash-admin' ),
+			'type'    => 'checkbox',
+			'std'     => 0,
+		);
+
 		$this->settings['custom_fonts'] = array(
 			'section' => 'appearance',
-			'title'   => __( 'Insert custom fonts', 'slash-admin' ),
+			'title'   => __( 'Google Fonts URL', 'slash-admin' ),
 			'desc'    => __( 'Insert your Google Web Fonts here. You can declare more than one fonts, styles and language subsets. If you use the latest, CSS2 version of Google Fonts, you should copy/paste the full URL that it generates, like for example <code>https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;900&display=swap</code>.<br/> If you prefer the old API, then you must only fill in the part after the "http://fonts.googleapis.com/css?family=" like for example <code>Roboto+Slab:300,400,700|Roboto:300,400,900&display=swap</code>. View more information about the font\'s structure, subsets and weights at the <a href="https://developers.google.com/fonts/docs/getting_started#Overview" target="_blank">Google Fonts help page</a>.<br/> If your theme has it\'s own mechanism for embedding Google Fonts or if you prefer to do it manually, just leave it blank.',
 				'slash-admin' ),
 			'type'    => 'text',
 			'std'     => '',
 		);
+
 
 		$this->settings['cookielaw_header']   = array( // Cookie law
 			'section' => 'appearance',

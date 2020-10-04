@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: WordPress, admin, administration, dashboard, login, analytics, internet explorer, revisions, permission, role, access, fonts, dns prefetching, prefetching, prerendering, white label, cookie law, eu cookie law, site health, loading, obfuscate
 Requires at least: 4.0
 Tested up to: 5.5
-Stable tag: 3.4.1
+Stable tag: 3.5
 License: GPLv2 or later
 
 Dozens of settings aiming at creating a friendlier administration environment for both Administrators and Editors.
@@ -21,8 +21,7 @@ Slash Admin gathers some common functions that you probably need in most of your
 * Option to convert email addresses characters to HTML entities to block spam bots.
 * Show EU Cookie Law consent message (check screenshots about available options). Since v.3.0 it also supports WPML for different message per language.
 * Add a "Loading" animation which hides itself when the page is fully loaded
-* Unload default WordPress Open Sans font
-* Enqueue your own Google Web Fonts
+* Enqueue your own Google Web Fonts, with option to load it locally for better performance and privacy
 * Get rid of the word "Category:" in front of the Archive title (usually needed if your theme uses the_archive_title()).
 * Add excerpt support to pages.
 * Enable the use of shortcodes in widgets.
@@ -156,6 +155,10 @@ This is a known issue. When Page Caching is activated in the W3 Total Cache plug
 10. The Old Browser warning message 
 
 == Changelog ==
+
+= 3.5 =
+* Added option to locally load External fonts, using [webfont-loader](https://github.com/WPTT/webfont-loader).
+* Fixed a bug with displaying header scripts
 
 = 3.4.1 =
 * Restrict "techie" users dropdown options to admins only.
