@@ -495,7 +495,7 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * @since 1.1.0
 		 */
 		public function get_local_stylesheet_filename() {
-			return md5( $this->get_base_url() . $this->get_base_path() . $this->remote_url );
+			return md5( $this->get_base_url() . $this->get_base_path() . $this->remote_url . $this->font_format );
 		}
 
 		/**
