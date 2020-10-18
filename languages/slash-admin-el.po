@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slash Admin 1.8\n"
-"POT-Creation-Date: 2020-09-04 00:25+0300\n"
-"PO-Revision-Date: 2020-09-04 00:25+0300\n"
+"POT-Creation-Date: 2020-10-18 14:47+0300\n"
+"PO-Revision-Date: 2020-10-18 14:51+0300\n"
 "Last-Translator: Giorgos Sarigiannidis <contact@gsarigiannidis.gr>\n"
 "Language-Team: Giorgos Sarigiannidis <contact@gsarigiannidis.gr>\n"
 "Language: el\n"
@@ -100,7 +100,7 @@ msgstr "Εμφάνιση"
 msgid "Administration"
 msgstr "Διαχείριση"
 
-#: options.php:34 options.php:796
+#: options.php:34 options.php:878
 msgid "Login screen"
 msgstr "Οθόνη σύνδεσης"
 
@@ -116,7 +116,7 @@ msgstr "Παραμετροποίηση Διαχειριστικού"
 msgid "Performance"
 msgstr "Ταχύτητα"
 
-#: options.php:38 options.php:1197
+#: options.php:38 options.php:1255
 msgid "Shortcodes"
 msgstr "Shortcodes"
 
@@ -148,15 +148,15 @@ msgstr "Οι Ρυθμίσεις ενημερώθηκαν."
 msgid "Save Changes"
 msgstr "Αποθήκευση Αλλαγών"
 
-#: options.php:306
+#: options.php:325
 msgid "Upload"
 msgstr "Ανέβασμα"
 
-#: options.php:379
+#: options.php:398
 msgid "Custom Splash page"
 msgstr ""
 
-#: options.php:381
+#: options.php:400
 msgid ""
 "Redirect anonymous users to a static splash page located on a folder in the "
 "root of your WordPress installation. In there you can put plain old HTML or "
@@ -164,34 +164,65 @@ msgid ""
 "with temporary code that should be removed when the site goes on air."
 msgstr ""
 
-#: options.php:386 options.php:426
+#: options.php:405 options.php:473
 msgid "Enable"
 msgstr "Ενεργοποίηση"
 
-#: options.php:387
+#: options.php:406
 msgid "Enable the custom splash page"
 msgstr ""
 
-#: options.php:393
+#: options.php:412
 msgid "Custom splash page folder"
 msgstr ""
 
-#: options.php:394
+#: options.php:413
 msgid ""
 "Fill in the name of the folder where your splash page is. The folder should "
 "be on the root of your WordPress installation. If you leave this blank, the "
 "custom splash functionality won't work."
 msgstr ""
 
-#: options.php:403
+#: options.php:422
 msgid "Fonts"
 msgstr "Γραμματοσειρές"
 
-#: options.php:409
-msgid "Insert custom fonts"
-msgstr "Εισαγωγή γραμματοσειρών"
+#: options.php:428
+msgid "Local fonts"
+msgstr ""
 
-#: options.php:410
+#: options.php:429
+msgid ""
+"Download webfonts and host them locally using <a href=\"https://github.com/"
+"WPTT/webfont-loader\" target=\"_blank\">Webfont Loader</a>."
+msgstr ""
+
+#: options.php:436
+msgid "Local fonts URLs"
+msgstr ""
+
+#: options.php:437
+msgid ""
+"Paste the full URLs of the fonts. You can add more than one. Each URL should "
+"be on its own line."
+msgstr ""
+
+#: options.php:446
+msgid "Support Internet Explorer"
+msgstr ""
+
+#: options.php:447
+msgid ""
+"The wptt_get_webfont_url will - by default - download .woff2 files. However, "
+"if you need to support IE you will need to use .woff files instead. To do "
+"that, enable this option"
+msgstr ""
+
+#: options.php:455
+msgid "Google Fonts URL"
+msgstr "Διεύθυνση URL γραμματοσειρών Google"
+
+#: options.php:456
 msgid ""
 "Insert your Google Web Fonts here. You can declare more than one fonts, "
 "styles and language subsets. If you use the latest, CSS2 version of Google "
@@ -222,11 +253,11 @@ msgstr ""
 "θέμα σας έχει τον δικό του μηχανισμό για την εισαγωγή των Google Fonts ή εάν "
 "προτιμάτε να το κάνετε χειροκίνητα, απλά αφήστε το πεδίο κενό."
 
-#: options.php:419
+#: options.php:466
 msgid "Cookie Law consent message"
 msgstr "Μήνυμα συμμόρφωσης με τη Ευρωπαϊκή οδηγία περί cookies"
 
-#: options.php:421
+#: options.php:468
 msgid ""
 "Show how your website complies with the EU Cookie Law. It displays a message "
 "at the bottom or the top of the page asking for the user's consent. Read "
@@ -240,72 +271,72 @@ msgstr ""
 "legal/cookies/index_en.htm\" target=\"_blank\">Διαβάστε περισσότερα για το "
 "θέμα</a>"
 
-#: options.php:427
+#: options.php:474
 msgid "Show the Cookie Law consent message"
 msgstr ""
 "Να εμφανίζεται το μήνυμα συμμόρφωσης στην Ευρωπαϊκή οδηγία περί cookies"
 
-#: options.php:433
+#: options.php:480
 msgid "Message style"
 msgstr "Μορφή μηνύματος"
 
-#: options.php:434
+#: options.php:481
 msgid "Select the style of the message box."
 msgstr "Επιλέξτε την μορφή του μηνύματος."
 
-#: options.php:438
+#: options.php:485
 msgid "Dark (default)"
 msgstr "Σκοτεινό (προεπιλογή)"
 
-#: options.php:439
+#: options.php:486
 msgid "Light"
 msgstr "Φωτεινό"
 
-#: options.php:440
+#: options.php:487
 msgid "None (I will style it my self)"
 msgstr "Κανένα (θα το μορφοποιήσω μόνος μου)"
 
-#: options.php:445
+#: options.php:492
 msgid "Position"
 msgstr "Θέση"
 
-#: options.php:446
+#: options.php:493
 msgid "Select the position of the message box."
 msgstr "Επιλέξτε τη θέση του μηνύματος."
 
-#: options.php:450
+#: options.php:497
 msgid "Bottom"
 msgstr "Κάτω"
 
-#: options.php:451
+#: options.php:498
 msgid "Top"
 msgstr "Επάνω"
 
-#: options.php:452
+#: options.php:499
 msgid "Bottom right"
 msgstr "Κάτω δεξιά"
 
-#: options.php:457
+#: options.php:504
 msgid "Message"
 msgstr "Μήνυμα"
 
-#: options.php:458
+#: options.php:505
 msgid ""
 "Change the default message. If you use WPML and you want a different message "
 "per language, you should enable \"Get message from page\" option below."
 msgstr ""
 
-#: options.php:461
+#: options.php:508
 msgid "We use cookies. By browsing our site you agree to our use of cookies."
 msgstr ""
 "Ο ιστοχώρος χρησιμοποιεί cookies για τη βελτιστοποίηση της εμπειρίας του "
 "χρήστη. Με τη χρήση αυτού του ιστοχώρου, αποδέχεστε τη χρήση των cookies."
 
-#: options.php:465
+#: options.php:512
 msgid "Accept text"
 msgstr "Κείμενο αποδοχής"
 
-#: options.php:466
+#: options.php:513
 msgid ""
 "Change the \"Accept\" button text. If you use WPML and you want a different "
 "wording per language, go to your terms page (as set via \"Read more page\" "
@@ -313,23 +344,23 @@ msgid ""
 "\"."
 msgstr ""
 
-#: options.php:469
+#: options.php:516
 msgid "Accept"
 msgstr "Αποδοχή"
 
-#: options.php:473 options.php:476
+#: options.php:520 options.php:523
 msgid "Read more"
 msgstr "Περισσότερα"
 
-#: options.php:474
+#: options.php:521
 msgid "Change the \"read more\" text."
 msgstr "Αλλάξτε το κείμενο \"περισσότερα\"."
 
-#: options.php:481
+#: options.php:528
 msgid "Read more page"
 msgstr "Σελίδα λεπτομερειών"
 
-#: options.php:482
+#: options.php:529
 msgid ""
 "The page with the details about how your website uses cookies. If you don't "
 "select one, then no \"read more\" link will appear."
@@ -338,11 +369,11 @@ msgstr ""
 "στον ιστοχώρο σας. Εάν δεν επιλέξετε κάποια σελίδα, τότε ο σύνδεσμος "
 "\"Περισσότερα\" δεν θα εμφανίζεται."
 
-#: options.php:491
+#: options.php:538
 msgid "Get message from page"
 msgstr ""
 
-#: options.php:492
+#: options.php:539
 msgid ""
 "Retrieve the box message form from your \"Read more\" page's excerpt instead "
 "of the plugin's message field. You need to enable excerpt support to pages "
@@ -350,21 +381,21 @@ msgid ""
 "and you want to have different consent messages per language."
 msgstr ""
 
-#: options.php:501
+#: options.php:548
 msgid "Loading animation"
 msgstr "Εφέ φόρτωσης"
 
-#: options.php:503
+#: options.php:550
 msgid ""
 "Show a \"Loading\" animation which dissapears when the page is fully loaded."
 msgstr ""
 "Εμφανίζει ένα κινούμενο εφέ που χάνεται μόλις η σελίδα φορτώσει ολόκληρη."
 
-#: options.php:508
+#: options.php:555
 msgid "Enable loader"
 msgstr "Ενεργοποίηση εφέ φόρτωσης"
 
-#: options.php:509
+#: options.php:556
 msgid ""
 "Select whether the loader should be enabled or not. \"Loader with a logo\" "
 "displays a circular spinner with your logo in the middle. If no image is "
@@ -375,27 +406,27 @@ msgid ""
 "and use your own animated GIF."
 msgstr "Επιλέξτε εάν το εφέ φόρτωσης θα είναι ενεργό ή όχι."
 
-#: options.php:514 options.php:731
+#: options.php:561 options.php:813
 msgid "Disabled"
 msgstr "Μη ενεργό"
 
-#: options.php:515
+#: options.php:562
 msgid "Loader with a logo"
 msgstr "Εφέ φόρτωσης με εμφάνιση λογοτύπου"
 
-#: options.php:516
+#: options.php:563
 msgid "Custom GIF"
 msgstr "Ξεχωριστό GIF"
 
-#: options.php:517
+#: options.php:564
 msgid "Empty loader"
 msgstr "Εφέ φόρτωσης χωρίς εικόνα"
 
-#: options.php:521
+#: options.php:568
 msgid "Image loader"
 msgstr "Εφέ φόρτωσης με εικόνα"
 
-#: options.php:522
+#: options.php:569
 msgid ""
 "If you use a site icon (via <strong>Appearance &rarr; Customize &rarr; Site "
 "Identity &rarr; Site Icon</strong>) it will be used as the loader's image. "
@@ -410,11 +441,11 @@ msgstr ""
 "για το εφέ φόρτωσης, ανεβάστε την εδώ. Η εικόνα θα πρέπει να είναι τετράγωνη "
 "και όχι μεγαλύτερη από 160x160 pixels."
 
-#: options.php:531
+#: options.php:578
 msgid "Background color"
 msgstr "Χρώμα φόντου"
 
-#: options.php:532
+#: options.php:579
 msgid ""
 "The loader's background color. You can use hex (e.g. <code>#FFFFFF</code>) "
 "or rgb/rgba (e.g. <code>rgba(255,255,255,0.8)</code>)."
@@ -423,53 +454,53 @@ msgstr ""
 "HEX (π.χ. <code>#FFFFFF</code>) ή και rgb/rgba (π.χ. "
 "<code>rgba(255,255,255,0.8)</code>)."
 
-#: options.php:539
+#: options.php:586
 msgid "Spinner background"
 msgstr "Χρώμα περιστρεφόμενου κύκλου"
 
-#: options.php:540
+#: options.php:587
 msgid "The background of the spinner."
 msgstr "Το χρώμα του φόντου στον περιστρεφόμενο κύκλo."
 
-#: options.php:546
+#: options.php:593
 msgid "Spinner loading color"
 msgstr "Χρώμα φόρτωσης"
 
-#: options.php:547
+#: options.php:594
 msgid "The color of the spinner's loading part."
 msgstr "Το χρώμα φόρτωσης του περιστρεφόμενου κύκλου."
 
-#: options.php:553
+#: options.php:600
 msgid "Alt text"
 msgstr "Alt text"
 
-#: options.php:554
+#: options.php:601
 msgid "The text to be displayed as the image's alt text."
 msgstr "Εναλλακτικό κείμενο εικόνας (alt text)"
 
-#: options.php:556
+#: options.php:603
 msgid "Loading..."
 msgstr "Φορτώνει..."
 
-#: options.php:560
+#: options.php:607
 msgid "Hide Loader"
 msgstr "Απόκρυψη φόρτωσης"
 
-#: options.php:561
+#: options.php:608
 msgid ""
 "The text to be displayed if the spinner takes too long. When it gets "
 "clicked, it hides the spinner."
 msgstr ""
 
-#: options.php:564
+#: options.php:611
 msgid "If the spinner keeps loading forever, click to hide it."
 msgstr ""
 
-#: options.php:568
+#: options.php:615
 msgid "Homepage only"
 msgstr "Μόνο στην αρχική σελίδα"
 
-#: options.php:569
+#: options.php:616
 msgid ""
 "If checked, it will show the loader only on the homepage. Leave it unchecked "
 "to show it on all your website's pages. This option gets ignored if you "
@@ -480,11 +511,11 @@ msgstr ""
 "Η συγκεκριμένη επιλογή δεν λαμβάνεται υπόψη αν έχετε επιλέξει να εισάγετε το "
 "εφέ χειροκίνητα."
 
-#: options.php:577
+#: options.php:624
 msgid "Manual add"
 msgstr "Χειροκίνητη προσθήκη"
 
-#: options.php:578
+#: options.php:625
 msgid ""
 "Normally, the function is hooked to the footer via the <code>wp_footer</"
 "code> hook. For better results, you can disable that hook and manually add "
@@ -498,57 +529,57 @@ msgstr ""
 "προσθέτοντας το <code>&lt;?php do_action('slash_admin_loader'); ?&gt;</"
 "code>, κατά προτίμηση ακριβώς πριν το άνοιγμα του <code>&lt;body&gt;</code>."
 
-#: options.php:587 options.php:603
+#: options.php:634 options.php:650
 msgid "Miscellaneous"
 msgstr "Διάφορα"
 
-#: options.php:592
+#: options.php:639
 msgid "Obfuscate emails"
 msgstr ""
 
-#: options.php:593
+#: options.php:640
 msgid ""
 "Filters the_content to automatically obfuscate email addresses using the <a "
 "href=\"https://developer.wordpress.org/reference/functions/antispambot/\" "
 "target=\"_blank\">antispambot()</a> function."
 msgstr ""
 
-#: options.php:608
+#: options.php:655
 msgid "Remove prefix from archives"
 msgstr "Αφαιρέσετε το \"Κατηγορία:\" από τα αρχεία"
 
-#: options.php:609
+#: options.php:656
 msgid ""
 "Gets rid of the word \"Category:\", \"Tag:\" etc in front of the Archive "
 "title."
 msgstr ""
 "Αφαιρέστε την λέξη \"Κατηγορία:\" από τους τίτλους των σελίδων Αρχείου."
 
-#: options.php:617
+#: options.php:664
 msgid "Excerpt to pages"
 msgstr "Αποσπάσματα στις Σελίδες"
 
-#: options.php:618
+#: options.php:665
 msgid "Add excerpt support to pages."
 msgstr "Προσθέστε υποστήριξη για Αποσπάσματα (excerpts) στις Σελίδες."
 
-#: options.php:625
+#: options.php:672
 msgid "Shortcodes in widgets"
 msgstr "Shortcodes στα Widgets"
 
-#: options.php:626
+#: options.php:673
 msgid "Enable use of shortcodes in widgets."
 msgstr "Ενεργοποιήστε την υποστήριξη shortcodes στις μικροεφαρμογές (widgets)"
 
-#: options.php:635
+#: options.php:682
 msgid "Compatibility"
 msgstr "Συμβατότητα"
 
-#: options.php:641
+#: options.php:688
 msgid "Old IE Warning"
 msgstr "Προειδοποίηση παλιού ΙΕ"
 
-#: options.php:642
+#: options.php:689
 msgid ""
 "If the visitor uses Internet Explorer, display a message at the top of the "
 "page warning him that he is using an outdated browser and that he should "
@@ -558,15 +589,15 @@ msgstr ""
 "κορυφή της σελίδας που θα τον προειδοποιεί ότι χρησιμοποιεί παλιό "
 "φυλλομετρητή και ότι καλό είναι να αναβαθμίσει σε έναν νεότερο."
 
-#: options.php:653
+#: options.php:700
 msgid "Google Analytics"
 msgstr "Google Analytics"
 
-#: options.php:657
+#: options.php:704
 msgid "Analytics tracking code"
 msgstr "Κώδικας παρακολούθησης του Google Analytics"
 
-#: options.php:658
+#: options.php:705
 msgid ""
 "Add code for Google Analytics (it will be inserted before the <code>&lt;/"
 "head&gt;</code> tag). You can load scripts only if a specific cookie is set. "
@@ -574,19 +605,19 @@ msgid ""
 "cookie&gt;&gt;</code>"
 msgstr ""
 
-#: options.php:668
+#: options.php:715
 msgid "Admin overrides"
 msgstr ""
 
-#: options.php:674 slashadmin.php:49
+#: options.php:721 slashadmin.php:49
 msgid "None"
 msgstr "Καμία"
 
-#: options.php:681
+#: options.php:730
 msgid "Techie user"
 msgstr ""
 
-#: options.php:682
+#: options.php:731
 msgid ""
 "Assigning a user with the \"Techie\" attribute will hide parts of the admin "
 "from everybody else, except for the given user. This includes features like "
@@ -594,11 +625,11 @@ msgid ""
 "Settings panel visibility."
 msgstr ""
 
-#: options.php:689
+#: options.php:738
 msgid "Recovery mode email(s)"
 msgstr ""
 
-#: options.php:690
+#: options.php:739
 msgid ""
 "Since WordPress 5.2 there is a built-in feature that detects when a plugin "
 "or theme causes a fatal error on your site, and notifies you with this "
@@ -607,15 +638,48 @@ msgid ""
 "here. For multiple recipients, separate them with a comma (,)."
 msgstr ""
 
-#: options.php:700
+#: options.php:750
+msgid "Taxonomies"
+msgstr ""
+
+#: options.php:756
+msgid "Term order in posts"
+msgstr ""
+
+#: options.php:757
+msgid ""
+"Set non-hierarchical taxonomies order based on the order added on a post"
+msgstr ""
+
+#: options.php:765
+msgid "Tag support"
+msgstr ""
+
+#: options.php:766
+#, fuzzy
+#| msgid "Remove categories"
+msgid "Remove tags support"
+msgstr "Αφαιρέσετε τις κατηγορίες"
+
+#: options.php:773
+msgid "Category support"
+msgstr ""
+
+#: options.php:774
+#, fuzzy
+#| msgid "Remove categories"
+msgid "Remove category support"
+msgstr "Αφαιρέσετε τις κατηγορίες"
+
+#: options.php:782
 msgid "Limit revisions"
 msgstr "Περιορισμός αναθεωρήσεων"
 
-#: options.php:705
+#: options.php:787
 msgid "Limit post revisions"
 msgstr "Περιορισμός αναθεωρήσεων στα άρθρα"
 
-#: options.php:706
+#: options.php:788
 msgid ""
 "Limit the number of revisions that WordPress keeps for each post type. By "
 "default, an infinite number of revisions are stored if a post type supports "
@@ -628,47 +692,47 @@ msgstr ""
 "περιορίσετε τον αριθμό, το WordPress θα καθαρίσει τις παλιότερες "
 "αναθεωρήσεις μόνο μετά την επόμενη ενημέρωση του άρθρου."
 
-#: options.php:711
+#: options.php:793
 msgid "WordPress default (unlimited revisions)"
 msgstr "Προεπιλογή του WordPress (απεριόριστες αναθεωρήσεις)"
 
-#: options.php:712
+#: options.php:794
 msgid "1 revision (practically disables it)"
 msgstr "1 αναθεώρηση (ουσιαστικά τις απενεργοποιεί)"
 
-#: options.php:713
+#: options.php:795
 msgid "2 revisions"
 msgstr "2 αναθεωρήσεις"
 
-#: options.php:714
+#: options.php:796
 msgid "3 revisions"
 msgstr "3 αναθεωρήσεις"
 
-#: options.php:715
+#: options.php:797
 msgid "4 revisions"
 msgstr "4 αναθεωρήσεις"
 
-#: options.php:716
+#: options.php:798
 msgid "5 revisions"
 msgstr "5 αναθεωρήσεις"
 
-#: options.php:717
+#: options.php:799
 msgid "10 revisions"
 msgstr "10 αναθεωρήσεις"
 
-#: options.php:718
+#: options.php:800
 msgid "20 revisions"
 msgstr "20 αναθεωρήσεις"
 
-#: options.php:719
+#: options.php:801
 msgid "50 revisions"
 msgstr "50 αναθεωρήσεις"
 
-#: options.php:725
+#: options.php:807
 msgid "Prevent updates on old posts"
 msgstr "Απαγόρευση αλλαγών σε παλιά άρθρα"
 
-#: options.php:726
+#: options.php:808
 msgid ""
 "Block post updates and deletion if the post is older than a specific period "
 "of time. Applies only to editors (admins can still edit the post as usual)."
@@ -677,42 +741,42 @@ msgstr ""
 "διαγράφουν άρθρα παλαιότερα από ένα συγκεκριμένο χρονικό διάστημα. Η ρύθμιση "
 "δεν επηρεάζει τους διαχειριστές."
 
-#: options.php:732
+#: options.php:814
 msgid "After one day"
 msgstr "Μετά από μια ημέρα"
 
-#: options.php:733
+#: options.php:815
 msgid "After one week (7 days)"
 msgstr "Μετά από μία εβδομάδα (7 ημέρες)"
 
-#: options.php:734
+#: options.php:816
 msgid "After two weeks (14 days)"
 msgstr "Μετά από δύο εβδομάδες (14 ημέρες)"
 
-#: options.php:735
+#: options.php:817
 msgid "After one month (30 days)"
 msgstr "Μετά από ένα μήνα (30 ημέρες)"
 
-#: options.php:743
+#: options.php:825
 msgid "Jetpack settings"
 msgstr "Jetpack"
 
-#: options.php:748
+#: options.php:830
 msgid "Enable Jetpack development mode"
 msgstr ""
 
-#: options.php:749
+#: options.php:831
 msgid ""
 "With Development Mode, features that do not require a connection to "
 "WordPress.com servers can be activated on a localhost WordPress installation "
 "for testing. Dont' forget to un-check it back when you go live."
 msgstr ""
 
-#: options.php:757
+#: options.php:839
 msgid "Move Jetpack share and like buttons"
 msgstr ""
 
-#: options.php:758
+#: options.php:840
 msgid ""
 "Jetpack, by default, just attaches it's share and like buttons to two "
 "filters: the_content() and the_excerpt(). If you want to manually display "
@@ -724,15 +788,15 @@ msgid ""
 "<br/>}?></code>"
 msgstr ""
 
-#: options.php:768
+#: options.php:850
 msgid "Maintenance mode"
 msgstr "Εργασίες συντήρησης"
 
-#: options.php:773
+#: options.php:855
 msgid "Enable maintenance mode"
 msgstr "Ενεργοποίηση εργασιών συντήρησης"
 
-#: options.php:774
+#: options.php:856
 msgid ""
 "If checked, non-Admins will not be able to acess the WordPress backend and "
 "they will see the following message instead. Admins can always login as "
@@ -744,11 +808,11 @@ msgstr ""
 "όπως συνήθως. Μην ξεχάσετε να επαναφέρετε την επιλογή στο \"ανενεργό\" όταν "
 "τελειώσετε."
 
-#: options.php:780
+#: options.php:862
 msgid "Maintenance message"
 msgstr "Μήνυμα συντήρησης"
 
-#: options.php:781
+#: options.php:863
 msgid ""
 "The message to be displayed if an non-Admin tries to login while in "
 "maintenance mode."
@@ -756,7 +820,7 @@ msgstr ""
 "Το μήνυμα εμφανίζεται εάν κάποιος μη-Διαχειριστής επιχειρήσει να συνδεθεί "
 "κατά τη διάρκεια των εργασιών συντήρησης."
 
-#: options.php:783
+#: options.php:865
 #, php-format
 msgid ""
 "Site undergoing maintainance. Content uploading and editing will not be "
@@ -768,11 +832,11 @@ msgstr ""
 "διευκρινίσεις παρακαλούμε επικοινωνήστε με τον <a href='mailto:"
 "%s'>Διαχειριστή</a> του ιστοχώρου."
 
-#: options.php:801
+#: options.php:883
 msgid "Upload your logo"
 msgstr "Ανεβάστε το λογότυπό σας"
 
-#: options.php:802
+#: options.php:884
 msgid ""
 "Upload the logo to appear at the login screen of your website. The plugin "
 "will try to automatically adjust the width/height but the suggested "
@@ -783,11 +847,11 @@ msgstr ""
 "το ύψος, αλλά παρόλα αυτά οι προτεινόμενες διαστάσεις είναι <strong>320x80 "
 "pixels</strong>."
 
-#: options.php:811
+#: options.php:893
 msgid "Fix links at the login screen"
 msgstr "Διόρθωση συνδέσμων στην οθόνη σύνδεσης"
 
-#: options.php:812
+#: options.php:894
 msgid ""
 "Fix the links at the wordpress login screen in order to link to your website "
 "instead of wordpress.org."
@@ -795,11 +859,11 @@ msgstr ""
 "Διορθώστε τους συνδέσμους που εμφανίζονται στην οθόνη σύνδεσης του Wordpress "
 "ώστε να οδηγούν στον ιστοχώρο σας και όχι στο wordpress.org."
 
-#: options.php:820
+#: options.php:902
 msgid "Go to homepage after login"
 msgstr "Μετάβαση στην αρχική σελίδα μετά τη σύνδεση"
 
-#: options.php:821
+#: options.php:903
 msgid ""
 "After log-in, redirect users to the website's homepage instead of their "
 "profile page."
@@ -807,11 +871,11 @@ msgstr ""
 "Μετά τη σύνδεση, οι χρήστες να ανακατευθύνονται στην αρχική σελίδα του "
 "ιστοχώρου αντί για την σελίδα του προφίλ τους."
 
-#: options.php:829
+#: options.php:911
 msgid "Disable Admin Bar for non Admins"
 msgstr "Απενεργοποίηση Μπάρας Διαχείρισης για τους μη Διαχειριστές"
 
-#: options.php:830
+#: options.php:912
 msgid ""
 "Disable the Admin Bar for all users except Administrators (applies only to "
 "the front-end)."
@@ -820,11 +884,11 @@ msgstr ""
 "Διαχειριστές (αφορά μόνο τις σελίδες που βλέπουν οι επισκέπτες του ιστοχώρου "
 "και όχι το διαχειριστικό περιβάλλον)."
 
-#: options.php:837 options.php:1093
+#: options.php:919 options.php:1151
 msgid "Custom CSS"
 msgstr "Προσαρμοσμένα CSS"
 
-#: options.php:838
+#: options.php:920
 msgid ""
 "Your custom styles for the login screen (quick referrence for tags you might "
 "want to use: <code>body.login.login-action-login, div#login, div#login h1 a, "
@@ -836,71 +900,71 @@ msgstr ""
 "form#loginform, input#user_login.input, input#user_pass.input, input#wp-"
 "submit, p#nav, p#backtoblog</code>)."
 
-#: options.php:849
+#: options.php:931
 msgid "Hide options for non-admins"
 msgstr "Απόκρυψη επιλογών για μη διαχειριστές"
 
-#: options.php:855
+#: options.php:937
 msgid "Media"
 msgstr "Πολυμέσα"
 
-#: options.php:856
+#: options.php:938
 msgid "Exclude media"
 msgstr "Απόκρυψη πολυμέσων"
 
-#: options.php:862
+#: options.php:944
 msgid "Comments"
 msgstr "Σχόλια"
 
-#: options.php:863
+#: options.php:945
 msgid "Exclude comments"
 msgstr "Απόκρυψη σχολίων"
 
-#: options.php:869
+#: options.php:951
 msgid "Tools"
 msgstr "Εργαλεία"
 
-#: options.php:870
+#: options.php:952
 msgid "Exclude tools"
 msgstr "Απόκρυψη εργαλείων"
 
-#: options.php:876
+#: options.php:958
 msgid "Profile"
 msgstr "Προφίλ"
 
-#: options.php:877
+#: options.php:959
 msgid "Exclude profile"
 msgstr "Απόκρυψη προφίλ"
 
-#: options.php:883
+#: options.php:965
 msgid "Posts"
 msgstr "Άρθρα"
 
-#: options.php:884
+#: options.php:966
 msgid "Exclude posts"
 msgstr "Απόκρυψη άρθρων"
 
-#: options.php:890
+#: options.php:972
 msgid "Pages"
 msgstr "Σελίδες"
 
-#: options.php:891
+#: options.php:973
 msgid "Exclude pages"
 msgstr "Απόκρυψη σελίδων"
 
-#: options.php:897
+#: options.php:979
 msgid "Jetpack"
 msgstr "Jetpack"
 
-#: options.php:898
+#: options.php:980
 msgid "Exclude Jetpack plugin"
 msgstr "Απόκρυψη του Jetpack"
 
-#: options.php:904
+#: options.php:986
 msgid "Custom excludes"
 msgstr "Επιπλέον εξαιρέσεις"
 
-#: options.php:905
+#: options.php:987
 msgid ""
 "Exclude other options such as custom post types or even the Dashboard. To do "
 "so, add the names separated with commas and no blank spaces like for example "
@@ -913,11 +977,11 @@ msgstr ""
 "Media,Pages</code> κλπ. Μπορείτε να εξαιρέσετε <strong>έως 5 επιπλέον "
 "επιλογές</strong>."
 
-#: options.php:913
+#: options.php:995
 msgid "Exclude by CSS"
 msgstr "Αφαίρεση μέσω CSS"
 
-#: options.php:914
+#: options.php:996
 msgid ""
 "If there is an section that you cannot hide with the options above, you can "
 "hide it by adding here its CSS id or class. You can hide multiple elements "
@@ -934,11 +998,11 @@ msgstr ""
 "CSS. Θα πρέπει να το χρησιμοποιείτε μόνο για λόγους ευχρηστίας και όχι για "
 "λόγους ασφαλείας."
 
-#: options.php:921
+#: options.php:1003
 msgid "Hide update notices to non Admins"
 msgstr "Απόκρυψη ειδοποιήσεων αναβάθμισης"
 
-#: options.php:922
+#: options.php:1004
 msgid ""
 "Hide the notices for updating Wordpress and other plugins for all users "
 "except from Admins"
@@ -946,35 +1010,15 @@ msgstr ""
 "Κρύψτε τις ειδοποιήσεις για την αναβάθμιση του Wordpress και άλλων προσθέτων "
 "για όλους τους χρήστες εκτός από τους Διαχειριστές"
 
-#: options.php:932
-msgid "Remove tags and categories"
-msgstr ""
-
-#: options.php:938
-msgid "Tags"
-msgstr ""
-
-#: options.php:939
-msgid "Remove tags"
-msgstr ""
-
-#: options.php:946
-msgid "Categories"
-msgstr ""
-
-#: options.php:947
-msgid "Remove categories"
-msgstr "Αφαιρέσετε τις κατηγορίες"
-
-#: options.php:956
+#: options.php:1014
 msgid "Hide specific pages from non admins"
 msgstr "Κρύψτε συγκεκριμένες σελίδες από τους μη-Διαχειριστές"
 
-#: options.php:962
+#: options.php:1020
 msgid "Hide pages"
 msgstr "Απόκρυψη σελίδων"
 
-#: options.php:963
+#: options.php:1021
 msgid ""
 "Hide specific pages for non admins. Press \"Ctrl/Cmd+Click\" to select/"
 "deselect multiple pages."
@@ -982,44 +1026,44 @@ msgstr ""
 "Κρύψτε συγκεκριμένες σελίδες από τους μη-Διαχειριστές. Πατήστε \"Ctrl/Cmd"
 "+Click\" για να επιλέξετε ή να αποεπιλέξετε πολλαπλές σελίδες."
 
-#: options.php:973
+#: options.php:1031
 msgid "Show extra options to Editors"
 msgstr "Προβολή επιπλέον επιλογών στους Αρχισυντάκτες (Editors)"
 
-#: options.php:978
+#: options.php:1036
 msgid "Menus"
 msgstr "Μενού"
 
-#: options.php:979
+#: options.php:1037
 msgid "Allow Editors to manage the website's menus."
 msgstr ""
 "Επιτρέψτε στους Αρχισυντάκτες να διαχειρίζονται τα μενού του ιστοχώρου."
 
-#: options.php:985
+#: options.php:1043
 msgid "Widgets"
 msgstr "Μονάδες"
 
-#: options.php:986
+#: options.php:1044
 msgid "Allow Editors to manage the website's widgets."
 msgstr ""
 "Επιτρέψτε στους Αρχισυντάκτες να διαχειρίζονται τις Μονάδες (Widgets) του "
 "ιστοχώρου."
 
-#: options.php:992
+#: options.php:1050
 msgid "Customizer"
 msgstr "Προσαρμογέας"
 
-#: options.php:993
+#: options.php:1051
 msgid "Allow Editors access to the Theme Customizer."
 msgstr ""
 "Επιτρέψτε στους Αρχισυντάκτες πρόσβαση στις επιλογές Προσαρμογής του "
 "τρέχοντος θέματος."
 
-#: options.php:999
+#: options.php:1057
 msgid "Background"
 msgstr "Φόντο"
 
-#: options.php:1000
+#: options.php:1058
 msgid ""
 "Allow Editors to change the website's background (check this only if your "
 "theme has support for WordPress' <a href=\"http://codex.wordpress.org/"
@@ -1031,53 +1075,53 @@ msgstr ""
 "wordpress.org/Function_Reference/add_theme_support#Custom_Background\" "
 "target=\"_blank\">Custom Background</a> του WordPress)."
 
-#: options.php:1007
+#: options.php:1065
 msgid "Gravity Forms"
 msgstr ""
 
-#: options.php:1008
+#: options.php:1066
 msgid ""
 "Allow Editors to view entries submitted via Gravity Forms (requires Gravity "
 "Forms plugin to be installed, obviously)."
 msgstr ""
 
-#: options.php:1015
+#: options.php:1073
 msgid "Remove Gravity Forms \"Add Form\" button"
 msgstr ""
 
-#: options.php:1016
+#: options.php:1074
 msgid ""
 " Remove Gravity Forms' \"Add Form\" button from all WYSIWYG editors "
 "(requires Gravity Forms plugin to be installed, obviously)."
 msgstr ""
 
-#: options.php:1027
+#: options.php:1085
 msgid "White label Backend"
 msgstr "Παραμετροποίηση διαχειριστικού"
 
-#: options.php:1032
+#: options.php:1090
 msgid "Change \"Howdy\""
 msgstr "Αλλαγή του καλωσορίσματος"
 
-#: options.php:1033
+#: options.php:1091
 msgid "Change the \"Howdy\" message at the top right corner of the screen."
 msgstr "Αλλάξτε το \"Howdy\" που εμφανίζεται ως καλωσόρισμα πάνω δεξιά."
 
-#: options.php:1039
+#: options.php:1097
 msgid "Change footer text"
 msgstr "Αλλάξτε το κείμενο στο τέλος της σελίδας"
 
-#: options.php:1040
+#: options.php:1098
 msgid "Change the footer text (you can use HTML markup)."
 msgstr ""
 "Αλλάξτε το κείμενο στο τέλος της σελίδας του Διαχειριστικού (μπορείτε να "
 "χρησιμοποιήσετε κώδικα HTML)"
 
-#: options.php:1044
+#: options.php:1102
 msgid "Change the Admin logo"
 msgstr "Αλλάξτε το λογότυπο του Διαχειριστικού"
 
-#: options.php:1045
+#: options.php:1103
 msgid ""
 "Replace the WordPress logo at the top left of the screen. Suggested image "
 "dimension is <strong>92x92 pixels</strong>."
@@ -1085,11 +1129,11 @@ msgstr ""
 "Αντικαταστήστε το λογότυπο του WordPress επάνω αριστερά της οθόνης, με το "
 "δικό σας. Προτεινόμενες διαστάσεις:  <strong>92x92 pixels</strong>."
 
-#: options.php:1055
+#: options.php:1113
 msgid "Welcome message"
 msgstr "Καλωσόρισμα"
 
-#: options.php:1057
+#: options.php:1115
 msgid ""
 "Change the Dashboard welcome message. Removes the default welcome message at "
 "the Dashboard and replaces it with your own."
@@ -1097,21 +1141,21 @@ msgstr ""
 "Αλλάξτε το καλωσόρισμα που εμφανίζεται στον Πίνακα ελέγχου. Αφαιρεί το "
 "προεπιλεγμένο μήνυμα και το αντικαθιστά με το δικό σας."
 
-#: options.php:1062
+#: options.php:1120
 msgid "Your welcome message"
 msgstr "Το μήνυμά σας"
 
-#: options.php:1063
+#: options.php:1121
 msgid ""
 "Add the content of your custom welcome message (HTML markup is allowed)."
 msgstr ""
 "Προσθέστε το δικό σας καλωσόρισμα (μπορείτε να χρησιμοποιήσετε κώδικα HTML)"
 
-#: options.php:1071
+#: options.php:1129
 msgid "Add a Dashboard widget"
 msgstr "Νέα Μικροεφαρμογή στον Πίνακα ελέγχου"
 
-#: options.php:1073
+#: options.php:1131
 msgid ""
 "Add a Dashboard Widget to provide general or commercial information to your "
 "clients (for example: your contact info or links to support documentation)."
@@ -1121,29 +1165,29 @@ msgstr ""
 "να εμφανίζετε τα στοιχεία επικοινωνίας σας ή κάποια παραπομπή σε οδηγίες "
 "χρήσης)."
 
-#: options.php:1078
+#: options.php:1136
 msgid "Widget title"
 msgstr "Τίτλος Μικροεφαρμογής"
 
-#: options.php:1079
+#: options.php:1137
 msgid "Add the title of the Dashboard widget."
 msgstr "Προσθέστε τον τίτλο της Μικροεφαρμογής του Πίνακα ελέγχου."
 
-#: options.php:1085
+#: options.php:1143
 msgid "Widget content"
 msgstr "Περιεχόμενο Μικροεφαρμογής"
 
-#: options.php:1086
+#: options.php:1144
 msgid "Add the content of the Dashboard widget (HTML markup is allowed)."
 msgstr ""
 "Προσθέστε το περιεχόμενο της Μικροεφαρμογής του Πίνακα ελέγχου (μπορείτε να "
 "χρησιμοποιήσετε κώδικα HTML)"
 
-#: options.php:1098
+#: options.php:1156
 msgid "Custom CSS for the Admin"
 msgstr "Προσαρμοσμένα CSS για το Διαχειριστικό"
 
-#: options.php:1099
+#: options.php:1157
 msgid ""
 "The styles that you put here affect only the Admin and they don't get called "
 "at the frontend. Quick referrence for tags you might want to use: "
@@ -1155,53 +1199,53 @@ msgstr ""
 "<code>div#slashadmin_dashboard_widget</code>για την Μικροεφαρμογή στον "
 "Πίνακα ελέγχου και <code>div#welcome-panel</code> για το Καλωσόρισμα."
 
-#: options.php:1109
+#: options.php:1167
 msgid "Remove scripts"
 msgstr ""
 
-#: options.php:1114
+#: options.php:1172
 msgid "Emojis"
 msgstr ""
 
-#: options.php:1115
+#: options.php:1173
 msgid "Disable emojis (remove emojis scripts and styles)."
 msgstr ""
 
-#: options.php:1122
+#: options.php:1180
 msgid "Disable oEmbed"
 msgstr "Απενεργοποίηση oEmbed"
 
-#: options.php:1123
+#: options.php:1181
 msgid ""
 "If you don't use embedded content you can completely disable oEmbeds or load "
 "them only on specific pages."
 msgstr ""
 
-#: options.php:1128
+#: options.php:1186
 msgid "Keep it enabled (default)"
 msgstr "Διατήρηση προεπιλογών του WordPress (προεπιλογή)"
 
-#: options.php:1129
+#: options.php:1187
 msgid "Disable"
 msgstr "Απενεργοποίηση"
 
-#: options.php:1130
+#: options.php:1188
 msgid "Enable only on single posts, pages and custom posts"
 msgstr ""
 
-#: options.php:1131
+#: options.php:1189
 msgid "Enable only on the Home Page"
 msgstr ""
 
-#: options.php:1132
+#: options.php:1190
 msgid "Enable everywhere except from archives"
 msgstr ""
 
-#: options.php:1140 options.php:1145
+#: options.php:1198 options.php:1203
 msgid "DNS prefetching"
 msgstr "DNS prefetching"
 
-#: options.php:1146
+#: options.php:1204
 msgid ""
 "DNS prefetching notifies the client that there are assets we'll need later "
 "from a specific URL (outside our website's domain) so the browser can "
@@ -1230,11 +1274,11 @@ msgstr ""
 "\t\t\t\t\t<code>//maxcdn.bootstrapcdn.com</code> (MaxCDN, χρησιμοποιείται "
 "από το Font Awesome)"
 
-#: options.php:1158
+#: options.php:1216
 msgid "Prefetch and prerender pages"
 msgstr "Prefetch και prerender σελίδων"
 
-#: options.php:1160
+#: options.php:1218
 msgid ""
 "Link prefetching is a browser mechanism, which utilizes browser idle time to "
 "download or prefetch documents that the user might visit in the near future. "
@@ -1255,45 +1299,45 @@ msgstr ""
 "καλέσει. Για το λόγο αυτό, το prerendering καλό είναι να χρησιμοποείται με "
 "σύνεση."
 
-#: options.php:1165
+#: options.php:1223
 msgid "Prefetch next page"
 msgstr "Prefetch επόμενης σελίδας"
 
-#: options.php:1166
+#: options.php:1224
 msgid "Prefetch next page when on archives."
 msgstr "Prefetch επόμενης σελίδας όταν βρισκόμαστε σε σελίδες αρχείων."
 
-#: options.php:1172
+#: options.php:1230
 msgid "Prerender next page"
 msgstr "Prerender επόμενης σελίδας"
 
-#: options.php:1173
+#: options.php:1231
 msgid "Prerender next page when on archives."
 msgstr "Prerender επόμενης σελίδας όταν βρισκόμαστε σε σελίδες αρχείων."
 
-#: options.php:1179
+#: options.php:1237
 msgid "Prefetch homepage"
 msgstr "Prefetch αρχικής σελίδας"
 
-#: options.php:1180
+#: options.php:1238
 msgid "Prefetch homepage when on sigle posts and pages."
 msgstr ""
 "Prefetch αρχικής σελίδας όταν βρισκόμαστε σε μεμονωμένα άρθρα και σελίδες."
 
-#: options.php:1186
+#: options.php:1244
 msgid "Prerender homepage"
 msgstr "Prerender αρχικής σελίδας"
 
-#: options.php:1187
+#: options.php:1245
 msgid "Prerender homepage when on sigle posts and pages."
 msgstr ""
 "Prerender αρχικής σελίδας όταν βρισκόμαστε σε μεμονωμένα άρθρα και σελίδες."
 
-#: options.php:1202
+#: options.php:1260
 msgid "Protect mail from harvesters"
 msgstr "Προστασία των e-mail από spammers"
 
-#: options.php:1203
+#: options.php:1261
 msgid ""
 "To disguise an email address, use <code>[slash_mail address=\"yourmail@mail."
 "com\"]</code>.Use <code>[slash_mailto address=\"yourmail@mail.com\"]</code> "
@@ -1310,11 +1354,11 @@ msgstr ""
 "αυτόματα το email του χρήστη που έχει δημιουργήσει την τρέχουσα σελίδα/"
 "άρθρο. Για πιο αναλυτική περιγραφή δείτε την καρτέλα \"Βοήθεια\"."
 
-#: options.php:1211
+#: options.php:1269
 msgid "Show telephone numbers"
 msgstr "Εμφάνιση τηλεφωνικών αριθμών"
 
-#: options.php:1212
+#: options.php:1270
 msgid ""
 "Show a telephone number in a way that it is clickable. When clicked, if you "
 "are on a mobile device it opens the phone's dialer and if you are on a "
@@ -1337,11 +1381,11 @@ msgstr ""
 "\"Τηλεφωνήστε μας\"]</code> θα εμφάνιζε link \"Τηλεφωνήστε μας\" που θα "
 "έκανε κλήση στο +30999999."
 
-#: options.php:1220
+#: options.php:1278
 msgid "Enable relative URLs"
 msgstr "Χρήση σχετικών URL"
 
-#: options.php:1221
+#: options.php:1279
 msgid ""
 "If you develop your site on localhost or on a temporary URL, you might want "
 "to avoid absolute URLs inside posts and pages. That way you don't need to "
@@ -1381,7 +1425,7 @@ msgstr ""
 "<code>&lt;img src=\"http://www.yourdomain.com/wp-content/themes/childtheme/"
 "images/image.png\" /&gt;</code>"
 
-#: options.php:1237
+#: options.php:1295
 msgid ""
 "My theme also supports some of this plugin's features. Which one should I "
 "choose?"
@@ -1389,7 +1433,7 @@ msgstr ""
 "Το θέμα μου υποστηρίζει ήδη κάποιες από τις λειτουργίες αυτού του πρόσθετου. "
 "Ποιές να διαλέξω;"
 
-#: options.php:1240
+#: options.php:1298
 msgid ""
 "It is up to you to decide whether you will use your theme's options or those "
 "provided by this plugin. It is recommended, though, that you keep those "
@@ -1406,11 +1450,11 @@ msgstr ""
 "ξαναπεράσετε. Αντίθετα, έχοντάς τες σε ένα αυτόνομο πρόσθετο διατηρείτε τις "
 "επιλογές μεταξύ διαφορετικών θεμάτων."
 
-#: options.php:1247
+#: options.php:1305
 msgid "Which shortcodes are available?"
 msgstr "Ποια shortcodes είναι διαθέσιμα;"
 
-#: options.php:1249
+#: options.php:1307
 msgid ""
 "You can enable the following shortcodes:\n"
 "\t\t\t\t\t\t\t\t<br />- <code>[slash_mail address=\"yourmail@mail.com\"]</"
@@ -1474,11 +1518,11 @@ msgstr ""
 "get_stylesheet_directory_uri(); ?&gt;</code>.\n"
 "\t\t\t\t\t\t"
 
-#: options.php:1263
+#: options.php:1321
 msgid "Available functions"
 msgstr "Διαθέσιμα functions"
 
-#: options.php:1265
+#: options.php:1323
 msgid ""
 "Slash Admin includes the following functions which you can use in your "
 "code:\n"
@@ -1500,11 +1544,11 @@ msgstr ""
 "\n"
 "\t\t\t\t\t\t"
 
-#: options.php:1274
+#: options.php:1332
 msgid "What does hiding options for non-admins means?"
 msgstr "Τί ακριβώς κάνει η απόκρυψη επιλογών για τους μη διαχειριστές;"
 
-#: options.php:1276
+#: options.php:1334
 msgid ""
 "Sometimes you only use certain features of Wordpress. For example, your "
 "website might have comments disabled or not using a certain feature. Also, "
@@ -1524,12 +1568,12 @@ msgstr ""
 "μπορεί να δει τις κρυφές επιλογές, κάτι που τον βοηθά να εστιάσει μόνο σε "
 "αυτές που τον αφορούν."
 
-#: options.php:1283
+#: options.php:1341
 msgid "Is it wise to hide update notices from my users?"
 msgstr ""
 "Είναι σωστό να κρύβω τις ειδοποιήσεις αναβάθμισης από τους χρήστες μου;"
 
-#: options.php:1285
+#: options.php:1343
 msgid ""
 "Generally speaking, no. Wordpress' default behaviour is probably the best, "
 "that's why the specific option is disabled by default. In some cases, "
@@ -1550,11 +1594,11 @@ msgstr ""
 "της συγκεκριμένης ρύθμισης δεν θα αφαιρέσει τις ειδοποιήσεις για τους μη-"
 "διαχειριστές - απλά θα τις κρύψει μέσω CSS."
 
-#: options.php:1292
+#: options.php:1350
 msgid "How does allowing access to appearance settings work?"
 msgstr "Πώς λειτουργεί η πρόσβαση στις επιλογές Εμφάνισης;"
 
-#: options.php:1294
+#: options.php:1352
 msgid ""
 "You can allow editors access to one or more of the following sub-sections of "
 "the \"Appearance\" section: <br />- Customize<br />- Widgets<br />- "
@@ -1581,11 +1625,11 @@ msgstr ""
 "του WordPress και διατηρεί τις παραπάνω επιλογές απενεργοποιημένες (έτσι οι "
 "Αρχισυντάκτες δεν έχουν καμία πρόσβαση στην ενότητα \"Εμφάνιση\")."
 
-#: options.php:1301
+#: options.php:1359
 msgid "Old browser warning behaves strangely with W3TC plugin"
 msgstr "Η προειδοποίηση παλιού φυλλομετρητή δεν συνεργάζεται καλά με το W3TC"
 
-#: options.php:1303
+#: options.php:1361
 msgid ""
 "This is a known issue. When Page Caching is activated in the W3 Total Cache "
 "plugin, the old browser warning becomes unpredictable and it may appear not "
@@ -1599,11 +1643,11 @@ msgstr ""
 "απενεργοποιήσετε ένα από τα δύο - είτε την επιλογή προειδοποίησης από το "
 "Slash Admin είτε την επιλογή Page Caching από το W3TC."
 
-#: options.php:1310
+#: options.php:1368
 msgid "Which are the minimum requirements to run this plugin?"
 msgstr "Ποιές είναι οι ελάχιστες απαιτήσεις για να τρέξω αυτό το πρόσθετο;"
 
-#: options.php:1312
+#: options.php:1370
 msgid ""
 "This plugin has been tested with Wordpress 4.0 and above. It might probably "
 "work with older versions too, but you should always use the latest version "
@@ -1613,12 +1657,12 @@ msgstr ""
 "λειτουργεί και με παλαιότερες εκδόσεις, αλλά καλό είναι να χρησιμοποιείτε "
 "πάντα την τελευταία έκδοση του WordPress."
 
-#: options.php:1318
+#: options.php:1376
 msgid "I found a bug / I have a suggestion or a feature request."
 msgstr ""
 "Βρήκα ένα πρόβλημα / έχω μια πρόταση ή θα ήθελα να ζητήσω μια νέα λειτουργία."
 
-#: options.php:1320
+#: options.php:1378
 msgid ""
 "You can post a message at the plugin's <a target=\"_blank\" href=\"http://"
 "wordpress.org/support/plugin/slash-admin\">support forum</a> and I will to "
@@ -1628,13 +1672,16 @@ msgstr ""
 "wordpress.org/support/plugin/slash-admin\">φόρουμ υποστήριξης</a> του "
 "προσθέτου και θα κάνω ό,τι μπορώ για να σας βοηθήσω."
 
-#: options.php:1386
+#: options.php:1444
 msgid "Use this image"
 msgstr "Χρήση αυτής της εικόνας"
 
 #: slashadmin.php:37
 msgid "Settings"
 msgstr "Ρυθμίσεις"
+
+#~ msgid "Insert custom fonts"
+#~ msgstr "Εισαγωγή γραμματοσειρών"
 
 #~ msgid "What's wrong with the default WordPress Open Sans fonts?"
 #~ msgstr ""

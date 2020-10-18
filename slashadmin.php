@@ -3,7 +3,7 @@
  * Plugin Name: Slash Admin
  * Plugin URI: http://wordpress.org/plugins/slash-admin/
  * Description: Slash Admin lets you change various different options in a WordPress website, keeps them active even if you switch your theme and helps you create a friendlier Admin Panel for you and your editors. 
- * Version: 3.5.1
+ * Version: 3.6
  * Author: Giorgos Sarigiannidis
  * Author URI: http://www.gsarigiannidis.gr
  * Text Domain: slash-admin
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'SLASH_ADMIN_VERSION', '3.5.1' );
+define( 'SLASH_ADMIN_VERSION', '3.6' );
 
 load_plugin_textdomain( 'slash-admin', false, basename( dirname( __FILE__ ) ) . '/languages' ); // Localize it
 
@@ -69,6 +69,12 @@ function is_slash_techie() {
 
 	return ! ( $techie_id && '0' !== $techie_id && $current_id !== intval( $techie_id ) );
 }
+
+// Autoload Classes
+include_once dirname( __FILE__ ) . '/inc/autoloader.php';
+
+// Set non-hierarchical taxonomies order based on the order added on a post
+include_once dirname( __FILE__ ) . '/inc/taxonomy-order.php';
 
 // Header includes (Google Analytics code)
 include_once dirname( __FILE__ ) . '/inc/header-includes.php';

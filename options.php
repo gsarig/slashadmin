@@ -728,7 +728,7 @@ class Slash_Admin_Options {
 		$this->settings['slash_techie']        = array(
 			'section' => 'administration',
 			'title'   => __( 'Techie user', 'slash-admin' ),
-			'desc'    => __( 'Assigning a user with the "Techie" attribute will hide parts of the admin from everybody else, except for the given user. This includes features like Site Health, Recovery mode email notifications, Admin update notices and ACF Settings panel visibility.',
+			'desc'    => __( 'Assigning a user with the "Techie" attribute will hide parts of the admin from everybody else, except for the given user. This includes features like Site Health, Recovery mode email notifications, Admin update notices, plugin and theme auto-update email notifications and ACF Settings panel visibility.',
 				'slash-admin' ),
 			'type'    => 'select',
 			'std'     => '0',
@@ -741,6 +741,39 @@ class Slash_Admin_Options {
 			'std'     => '',
 			'type'    => 'text',
 			'section' => 'administration',
+		);
+
+		// Taxonomies
+		$this->settings['taxonomy_settings_heading'] = array(
+			'title'   => '',
+			'section' => 'administration',
+			'desc'    => __( 'Taxonomies', 'slash-admin' ),
+			'type'    => 'heading',
+		);
+
+		$this->settings['taxonomy_order'] = array(
+			'section' => 'administration',
+			'title'   => __( 'Term order in posts', 'slash-admin' ),
+			'desc'    => __( 'Set non-hierarchical taxonomies order based on the order added on a post',
+				'slash-admin' ),
+			'type'    => 'checkbox',
+			'std'     => 0,
+		);
+
+		$this->settings['remove_tags'] = array(
+			'section' => 'administration',
+			'title'   => __( 'Tag support', 'slash-admin' ),
+			'desc'    => __( 'Remove tags support', 'slash-admin' ),
+			'type'    => 'checkbox',
+			'std'     => 0,
+		);
+
+		$this->settings['remove_categories'] = array(
+			'section' => 'administration',
+			'title'   => __( 'Category support', 'slash-admin' ),
+			'desc'    => __( 'Remove category support', 'slash-admin' ),
+			'type'    => 'checkbox',
+			'std'     => 0,
 		);
 
 		$this->settings['limit_revisions_header'] = array(
@@ -970,30 +1003,6 @@ class Slash_Admin_Options {
 			'title'   => __( 'Hide update notices to non Admins', 'slash-admin' ),
 			'desc'    => __( 'Hide the notices for updating Wordpress and other plugins for all users except from Admins',
 				'slash-admin' ),
-			'type'    => 'checkbox',
-			'std'     => 0,
-		);
-
-		// Disable tags and categories
-		$this->settings['disable_taxonomies'] = array(
-			'section' => 'backend_usability',
-			'title'   => '', // Not used for headings.
-			'desc'    => __( 'Remove tags and categories', 'slash-admin' ),
-			'type'    => 'heading',
-		);
-
-		$this->settings['remove_tags'] = array(
-			'section' => 'backend_usability',
-			'title'   => __( 'Tags', 'slash-admin' ),
-			'desc'    => __( 'Remove tags', 'slash-admin' ),
-			'type'    => 'checkbox',
-			'std'     => 0,
-		);
-
-		$this->settings['remove_categories'] = array(
-			'section' => 'backend_usability',
-			'title'   => __( 'Categories', 'slash-admin' ),
-			'desc'    => __( 'Remove categories', 'slash-admin' ),
 			'type'    => 'checkbox',
 			'std'     => 0,
 		);

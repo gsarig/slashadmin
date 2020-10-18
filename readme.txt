@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: WordPress, admin, administration, dashboard, login, analytics, internet explorer, revisions, permission, role, access, fonts, dns prefetching, prefetching, prerendering, white label, cookie law, eu cookie law, site health, loading, obfuscate
 Requires at least: 4.0
 Tested up to: 5.5
-Stable tag: 3.5.1
+Stable tag: 3.6
 License: GPLv2 or later
 
 Dozens of settings aiming at creating a friendlier administration environment for both Administrators and Editors.
@@ -30,9 +30,11 @@ Slash Admin gathers some common functions that you probably need in most of your
 *Administration*
 
 * Insert Google Analytics tracking code (so as you don't have to remember re-entering it in case you switch themes in the future)
-* Hide Site Health from everyone except from a selected Admin
+* Hide Site Health from everyone except from a selected Admin ([read more](https://www.gsarigiannidis.gr/how-to-hide-wordpress-site-health-from-everyone-but-you/))
 * Hide ACF options from everyone except from the selected Admin
-* Since WordPress 5.2 there is a built-in feature that detects when a plugin or theme causes a fatal error on your site, and notifies you with this automated email. By default, it will be sent to the admin email. Slash Admin allows you to override it (you can also add multiple recipients if you like)
+* Since WordPress 5.2 there is a built-in feature that detects when a plugin or theme causes a fatal error on your site, and notifies you with this automated email. By default, it will be sent to the admin email. Slash Admin allows you to override it (you can also add multiple recipients if you like). [Read more](https://www.gsarigiannidis.gr/how-to-hide-wordpress-site-health-from-everyone-but-you/)
+* Change the address that receives the Plugin and Theme auto-update email notifications
+* Make WordPress respect the order of the tags you insert in a post ([read more](https://www.gsarigiannidis.gr/wordpress-post-tags-order))
 * Limit the number of revisions that WordPress keeps for each post (keeps the database cleaner)
 * Prevent Post Updates and Deletion After a Set Period. Useful if you have many editors or in cases where an editor's account is compromised, adding spam code to the posts (by disallowing editing of older posts you limit the damage)
 * Enable Jetpack development mode
@@ -155,6 +157,10 @@ This is a known issue. When Page Caching is activated in the W3 Total Cache plug
 10. The Old Browser warning message 
 
 == Changelog ==
+
+= 3.6 =
+* NEW FEATURE: Make WordPress respect the order of the tags you insert in a post
+* IMPROVEMENT: Change the address that receives the Plugin and Theme auto-update email notifications
 
 = 3.5.1 =
 * Updated webfont-loader script, which fixes bug [#7](https://github.com/WPTT/webfont-loader/issues/7)
