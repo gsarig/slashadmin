@@ -547,7 +547,7 @@ class Slash_Admin_Options {
 			'title'   => '', // Not used for headings.
 			'desc'    => __( 'Loading animation', 'slash-admin' ),
 			'type'    => 'heading',
-			'para'    => __( 'Show a "Loading" animation which dissapears when the page is fully loaded.',
+			'para'    => __( 'Show a "Loading" animation which disappears when the page is fully loaded.',
 				'slash-admin' ),
 		);
 		$this->settings['loading_enabled'] = array(
@@ -619,13 +619,18 @@ class Slash_Admin_Options {
 			'std'     => 0,
 		);
 
-		$this->settings['loading_manual'] = array(
+		$this->settings['loading_position'] = array(
 			'section' => 'appearance',
-			'title'   => __( 'Manual add', 'slash-admin' ),
-			'desc'    => __( 'Normally, the function is hooked to the footer via the <code>wp_footer</code> hook. For better results, you can disable that hook and manually add the loader to your template using <code>&lt;?php do_action(\'slash_admin_loader\'); ?&gt;</code>, prefferably right after your <code>&lt;body&gt;</code> opening.',
+			'title'   => __( 'Loading position', 'slash-admin' ),
+			'desc'    => __( 'By default, the function utilizes WordPress\'s <code>wp_body_open()</code> hook to load the script right after the opening of the <code>&lt;body&gt;</code> tag. As this is a new addition to WordPress, though (since v. 5.2), older themes might not support the hook. If that is the case for you, you can either load it on the footer via the <code>wp_footer</code> hook or manually add it to your template using <code>&lt;?php do_action(\'slash_admin_loader\'); ?&gt;</code>, wherever you like.',
 				'slash-admin' ),
-			'type'    => 'checkbox',
+			'type'    => 'select',
 			'std'     => 0,
+			'choices' => array(
+				'wp_body_open'       => __( 'Top of the page', 'slash-admin' ),
+				'wp_footer'          => __( 'Footer', 'slash-admin' ),
+				'slash_admin_loader' => __( 'Manual', 'slash-admin' ),
+			),
 		);
 
 		$this->settings['frontend_misc']   = array( // Frontend Misc
@@ -686,10 +691,15 @@ class Slash_Admin_Options {
 		$this->settings['oldie_warning'] = array( // Hide update notices for all but Admins
 			'section' => 'appearance',
 			'title'   => __( 'Old IE Warning', 'slash-admin' ),
-			'desc'    => __( 'If the visitor uses Internet Explorer, display a message at the top of the page warning him that he is using an outdated browser and that he should update to a newer one.',
+			'desc'    => __( 'If the visitor uses Internet Explorer, display a warning.<br/> <code>Discreet</code> appears at the top of the page and can be closed by the user. <code>Aggressive</code> covers the entire page and cannot be closed.',
 				'slash-admin' ),
-			'type'    => 'checkbox',
-			'std'     => 0,
+			'type'    => 'select',
+			'choices' => array(
+				'disabled'   => __( 'Disabled', 'slash-admin' ),
+				'discreet'   => __( 'Discreet', 'slash-admin' ),
+				'aggressive' => __( 'Aggressive', 'slash-admin' ),
+			),
+			'std'     => 'disabled',
 		);
 
 		/* Administration
@@ -697,12 +707,29 @@ class Slash_Admin_Options {
 		$this->settings['google_analytics'] = array(
 			'section' => 'administration',
 			'title'   => '', // Not used for headings.
-			'desc'    => __( 'Google Analytics', 'slash-admin' ),
+			'desc'    => __( 'Inject scripts', 'slash-admin' ),
 			'type'    => 'heading',
+			'para'    => __( 'Add code in the site\'s header (e.g. for Google Analytics), body and footer. You can load scripts only if a specific cookie is set. Example: <code>&lt;&lt;cookie=eucookie&gt;&gt;YOUR SCRIPT HERE&lt;&lt;/cookie&gt;&gt;</code>',
+				'slash-admin' ),
 		);
 		$this->settings['analytics']        = array(
-			'title'   => __( 'Analytics tracking code', 'slash-admin' ),
-			'desc'    => __( 'Add code for Google Analytics (it will be inserted before the <code>&lt;/head&gt;</code> tag). You can load scripts only if a specific cookie is set. Example: <code>&lt;&lt;cookie=eucookie&gt;&gt;YOUR SCRIPT HERE&lt;&lt;/cookie&gt;&gt;</code>',
+			'title'   => __( 'Header code', 'slash-admin' ),
+			'desc'    => __( 'It will be inserted before the <code>&lt;/head&gt;</code> tag).', 'slash-admin' ),
+			'std'     => '',
+			'type'    => 'textarea',
+			'section' => 'administration',
+		);
+		$this->settings['scripts_body']     = array(
+			'title'   => __( 'Body code', 'slash-admin' ),
+			'desc'    => __( 'It will be injected right after the <code>&lt;body&gt;</code> opening. It requires that the theme uses the <a href="https://developer.wordpress.org/reference/functions/wp_body_open/" target="_blank">wp_body_open</a> hook.',
+				'slash-admin' ),
+			'std'     => '',
+			'type'    => 'textarea',
+			'section' => 'administration',
+		);
+		$this->settings['scripts_footer']   = array(
+			'title'   => __( 'Footer code', 'slash-admin' ),
+			'desc'    => __( 'It will be inserted at the footer before the closing of the <code>&lt;/body&gt;</code> tag.',
 				'slash-admin' ),
 			'std'     => '',
 			'type'    => 'textarea',

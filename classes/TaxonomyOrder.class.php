@@ -2,11 +2,7 @@
 
 namespace SlashAdmin;
 
-use wpdb;
-
 class TaxonomyOrder {
-
-	private wpdb $wpdb;
 
 	/**
 	 * Respect the order by which non-hierarchical terms are being added to a post.
@@ -18,8 +14,12 @@ class TaxonomyOrder {
 
 	public $taxonomies = [];
 	public $post_types = [];
+	private $wpdb;
 
 	public function __construct( $post_types = [], $taxonomies = [] ) {
+		if ( ! Settings::option( 'taxonomy_order' ) ) {
+			return;
+		}
 		global $wpdb;
 		$this->wpdb       = $wpdb;
 		$this->post_types = $post_types;

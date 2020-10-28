@@ -1,5 +1,7 @@
 <?php
 
+use SlashAdmin\Settings;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
@@ -8,7 +10,7 @@ if ( slash_admin( 'editors_allow_menus' ) || slash_admin( 'editors_allow_widgets
 
 	// Allow editors to view theme options
 	function slashadmin_add_caps() {
-		foreach ( slashadmin_editor_roles() as $role ) {
+		foreach ( Settings::editorRoles() as $role ) {
 			if ( $role && ! $role->has_cap( 'edit_theme_options' ) ) {
 				$role->add_cap( 'edit_theme_options' );
 			}
@@ -22,7 +24,11 @@ if ( slash_admin( 'editors_allow_menus' ) || slash_admin( 'editors_allow_widgets
 
 		if ( ! current_user_can( 'activate_plugins' ) && is_user_logged_in() ) { // Check if current user is an administrator. If not:
 			// Call the editors-allow.js script
-			wp_enqueue_script( 'editors-allow-scripts', plugins_url( 'js/editors-allow.js', dirname( __FILE__ ) ), array( 'jquery' ), '1.0', true );
+			wp_enqueue_script( 'editors-allow-scripts',
+				plugins_url( 'js/editors-allow.js', dirname( __FILE__ ) ),
+				array( 'jquery' ),
+				'1.0',
+				true );
 			// Set the variables
 			$themes       = 'li#menu-appearance.wp-has-submenu li a[href="themes.php"]';
 			$submenu      = 'li#menu-appearance.wp-has-submenu a.wp-has-submenu';
@@ -84,7 +90,7 @@ if ( slash_admin( 'editors_allow_menus' ) || slash_admin( 'editors_allow_widgets
 } else {
 	// If no option is selected and if the editor has access to the theme options, revoke that access
 	function slashadmin_remove_caps() {
-		foreach ( slashadmin_editor_roles() as $role ) {
+		foreach ( Settings::editorRoles() as $role ) {
 			if ( $role && $role->has_cap( 'edit_theme_options' ) ) {
 				$role->remove_cap( 'edit_theme_options' );
 			}
@@ -131,8 +137,9 @@ function slashadmin_gravityforms_permissions() {
 	 *  Remove Gravity Forms' "Add Form" button from all WYSIWYG editors
 	 */
 	if ( is_plugin_active( 'gravityforms/gravityforms.php' ) && slash_admin( 'editors_gravityforms_remove_button' ) && ! function_exists( 'slash_bypass_gravityforms_permissions' ) ) {
-		add_filter( 'gform_display_add_form_button', function () {
-			return false;
-		} );
+		add_filter( 'gform_display_add_form_button',
+			function () {
+				return false;
+			} );
 	}
 }

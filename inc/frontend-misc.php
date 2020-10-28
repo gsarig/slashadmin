@@ -4,33 +4,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-/**
- * Obfuscate emails
- *
- * @param $title
- *
- * @return string|void
- */
-
-function slash_obfuscate_email( $content ) {
-	$pattern = "/[a-zA-Z\d]*@[a-zA-Z\d]*\.[a-zA-Z\.]*/";
-	preg_match_all( $pattern, $content, $matches );
-
-	$content = preg_replace_callback( $pattern,
-		function ( $matches ) {
-			return antispambot( $matches[0] );
-		},
-		$content
-	);
-
-	return $content;
-}
-
-if ( slash_admin( 'obfuscate_email' ) ) {
-	add_filter( 'the_content', 'slash_obfuscate_email' );
-}
-
-
 /*
  * Remove "Category:" from archives
  */

@@ -1,5 +1,7 @@
 <?php
 
+use SlashAdmin\Settings;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
@@ -7,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( slash_admin( 'hide_update_notices' ) == 1 ) {
 
 	function my_admin_theme_style() {
-		if ( ! current_user_can( 'manage_options' ) || ! is_slash_techie() ) {
+		if ( ! current_user_can( 'manage_options' ) || ! Settings::isTechie() ) {
 			echo '<style>.update-nag, .updated { display: none; }</style>';
 		}
 	}
@@ -15,24 +17,6 @@ if ( slash_admin( 'hide_update_notices' ) == 1 ) {
 	add_action( 'admin_enqueue_scripts', 'my_admin_theme_style' );
 	add_action( 'login_enqueue_scripts', 'my_admin_theme_style' );
 }
-
-// Change the email that receives the plugin update notifications
-function slashadmin_auto_plugin_theme_update_email( $email, $type, $successful_updates, $failed_updates ) {
-	$techie_id = slash_admin( 'slash_techie' );
-	if ( $techie_id && '0' !== $techie_id ) {
-		$user         = get_users( [
-			'include' => [ intval( $techie_id ) ],
-		] );
-		$techie_email = $user[0]->user_email;
-		if ( $techie_email ) {
-			$email['to'] = $techie_email;
-		}
-	}
-
-	return $email;
-}
-
-add_filter( 'auto_plugin_theme_update_email', 'slashadmin_auto_plugin_theme_update_email', 10, 4 );
 
 // Remove unnecessary options for non-admins
 if ( slash_admin( 'exclude_links' ) && slash_admin( 'exclude_comments' ) && slash_admin( 'exclude_media' ) && slash_admin( 'exclude_posts' ) && slash_admin( 'exclude_tools' ) && slash_admin( 'exclude_pages' ) && slash_admin( 'exclude_profile' ) == 0 ) {

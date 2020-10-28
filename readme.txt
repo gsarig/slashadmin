@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: WordPress, admin, administration, dashboard, login, analytics, internet explorer, revisions, permission, role, access, fonts, dns prefetching, prefetching, prerendering, white label, cookie law, eu cookie law, site health, loading, obfuscate
 Requires at least: 4.0
 Tested up to: 5.5
-Stable tag: 3.6
+Stable tag: 3.7
 License: GPLv2 or later
 
 Dozens of settings aiming at creating a friendlier administration environment for both Administrators and Editors.
@@ -12,6 +12,8 @@ Dozens of settings aiming at creating a friendlier administration environment fo
 == Description ==
 
 Slash Admin gathers some common functions that you probably need in most of your websites. The plugin lets you change various different options in a WordPress website, keeps them active even if you switch your theme and helps you create a friendlier Admin Panel for you and your editors.
+
+If you are lost with the many options, here's a presentation of the plugin's [best features](https://www.gsarigiannidis.gr/slash-admin-best-features/).
 
 = Features =
 
@@ -157,6 +159,12 @@ This is a known issue. When Page Caching is activated in the W3 Total Cache plug
 10. The Old Browser warning message 
 
 == Changelog ==
+
+= 3.7 =
+* Internet Explorer warning refactoring improvements
+* Loader refactoring and performance improvements
+* EU Cookie popup refactoring and performance improvements
+* Added option to inject scripts on body and footer, along with the already existing option for the header
 
 = 3.6 =
 * NEW FEATURE: Make WordPress respect the order of the tags you insert in a post
@@ -362,6 +370,9 @@ Bug fix
 * First release!
 
 == Upgrade Notice ==
+
+= 3.7 =
+A big refactoring of four features: Internet Explorer warning message, site loading animation, eu cookie message and Script includes have been rewritten for better performance and usability. Also, a refactoring of the rest of the code has began, without affecting the functionality, though.
 
 = 3.4 =
 This is a relatively big update, with the most important addition being the option to assign a specific admin user as "Techie". Doing so, will hide some functionalities from every other admin except from the Techie. Those functionalities include Site Health and ACF settings. Also, deprecated "Add favicon" option has been removed, and the same happened to the option to Unload Open Sans, as WordPress ditched it a few versions ago. Check the changelog for the full list of additions and changes.

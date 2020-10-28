@@ -3,18 +3,20 @@
  * Plugin Name: Slash Admin
  * Plugin URI: http://wordpress.org/plugins/slash-admin/
  * Description: Slash Admin lets you change various different options in a WordPress website, keeps them active even if you switch your theme and helps you create a friendlier Admin Panel for you and your editors. 
- * Version: 3.6
+ * Version: 3.7
  * Author: Giorgos Sarigiannidis
  * Author URI: http://www.gsarigiannidis.gr
  * Text Domain: slash-admin
  * Domain Path: /languages
 */
 
+use SlashAdmin\{ACF, Consent, Email, Fonts, InternetExplorer, Loader, Scripts, SiteHealth, TaxonomyOrder};
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'SLASH_ADMIN_VERSION', '3.6' );
+define( 'SLASH_ADMIN_VERSION', '3.7' );
 
 load_plugin_textdomain( 'slash-admin', false, basename( dirname( __FILE__ ) ) . '/languages' ); // Localize it
 
@@ -54,33 +56,18 @@ function slashadmin_get_pages( $multiple = false ) {
 	return $pages;
 }
 
-// Get the roles with editing priviledges
-function slashadmin_editor_roles() {
-	return array(
-		get_role( 'editor' ),
-		get_role( 'shop_manager' ),
-	);
-}
-
-// Check if current user is set as "Techie"
-function is_slash_techie() {
-	$techie_id  = slash_admin( 'slash_techie' );
-	$current_id = get_current_user_id();
-
-	return ! ( $techie_id && '0' !== $techie_id && $current_id !== intval( $techie_id ) );
-}
-
 // Autoload Classes
 include_once dirname( __FILE__ ) . '/inc/autoloader.php';
 
-// Set non-hierarchical taxonomies order based on the order added on a post
-include_once dirname( __FILE__ ) . '/inc/taxonomy-order.php';
-
-// Header includes (Google Analytics code)
-include_once dirname( __FILE__ ) . '/inc/header-includes.php';
-
-// Cookie law consent
-include_once dirname( __FILE__ ) . '/inc/cookie-law.php';
+new TaxonomyOrder();
+new InternetExplorer();
+new Loader();
+new Consent();
+new Fonts();
+new SiteHealth();
+new ACF();
+new Scripts();
+new Email();
 
 // Login screen
 include_once dirname( __FILE__ ) . '/inc/login.php';
@@ -103,20 +90,11 @@ include_once dirname( __FILE__ ) . '/inc/white-label.php';
 // Shortcodes
 include_once dirname( __FILE__ ) . '/inc/shortcodes.php';
 
-// Add Old IE Warning
-include_once dirname( __FILE__ ) . '/inc/oldiewarning.php';
-
-// Font fixes
-include_once dirname( __FILE__ ) . '/inc/font-fixes.php';
-
 // Performance
 include_once dirname( __FILE__ ) . '/inc/performance.php';
 
 // Admin notices
 include_once dirname( __FILE__ ) . '/inc/admin_notices.php';
-
-// Loader
-include_once dirname( __FILE__ ) . '/inc/loader.php';
 
 // Developer functions
 include_once dirname( __FILE__ ) . '/inc/dev-functions.php';
@@ -132,12 +110,3 @@ include_once dirname( __FILE__ ) . '/inc/jetpack.php';
 
 // Custom Splash Page
 include_once dirname( __FILE__ ) . '/inc/custom-splash.php';
-
-// Recovery mode email
-include_once dirname( __FILE__ ) . '/inc/recovery-mode-email.php';
-
-// Hide Site Health
-include_once dirname( __FILE__ ) . '/inc/site-health.php';
-
-// ACF Mods
-include_once dirname( __FILE__ ) . '/inc/acf-mods.php';
