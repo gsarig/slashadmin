@@ -729,7 +729,7 @@ class Slash_Admin_Options {
 		);
 		$this->settings['scripts_footer']   = array(
 			'title'   => __( 'Footer code', 'slash-admin' ),
-			'desc'    => __( 'It will be inserted at the footer before the closing of the <code>&lt;/body&gt;</code> tag.',
+			'desc'    => __( 'It will be inserted at the footer before the closing of the <code>&lt;/footer&gt;</code> tag.',
 				'slash-admin' ),
 			'std'     => '',
 			'type'    => 'textarea',

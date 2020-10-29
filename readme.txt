@@ -2,9 +2,10 @@
 Contributors: gsarig
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4EYE898NTMYKE
 Tags: WordPress, admin, administration, dashboard, login, analytics, internet explorer, revisions, permission, role, access, fonts, dns prefetching, prefetching, prerendering, white label, cookie law, eu cookie law, site health, loading, obfuscate
-Requires at least: 4.0
+Requires at least: 5.0
+Requires PHP: 7.2
 Tested up to: 5.5
-Stable tag: 3.7
+Stable tag: 3.7.1
 License: GPLv2 or later
 
 Dozens of settings aiming at creating a friendlier administration environment for both Administrators and Editors.
@@ -159,6 +160,9 @@ This is a known issue. When Page Caching is activated in the W3 Total Cache plug
 10. The Old Browser warning message 
 
 == Changelog ==
+
+= 3.7.1 =
+* Updated plugin minimum requirements
 
 = 3.7 =
 * Internet Explorer warning refactoring improvements
