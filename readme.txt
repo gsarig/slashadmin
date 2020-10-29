@@ -3,7 +3,7 @@ Contributors: gsarig
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4EYE898NTMYKE
 Tags: WordPress, admin, administration, dashboard, login, analytics, internet explorer, revisions, permission, role, access, fonts, dns prefetching, prefetching, prerendering, white label, cookie law, eu cookie law, site health, loading, obfuscate
 Requires at least: 5.0
-Requires PHP: 7.2
+Requires PHP: 7.0
 Tested up to: 5.5
 Stable tag: 3.7.1
 License: GPLv2 or later
