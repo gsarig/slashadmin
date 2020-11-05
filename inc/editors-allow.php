@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-if ( slash_admin( 'editors_allow_menus' ) || slash_admin( 'editors_allow_widgets' ) || slash_admin( 'editors_allow_customizer' ) || slash_admin( 'editors_allow_background' ) == 1 ) {
+if ( slash_admin( 'editors_allow_menus' ) || slash_admin( 'editors_allow_widgets' ) || slash_admin( 'editors_allow_customizer' ) || slash_admin( 'editors_allow_background' ) ) {
 
 	// Allow editors to view theme options
 	function slashadmin_add_caps() {
@@ -21,7 +21,6 @@ if ( slash_admin( 'editors_allow_menus' ) || slash_admin( 'editors_allow_widgets
 
 	// Call the script that hides the unwanted options from the Admin interface
 	function editors_allow_scripts() {
-
 		if ( ! current_user_can( 'activate_plugins' ) && is_user_logged_in() ) { // Check if current user is an administrator. If not:
 			// Call the editors-allow.js script
 			wp_enqueue_script( 'editors-allow-scripts',
@@ -34,29 +33,29 @@ if ( slash_admin( 'editors_allow_menus' ) || slash_admin( 'editors_allow_widgets
 			$submenu      = 'li#menu-appearance.wp-has-submenu a.wp-has-submenu';
 			$themes_front = 'li#wp-admin-bar-themes';
 
-			if ( slash_admin( 'editors_allow_menus' ) == 0 ) {
+			if ( ! slash_admin( 'editors_allow_menus' ) ) {
 				$menus       = 'li#menu-appearance.wp-has-submenu li a[href="nav-menus.php"]';
 				$menus_front = 'li#wp-admin-bar-menus';
 			} else {
 				$menus       = '';
 				$menus_front = '';
 			}
-			if ( slash_admin( 'editors_allow_widgets' ) == 0 ) {
-				$widgets       = 'li#menu-appearance.wp-has-submenu li a[href="widgets.php"]';
+			if ( ! slash_admin( 'editors_allow_widgets' ) ) {
+				$widgets       = 'li#menu-appearance.wp-has-submenu li a[href^="widgets.php"]';
 				$widgets_front = 'li#wp-admin-bar-widgets';
 			} else {
 				$widgets       = '';
 				$widgets_front = '';
 			}
-			if ( slash_admin( 'editors_allow_customizer' ) == 0 ) {
-				$customizer       = 'li#menu-appearance.wp-has-submenu li a[href="customize.php"]';
+			if ( ! slash_admin( 'editors_allow_customizer' ) ) {
+				$customizer       = 'li#menu-appearance.wp-has-submenu li a[href^="customize.php"]';
 				$customizer_front = 'li#wp-admin-bar-customize';
 			} else {
 				$customizer       = '';
 				$customizer_front = '';
 			}
-			if ( slash_admin( 'editors_allow_background' ) == 0 ) {
-				$background       = 'li#menu-appearance.wp-has-submenu li a[href="themes.php?page=custom-background"]';
+			if ( ! slash_admin( 'editors_allow_background' ) ) {
+				$background       = 'li#menu-appearance.wp-has-submenu li a[href*="background"]';
 				$background_front = 'li#wp-admin-bar-background';
 			} else {
 				$background       = '';
