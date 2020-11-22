@@ -46,7 +46,7 @@ class Email {
 		$techie_id = Settings::option( 'slash_techie' );
 		if ( $techie_id && '0' !== $techie_id ) {
 			$user         = get_users( [
-				'include' => [ intval( $techie_id ) ],
+				'include' => [ (int) $techie_id ],
 			] );
 			$techie_email = $user[0]->user_email;
 			if ( $techie_email ) {
@@ -89,7 +89,7 @@ class Email {
 			$output = array_filter( explode( ',', $overrides ), 'is_email' );
 		} elseif ( $techie_id && '0' !== $techie_id ) {
 			$user   = get_users( [
-				'include' => [ intval( $techie_id ) ],
+				'include' => [ (int) $techie_id ],
 			] );
 			$output = $user[0]->user_email;
 		}

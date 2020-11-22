@@ -51,7 +51,7 @@ class TaxonomyOrder {
 						'term_taxonomy_id' => $term_id,
 					];
 					$data  = [
-						'term_order' => intval( $index ),
+						'term_order' => (int) $index,
 					];
 					$this->wpdb->update( $this->wpdb->prefix . 'term_relationships', $data, $where );
 				}

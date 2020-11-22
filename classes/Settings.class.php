@@ -28,7 +28,7 @@ class Settings {
 		$techie_id  = self::option( 'slash_techie' );
 		$current_id = get_current_user_id();
 
-		return ! ( $techie_id && '0' !== $techie_id && $current_id !== intval( $techie_id ) );
+		return ! ( $techie_id && '0' !== $techie_id && $current_id !== (int) $techie_id );
 	}
 
 	/**
