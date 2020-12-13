@@ -116,10 +116,8 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Get a new instance of the object for a new URL.
 		 *
 		 * @access public
-		 *
-		 * @param string $url The remote URL.
-		 *
 		 * @since 1.1.0
+		 * @param string $url The remote URL.
 		 */
 		public function __construct( $url = '' ) {
 			$this->remote_url = $url;
@@ -135,8 +133,8 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Fallback to the remote URL if we were unable to write the file locally.
 		 *
 		 * @access public
-		 * @return string
 		 * @since 1.1.0
+		 * @return string
 		 */
 		public function get_url() {
 
@@ -159,8 +157,8 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Get the local stylesheet URL.
 		 *
 		 * @access public
-		 * @return string
 		 * @since 1.1.0
+		 * @return string
 		 */
 		public function get_local_stylesheet_url() {
 			if ( ! $this->local_stylesheet_url ) {
@@ -170,7 +168,6 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 					$this->get_local_stylesheet_path()
 				);
 			}
-
 			return $this->local_stylesheet_url;
 		}
 
@@ -178,8 +175,8 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Get styles with fonts downloaded locally.
 		 *
 		 * @access public
-		 * @return string
 		 * @since 1.0.0
+		 * @return string
 		 */
 		public function get_styles() {
 
@@ -219,8 +216,8 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Get local stylesheet contents.
 		 *
 		 * @access public
-		 * @return string|false Returns the remote URL contents.
 		 * @since 1.1.0
+		 * @return string|false Returns the remote URL contents.
 		 */
 		public function get_local_stylesheet_contents() {
 			$local_path = $this->get_local_stylesheet_path();
@@ -236,7 +233,6 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 
 			ob_start();
 			include $local_path;
-
 			return ob_get_clean();
 		}
 
@@ -244,8 +240,8 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Get remote file contents.
 		 *
 		 * @access public
-		 * @return string Returns the remote URL contents.
 		 * @since 1.0.0
+		 * @return string Returns the remote URL contents.
 		 */
 		public function get_remote_url_contents() {
 
@@ -267,16 +263,11 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 
 			// Early exit if there was an error.
 			if ( is_wp_error( $response ) ) {
-				return;
+				return '';
 			}
 
 			// Get the CSS from our response.
 			$contents = wp_remote_retrieve_body( $response );
-
-			// Early exit if there was an error.
-			if ( is_wp_error( $contents ) ) {
-				return;
-			}
 
 			return $contents;
 		}
@@ -285,8 +276,8 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Download files mentioned in our CSS locally.
 		 *
 		 * @access public
-		 * @return array Returns an array of remote URLs and their local counterparts.
 		 * @since 1.0.0
+		 * @return array Returns an array of remote URLs and their local counterparts.
 		 */
 		public function get_local_files_from_css() {
 			$font_files = $this->get_remote_files_from_css();
@@ -375,8 +366,8 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Get font files from the CSS.
 		 *
 		 * @access public
-		 * @return array Returns an array of font-families and the font-files used.
 		 * @since 1.0.0
+		 * @return array Returns an array of font-families and the font-files used.
 		 */
 		public function get_remote_files_from_css() {
 
@@ -430,7 +421,6 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 				// We're using array_flip here instead of array_unique for improved performance.
 				$result[ $font_family ] = array_flip( array_flip( $result[ $font_family ] ) );
 			}
-
 			return $result;
 		}
 
@@ -438,8 +428,8 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Write the CSS to the filesystem.
 		 *
 		 * @access protected
-		 * @return string|false Returns the absolute path of the file on success, or false on fail.
 		 * @since 1.1.0
+		 * @return string|false Returns the absolute path of the file on success, or false on fail.
 		 */
 		protected function write_stylesheet() {
 			$file_path  = $this->get_local_stylesheet_path();
@@ -473,14 +463,13 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Get the stylesheet path.
 		 *
 		 * @access public
-		 * @return string
 		 * @since 1.1.0
+		 * @return string
 		 */
 		public function get_local_stylesheet_path() {
 			if ( ! $this->local_stylesheet_path ) {
 				$this->local_stylesheet_path = $this->get_fonts_folder() . '/' . $this->get_local_stylesheet_filename() . '.css';
 			}
-
 			return $this->local_stylesheet_path;
 		}
 
@@ -491,8 +480,8 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * This way we can avoid issues with sites changing their URL, or the wp-content path etc.
 		 *
 		 * @access public
-		 * @return string
 		 * @since 1.1.0
+		 * @return string
 		 */
 		public function get_local_stylesheet_filename() {
 			return md5( $this->get_base_url() . $this->get_base_path() . $this->remote_url . $this->font_format );
@@ -502,11 +491,9 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Set the font-format to be used.
 		 *
 		 * @access public
-		 *
-		 * @param string $format The format to be used. Use "woff" or "woff2".
-		 *
-		 * @return void
 		 * @since 1.0.0
+		 * @param string $format The format to be used. Use "woff" or "woff2".
+		 * @return void
 		 */
 		public function set_font_format( $format = 'woff2' ) {
 			$this->font_format = $format;
@@ -516,8 +503,8 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Check if the local stylesheet exists.
 		 *
 		 * @access public
-		 * @return bool
 		 * @since 1.1.0
+		 * @return bool
 		 */
 		public function local_file_exists() {
 			return ( ! file_exists( $this->get_local_stylesheet_path() ) );
@@ -527,15 +514,13 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Get the base path.
 		 *
 		 * @access public
-		 * @return string
 		 * @since 1.1.0
+		 * @return string
 		 */
 		public function get_base_path() {
 			if ( ! $this->base_path ) {
-				$this->base_path = apply_filters( 'wptt_get_local_fonts_base_path',
-					$this->get_filesystem()->wp_content_dir() );
+				$this->base_path = apply_filters( 'wptt_get_local_fonts_base_path', $this->get_filesystem()->wp_content_dir() );
 			}
-
 			return $this->base_path;
 		}
 
@@ -543,14 +528,13 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Get the base URL.
 		 *
 		 * @access public
-		 * @return string
 		 * @since 1.1.0
+		 * @return string
 		 */
 		public function get_base_url() {
 			if ( ! $this->base_url ) {
 				$this->base_url = apply_filters( 'wptt_get_local_fonts_base_url', content_url() );
 			}
-
 			return $this->base_url;
 		}
 
@@ -558,14 +542,13 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Get the subfolder name.
 		 *
 		 * @access public
-		 * @return string
 		 * @since 1.1.0
+		 * @return string
 		 */
 		public function get_subfolder_name() {
 			if ( ! $this->subfolder_name ) {
 				$this->subfolder_name = apply_filters( 'wptt_get_local_fonts_subfolder_name', 'fonts' );
 			}
-
 			return $this->subfolder_name;
 		}
 
@@ -582,7 +565,6 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 					$this->fonts_folder .= '/' . $this->get_subfolder_name();
 				}
 			}
-
 			return $this->fonts_folder;
 		}
 
@@ -594,8 +576,8 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * and we avoid edge cases where unused files remain in the server.
 		 *
 		 * @access public
-		 * @return void
 		 * @since 1.1.0
+		 * @return void
 		 */
 		public function schedule_cleanup() {
 			if ( ! is_multisite() || ( is_multisite() && is_main_site() ) ) {
@@ -611,8 +593,8 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * This runs as part of a cleanup routine.
 		 *
 		 * @access public
-		 * @return bool
 		 * @since 1.1.0
+		 * @return bool
 		 */
 		public function delete_fonts_folder() {
 			return $this->get_filesystem()->delete( $this->get_fonts_folder(), true );
@@ -622,8 +604,8 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 * Get the filesystem.
 		 *
 		 * @access protected
-		 * @return WP_Filesystem
 		 * @since 1.0.0
+		 * @return \WP_Filesystem_Base
 		 */
 		protected function get_filesystem() {
 			global $wp_filesystem;
@@ -635,7 +617,6 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 				}
 				WP_Filesystem();
 			}
-
 			return $wp_filesystem;
 		}
 	}
@@ -650,17 +631,16 @@ if ( ! function_exists( 'wptt_get_webfont_styles' ) ) {
 	 * replace references to remote URLs with locally-downloaded assets,
 	 * and finally return the resulting CSS.
 	 *
-	 * @param string $url The URL of the remote webfont.
+	 * @since 1.0.0
+	 *
+	 * @param string $url    The URL of the remote webfont.
 	 * @param string $format The font-format. If you need to support IE, change this to "woff".
 	 *
 	 * @return string Returns the CSS.
-	 * @since 1.0.0
-	 *
 	 */
 	function wptt_get_webfont_styles( $url, $format = 'woff2' ) {
 		$font = new WPTT_WebFont_Loader( $url );
 		$font->set_font_format( $format );
-
 		return $font->get_styles();
 	}
 }
@@ -669,17 +649,16 @@ if ( ! function_exists( 'wptt_get_webfont_url' ) ) {
 	/**
 	 * Get a stylesheet URL for a webfont.
 	 *
-	 * @param string $url The URL of the remote webfont.
+	 * @since 1.1.0
+	 *
+	 * @param string $url    The URL of the remote webfont.
 	 * @param string $format The font-format. If you need to support IE, change this to "woff".
 	 *
 	 * @return string Returns the CSS.
-	 * @since 1.1.0
-	 *
 	 */
 	function wptt_get_webfont_url( $url, $format = 'woff2' ) {
 		$font = new WPTT_WebFont_Loader( $url );
 		$font->set_font_format( $format );
-
 		return $font->get_url();
 	}
 }

@@ -5,7 +5,7 @@ Tags: WordPress, admin, administration, dashboard, login, analytics, internet ex
 Requires at least: 5.0
 Requires PHP: 7.0
 Tested up to: 5.6
-Stable tag: 3.7.3
+Stable tag: 3.7.4
 License: GPLv2 or later
 
 Dozens of settings aiming at creating a friendlier administration environment for both Administrators and Editors.
@@ -160,7 +160,10 @@ This is a known issue. When Page Caching is activated in the W3 Total Cache plug
 10. The Old Browser warning message 
 
 == Changelog ==
-- 3.7.3 =
+= 3.7.4 =
+* Updated web font loader
+
+= 3.7.3 =
 * Replaced intval() with type casts
 
 = 3.7.2 =
