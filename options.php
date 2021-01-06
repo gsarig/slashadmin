@@ -434,7 +434,7 @@ class Slash_Admin_Options {
 
 		$this->settings['local_fonts'] = array( // Local font URLs
 			'title'   => __( 'Local fonts URLs', 'slash-admin' ),
-			'desc'    => __( 'Paste the full URLs of the fonts. You can add more than one. Each URL should be on its own line.',
+			'desc'    => __( 'Paste the full URLs of the fonts. You can add more than one. Each URL should be on its own line. If you want to preload a font, add <code>&preload=true</code> at the end of the respective URL. <br>Example: <code>https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&preload=true</code>',
 				'slash-admin' ),
 			'std'     => '',
 			'type'    => 'textarea',
