@@ -27,7 +27,6 @@ class Slash_Admin_Options {
 		// This will keep track of the checkbox options for the validate_settings function.
 		$this->checkboxes = array();
 		$this->settings   = array();
-		$this->get_settings();
 
 		$this->sections['appearance']         = __( 'Frontend', 'slash-admin' );
 		$this->sections['administration']     = __( 'Administration', 'slash-admin' );
