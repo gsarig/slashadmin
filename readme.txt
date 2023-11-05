@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: WordPress, admin, administration, dashboard, login, analytics, internet explorer, revisions, permission, role, access, fonts, dns prefetching, prefetching, prerendering, white label, cookie law, eu cookie law, site health, loading, obfuscate
 Requires at least: 5.0
 Requires PHP: 7.0
-Tested up to: 6.1
+Tested up to: 6.4
 Stable tag: 3.8.1
 License: GPLv2 or later
 
