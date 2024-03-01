@@ -75,8 +75,7 @@ class Loader {
 			$full_spinner  = Settings::option( 'loading_spinner_full' );
 			$styles        .= "#slash_admin_loader-container {background: {$background};}.slash_admin_loader_delay-msg {color: {$full_spinner};}.slash_admin_loader {border-top-color: {$empty_spinner};border-right-color: {$empty_spinner};border-bottom-color: {$empty_spinner};border-left-color: {$full_spinner};}";
 		}
-
-		echo $styles ? '<style>' . $styles . '</style>' : '';
+	 		echo $styles ? '<style>' . safecss_filter_attr( $styles ) . '</style>' : '';
 	}
 
 	private static function image( $alt_text ) {
