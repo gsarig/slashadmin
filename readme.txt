@@ -4,8 +4,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: WordPress, admin, administration, dashboard, login, analytics, internet explorer, revisions, permission, role, access, fonts, dns prefetching, prefetching, prerendering, white label, cookie law, eu cookie law, site health, loading, obfuscate
 Requires at least: 5.0
 Requires PHP: 7.0
-Tested up to: 6.4
-Stable tag: 3.8.3
+Tested up to: 7.1
+Stable tag: 3.8.4
 License: GPLv2 or later
 
 Dozens of settings aiming at creating a friendlier administration environment for both Administrators and Editors.
@@ -160,6 +160,11 @@ This is a known issue. When Page Caching is activated in the W3 Total Cache plug
 10. The Old Browser warning message 
 
 == Changelog ==
+= 3.8.4 =
+* Tested with WordPress 7.1
+* Fixes a notice about translations loading too early (WordPress 6.7+)
+* Fixes a PHP 8 deprecation notice in the "Who is online" feature
+
 = 3.8.3 =
 * Fixes a regression caused by 3.8.2
 

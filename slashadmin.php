@@ -3,7 +3,7 @@
  * Plugin Name: Slash Admin
  * Plugin URI: http://wordpress.org/plugins/slash-admin/
  * Description: Slash Admin lets you change various different options in a WordPress website, keeps them active even if you switch your theme and helps you create a friendlier Admin Panel for you and your editors. 
- * Version: 3.8.3
+ * Version: 3.8.4
  * Author: Giorgos Sarigiannidis
  * Author URI: http://www.gsarigiannidis.gr
  * Text Domain: slash-admin
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'SLASH_ADMIN_VERSION', '3.8.3' );
+define( 'SLASH_ADMIN_VERSION', '3.8.4' );
 
 add_action( 'init', 'slashadmin_load_textdomain' );
 function slashadmin_load_textdomain() {
