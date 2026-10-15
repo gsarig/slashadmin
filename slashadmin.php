@@ -18,7 +18,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'SLASH_ADMIN_VERSION', '3.8.3' );
 
-load_plugin_textdomain( 'slash-admin', false, basename( dirname( __FILE__ ) ) . '/languages' ); // Localize it
+add_action( 'init', 'slashadmin_load_textdomain' );
+function slashadmin_load_textdomain() {
+	load_plugin_textdomain( 'slash-admin', false, basename( dirname( __FILE__ ) ) . '/languages' ); // Localize it
+}
 
 if ( is_admin() ) // Display the plugin's options at the backend
 {
