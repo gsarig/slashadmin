@@ -1261,14 +1261,14 @@ class Slash_Admin_Options {
 		$this->settings['prefetch_home']             = array(
 			'section' => 'performance',
 			'title'   => __( 'Prefetch homepage', 'slash-admin' ),
-			'desc'    => __( 'Prefetch homepage when on sigle posts and pages.', 'slash-admin' ),
+			'desc'    => __( 'Prefetch homepage when on single posts and pages.', 'slash-admin' ),
 			'type'    => 'checkbox',
 			'std'     => 0,
 		);
 		$this->settings['prerender_home']            = array(
 			'section' => 'performance',
 			'title'   => __( 'Prerender homepage', 'slash-admin' ),
-			'desc'    => __( 'Prerender homepage when on sigle posts and pages.', 'slash-admin' ),
+			'desc'    => __( 'Prerender homepage when on single posts and pages.', 'slash-admin' ),
 			'type'    => 'checkbox',
 			'std'     => 0,
 		);
