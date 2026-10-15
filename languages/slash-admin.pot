@@ -1148,7 +1148,7 @@ msgid "Prefetch homepage"
 msgstr ""
 
 #: options.php:1238
-msgid "Prefetch homepage when on sigle posts and pages."
+msgid "Prefetch homepage when on single posts and pages."
 msgstr ""
 
 #: options.php:1244
@@ -1156,7 +1156,7 @@ msgid "Prerender homepage"
 msgstr ""
 
 #: options.php:1245
-msgid "Prerender homepage when on sigle posts and pages."
+msgid "Prerender homepage when on single posts and pages."
 msgstr ""
 
 #: options.php:1260
