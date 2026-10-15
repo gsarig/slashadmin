@@ -12,6 +12,9 @@ add_action( 'init', 'slashadmin_users_status_init' );
 add_action( 'admin_init', 'slashadmin_users_status_init' );
 function slashadmin_users_status_init() {
 	$logged_in_users = get_transient( 'users_status' ); //Get the active users from the transient.
+	if ( ! is_array( $logged_in_users ) ) {
+		$logged_in_users = array(); //The transient is false when expired or not set yet.
+	}
 	$user            = wp_get_current_user(); //Get the current user's data
 
 	//Update the user if they are not on the list, or if they have not been online in the last 900 seconds (15 minutes)

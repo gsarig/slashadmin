@@ -1515,4 +1515,9 @@ class Slash_Admin_Options {
 
 }
 
-$slashadmin_options = new Slash_Admin_Options();
+// Instantiate on init, since the constructor translates strings and WordPress 6.7+ warns when that happens earlier.
+add_action( 'init', 'slashadmin_options_init' );
+function slashadmin_options_init() {
+	global $slashadmin_options;
+	$slashadmin_options = new Slash_Admin_Options();
+}
